@@ -1,0 +1,1656 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../02-what-can-ros2-do/">
+      
+      
+        <link rel="next" href="../04-why-ubuntu/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>03 ROS1 vs ROS2 - ROS2 Newbie Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ros2-ros1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ROS2 Newbie Guide" class="md-header__button md-logo" aria-label="ROS2 Newbie Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ROS2 Newbie Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              03 ROS1 vs ROS2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ROS2 Newbie Guide" class="md-nav__button md-logo" aria-label="ROS2 Newbie Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ROS2 Newbie Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一部分：认识与选型
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第一部分：认识与选型
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-what-is-ros2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 什么是 ROS2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-what-can-ros2-do/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 ROS2 能干什么
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 ROS1 vs ROS2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 ROS1 vs ROS2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-ros1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 ROS1 是怎么来的
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-ros1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 ROS1 的先天问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 ROS1 的先天问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-roscore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1 单点故障问题（roscore）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.2 不支持实时系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.3 安全性几乎为零
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.4 平台支持受限
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 ROS2 是如何解决这些问题的
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 ROS2 是如何解决这些问题的">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roscore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        去中心化通信（没有 roscore）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支持实时系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        引入安全机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        真正的跨平台
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-ros1-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 ROS1 和 ROS2 的核心区别（对比表）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-ros1-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 应该学 ROS1 还是 ROS2？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-why-ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 为什么选择 Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二部分：学习前准备
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第二部分：学习前准备
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-before-you-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 学习前需要准备什么
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 开发工具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第三部分：安装与验证
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第三部分：安装与验证
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-install-ubuntu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 安装 Ubuntu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-install-ros2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 安装 ROS2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四部分：核心概念与实战
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第四部分：核心概念与实战
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-core-concepts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 核心概念速通
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-hello-node/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Hello Node
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-pub-sub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 Pub/Sub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-turtlesim/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 turtlesim
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五部分：排障与资源
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第五部分：排障与资源
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13 常见问题与排障
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14 资源与下一步
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-ros1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 ROS1 是怎么来的
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-ros1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 ROS1 的先天问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 ROS1 的先天问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-roscore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.1 单点故障问题（roscore）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.2 不支持实时系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.3 安全性几乎为零
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2.4 平台支持受限
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 ROS2 是如何解决这些问题的
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 ROS2 是如何解决这些问题的">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roscore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        去中心化通信（没有 roscore）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支持实时系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        引入安全机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        真正的跨平台
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-ros1-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 ROS1 和 ROS2 的核心区别（对比表）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-ros1-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 应该学 ROS1 还是 ROS2？
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ros2-ros1">ROS2 的前身 ROS1<a class="headerlink" href="#ros2-ros1" title="Permanent link">&para;</a></h1>
+<p>在前两章，我们已经知道：</p>
+<ul>
+<li>
+<p>ROS2 是什么  </p>
+</li>
+<li>
+<p>ROS2 在系统中能干什么  </p>
+</li>
+</ul>
+<p>这一章我们要回答一个<strong>很多新手都会问的问题</strong>：</p>
+<blockquote>
+<p><strong>既然已经有 ROS1，为什么还要搞一个 ROS2？</strong></p>
+</blockquote>
+<p>理解这一章，你就会明白：  </p>
+<p><strong>ROS2 不是“升级版 ROS1”，而是一次从底层设计开始的重构。</strong></p>
+<hr />
+<h2 id="31-ros1">3.1 ROS1 是怎么来的<a class="headerlink" href="#31-ros1" title="Permanent link">&para;</a></h2>
+<p>ROS1（通常直接叫 ROS）诞生于 <strong>2007 年</strong>，  </p>
+<p>由 <strong>斯坦福大学</strong> 和 <strong>Willow Garage</strong> 推动开发。</p>
+<p>当时机器人领域面临一个非常严重的问题：</p>
+<div class="admonition info">
+<p class="admonition-title">当年的真实困境</p>
+</div>
+<p>&nbsp;   每个实验室、每个团队都在 <strong>重复造轮子</strong>。</p>
+<ul>
+<li>
+<p>同样的导航算法，不同团队各写一份  </p>
+</li>
+<li>
+<p>接口不统一，代码无法复用  </p>
+</li>
+<li>
+<p>研究成果难以共享  </p>
+</li>
+</ul>
+<p>ROS1 的出现，第一次在机器人领域做了三件事：</p>
+<ol>
+<li>
+<p><strong>统一通信方式</strong>  </p>
+</li>
+<li>
+<p><strong>统一代码组织结构</strong>  </p>
+</li>
+<li>
+<p><strong>推动大规模开源协作</strong></p>
+</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">历史地位</p>
+</div>
+<p>&nbsp;   ROS1 让机器人领域第一次有了“通用语言”。</p>
+<p>随着时间发展，ROS 社区：</p>
+<ul>
+<li>
+<p>累积了 <strong>数千个功能包</strong></p>
+</li>
+<li>
+<p>拥有 <strong>数十万开发者</strong></p>
+</li>
+<li>
+<p>成为机器人研究和教学的事实标准</p>
+</li>
+</ul>
+<hr />
+<h2 id="32-ros1">3.2 ROS1 的先天问题<a class="headerlink" href="#32-ros1" title="Permanent link">&para;</a></h2>
+<p>ROS1 很成功，但它的很多问题并不是“Bug”，  </p>
+<p>而是 <strong>在最初设计阶段就无法避免的限制</strong>。</p>
+<p>这些问题，在实验室还能忍，但在工程和工业场景中会非常致命。</p>
+<hr />
+<h3 id="321-roscore">3.2.1 单点故障问题（roscore）<a class="headerlink" href="#321-roscore" title="Permanent link">&para;</a></h3>
+<p>ROS1 有一个核心组件叫 <strong>roscore</strong>。</p>
+<ul>
+<li>
+<p>所有节点都要通过它才能互相找到  </p>
+</li>
+<li>
+<p>一旦 roscore 挂掉，整个系统立刻瘫痪  </p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">工程级问题</p>
+</div>
+<p>&nbsp;   在真实机器人系统中，<strong>单点故障是不可接受的</strong>。</p>
+<hr />
+<h3 id="322">3.2.2 不支持实时系统<a class="headerlink" href="#322" title="Permanent link">&para;</a></h3>
+<p>很多工业机器人对时间非常敏感：</p>
+<ul>
+<li>
+<p>10 ms 内必须响应  </p>
+</li>
+<li>
+<p>延迟过大会直接导致安全问题  </p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">现实限制</p>
+</div>
+<p>&nbsp;   ROS1 在设计时并没有考虑实时性需求，  </p>
+<p>&nbsp;   这使它难以进入工业级应用。</p>
+<hr />
+<h3 id="323">3.2.3 安全性几乎为零<a class="headerlink" href="#323" title="Permanent link">&para;</a></h3>
+<p>ROS1 的默认设计是：</p>
+<ul>
+<li>
+<p>只要能连上网络  </p>
+</li>
+<li>
+<p>谁都可以发布、订阅、控制机器人  </p>
+</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">严重隐患</p>
+</div>
+<p>&nbsp;   在公网或工业网络中，这是<strong>严重的安全风险</strong>。</p>
+<hr />
+<h3 id="324">3.2.4 平台支持受限<a class="headerlink" href="#324" title="Permanent link">&para;</a></h3>
+<p>ROS1：</p>
+<ul>
+<li>
+<p>几乎只能在 Linux（Ubuntu）上完整运行  </p>
+</li>
+<li>
+<p>Python 依赖 Python 2（已停止维护）</p>
+</li>
+</ul>
+<p>这些问题，随着时间推移越来越难以接受。</p>
+<hr />
+<h2 id="33-ros2">3.3 ROS2 是如何解决这些问题的<a class="headerlink" href="#33-ros2" title="Permanent link">&para;</a></h2>
+<p>ROS2 并不是在 ROS1 上“打补丁”，  </p>
+<p>而是 <strong>推倒重来，从架构层重新设计</strong>。</p>
+<hr />
+<h3 id="roscore">去中心化通信（没有 roscore）<a class="headerlink" href="#roscore" title="Permanent link">&para;</a></h3>
+<p>ROS2 基于 <strong>DDS（数据分发服务）</strong>：</p>
+<div class="admonition info">
+<p class="admonition-title">核心变化</p>
+</div>
+<p>&nbsp;   节点之间 <strong>直接发现、直接通信</strong>，  </p>
+<p>&nbsp;   不再依赖中心节点。</p>
+<p>结果是：</p>
+<ul>
+<li>
+<p>没有单点故障  </p>
+</li>
+<li>
+<p>系统更稳定  </p>
+</li>
+<li>
+<p>更适合分布式部署  </p>
+</li>
+</ul>
+<hr />
+<h3 id="_1">支持实时系统<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>ROS2 在设计时就考虑了：</p>
+<ul>
+<li>
+<p>实时调度  </p>
+</li>
+<li>
+<p>确定性通信  </p>
+</li>
+<li>
+<p>工业控制需求  </p>
+</li>
+</ul>
+<p>这使 ROS2 能进入：</p>
+<ul>
+<li>
+<p>工业机器人  </p>
+</li>
+<li>
+<p>自动化生产线  </p>
+</li>
+<li>
+<p>对安全性要求极高的场景  </p>
+</li>
+</ul>
+<hr />
+<h3 id="_2">引入安全机制<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>ROS2 支持：</p>
+<ul>
+<li>
+<p>加密通信  </p>
+</li>
+<li>
+<p>身份认证  </p>
+</li>
+<li>
+<p>权限控制（DDS-Security）</p>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">质变</p>
+</div>
+<p>&nbsp;   ROS2 从“实验室工具”，  </p>
+<p>&nbsp;   进化成 <strong>可进入真实工程环境的系统框架</strong>。</p>
+<hr />
+<h3 id="_3">真正的跨平台<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>ROS2 原生支持：</p>
+<ul>
+<li>
+<p>Linux  </p>
+</li>
+<li>
+<p>Windows  </p>
+</li>
+<li>
+<p>macOS  </p>
+</li>
+</ul>
+<p>并且 <strong>Python 3 / C++ 并行支持</strong>，彻底摆脱历史包袱。</p>
+<hr />
+<h2 id="34-ros1-ros2">3.4 ROS1 和 ROS2 的核心区别（对比表）<a class="headerlink" href="#34-ros1-ros2" title="Permanent link">&para;</a></h2>
+<p>| 对比项 | ROS1 | ROS2 |</p>
+<p>|------|-----|-----|</p>
+<p>| 通信架构 | roscore 中心化 | DDS 去中心化 |</p>
+<p>| 单点故障 | 有 | 无 |</p>
+<p>| 实时性 | 不支持 | 支持 |</p>
+<p>| 安全性 | 无 | 内置安全机制 |</p>
+<p>| 平台支持 | Linux 为主 | 真正跨平台 |</p>
+<p>| Python 版本 | Python 2 | Python 3 |</p>
+<p>| 维护状态 | 已停止维护 | 持续活跃开发 |</p>
+<hr />
+<h2 id="35-ros1-ros2">3.5 应该学 ROS1 还是 ROS2？<a class="headerlink" href="#35-ros1-ros2" title="Permanent link">&para;</a></h2>
+<div class="admonition success">
+<p class="admonition-title">直接结论</p>
+</div>
+<p>&nbsp;   <strong>直接学 ROS2，不要犹豫。</strong></p>
+<p>原因很简单：</p>
+<ul>
+<li>
+<p>ROS1 已在 <strong>2025 年停止官方支持</strong></p>
+</li>
+<li>
+<p>新项目几乎全部基于 ROS2</p>
+</li>
+<li>
+<p>ROS2 的设计更符合现代软件工程</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">唯一例外</p>
+</div>
+<p>&nbsp;   只有在你需要维护 <strong>历史 ROS1 项目</strong> 时，  </p>
+<p>&nbsp;   才需要了解 ROS1。</p>
+<p>即便如此，<strong>先学 ROS2 再回头看 ROS1，会更轻松</strong>。</p>
+<hr />
+<h2 id="_4">本章小结<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>通过这一章，你应该已经理解：</p>
+<ul>
+<li>
+<p>ROS1 的历史价值非常重要  </p>
+</li>
+<li>
+<p>ROS1 的问题无法通过“小修小补”解决  </p>
+</li>
+<li>
+<p>ROS2 是一次系统级重构  </p>
+</li>
+<li>
+<p>当前和未来的机器人开发，<strong>应优先选择 ROS2</strong></p>
+</li>
+</ul>
+<hr />
+<h2 id="_5">下一章预告<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>下一章我们会进入一个<strong>非常现实、也最容易踩坑的话题</strong>：</p>
+<blockquote>
+<p><strong>为什么要选择 Ubuntu 20.04 / 22.04？</strong></p>
+</blockquote>
+<p>我们会从系统、版本、兼容性角度，  </p>
+<p>帮你避开新手最常掉进去的坑。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
