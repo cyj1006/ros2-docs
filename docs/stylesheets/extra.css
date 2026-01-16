@@ -1,0 +1,5 @@
+/* Make bold more visible in content */
+.md-typeset strong,
+.md-typeset b {
+  font-weight: 800;
+}

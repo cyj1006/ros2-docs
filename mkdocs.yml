@@ -1,0 +1,43 @@
+site_name: ROS2 Newbie Guide
+
+theme:
+  name: material
+
+nav:
+  - 首页: index.md
+  - 第一部分：认识与选型:
+      - 01 什么是 ROS2: chapters/01-what-is-ros2.md
+      - 02 ROS2 能干什么: chapters/02-what-can-ros2-do.md
+      - 03 ROS1 vs ROS2: chapters/03-ros1-vs-ros2.md
+      - 04 为什么选择 Ubuntu: chapters/04-why-ubuntu.md
+
+  - 第二部分：学习前准备:
+      - 05 学习前需要准备什么: chapters/05-before-you-start.md
+      - 06 开发工具: chapters/06-tools.md
+
+  - 第三部分：安装与验证:
+      - 07 安装 Ubuntu: chapters/07-install-ubuntu.md
+      - 08 安装 ROS2: chapters/08-install-ros2.md
+
+  - 第四部分：核心概念与实战:
+      - 09 核心概念速通: chapters/09-core-concepts.md
+      - 10 Hello Node: chapters/10-hello-node.md
+      - 11 Pub/Sub: chapters/11-pub-sub.md
+      - 12 turtlesim: chapters/12-turtlesim.md
+
+  - 第五部分：排障与资源:
+      - 13 常见问题与排障: chapters/13-troubleshooting.md
+      - 14 资源与下一步: chapters/14-resources.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
