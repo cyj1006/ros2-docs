@@ -1,33 +1,33 @@
-site_name: ROS2 Newbie Guide
+site_name: ROS2 新手指导
 
 theme:
   name: material
-
+  features: []
 nav:
   - 首页: index.md
   - 第一部分：认识与选型:
       - 01 什么是 ROS2: chapters/01-what-is-ros2.md
-      - 02 ROS2 能干什么: chapters/02-what-can-ros2-do.md
-      - 03 ROS1 vs ROS2: chapters/03-ros1-vs-ros2.md
-      - 04 为什么选择 Ubuntu: chapters/04-why-ubuntu.md
+      - 02 ROS2能干什么——了解它的实际用途: chapters/02-what-can-ros2-do.md
+      - 03 ROS2 的前身 ROS1——知道它从哪来: chapters/03-ros1-vs-ros2.md
+      - 04 为什么选择 Ubuntu 20.04/22.04: chapters/04-why-ubuntu.md
 
   - 第二部分：学习前准备:
       - 05 学习前需要准备什么: chapters/05-before-you-start.md
-      - 06 开发工具: chapters/06-tools.md
+      - 06 开发工具介绍——认识你的"武器库": chapters/06-tools.md
 
   - 第三部分：安装与验证:
-      - 07 安装 Ubuntu: chapters/07-install-ubuntu.md
-      - 08 安装 ROS2: chapters/08-install-ros2.md
+      - 07 ROS2 支持哪些编程语言——选择适合你的: chapters/07-install-ubuntu.md
+      - 08 Ubuntu 系统安装教程——搭建环境: chapters/08-install-ros2.md
 
   - 第四部分：核心概念与实战:
-      - 09 核心概念速通: chapters/09-core-concepts.md
-      - 10 Hello Node: chapters/10-hello-node.md
-      - 11 Pub/Sub: chapters/11-pub-sub.md
-      - 12 turtlesim: chapters/12-turtlesim.md
+      - 09 ROS2 安装教程——安装核心软件: chapters/09-core-concepts.md
+      - 10 ROS2 核心概念详解——最重要的知识点: chapters/10-hello-node.md
+      - 11 第一个 ROS2 程序——Hello World: chapters/11-pub-sub.md
+      - 12 项目实战——发布者与订阅者通信: chapters/12-turtlesim.md
 
   - 第五部分：排障与资源:
-      - 13 常见问题与排障: chapters/13-troubleshooting.md
-      - 14 资源与下一步: chapters/14-resources.md
+      - 13 进阶项目——控制小海龟运动: chapters/13-troubleshooting.md
+      - 14 常见问题与解决方案——遇到问题别慌: chapters/14-resources.md
 
 markdown_extensions:
   - admonition
@@ -39,5 +39,5 @@ markdown_extensions:
   - toc:
       permalink: true
 
-extra_css:
-  - stylesheets/extra.css
+#extra_css:
+  #- stylesheets/extra.css

@@ -46,8 +46,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -64,6 +62,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -469,6 +472,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 开发工具
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -486,6 +509,1027 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 命令行工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 命令行工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ros2-run-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 run - 运行节点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 run - 运行节点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本用法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-node-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 node - 节点管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 node - 节点管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-topic-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 topic - 话题管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 topic - 话题管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-service-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 service - 服务管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 service - 服务管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-launch-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 launch - 启动文件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 launch - 启动文件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本用法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-bag-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 bag - 数据录制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 bag - 数据录制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-param-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 param - 参数管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 param - 参数管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-interface-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 interface - 接口查看
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 interface - 接口查看">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 可视化工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.2 可视化工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rviz2-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RViz2 - 3D 可视化工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RViz2 - 3D 可视化工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        启动命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要功能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gazebo-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gazebo - 仿真器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gazebo - 仿真器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要仿真
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        启动方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要功能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rqt-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rqt - 图形化工具集
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rqt - 图形化工具集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rqt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用的 rqt 工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常用的 rqt 工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-rqt_graph-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. rqt_graph - 查看节点关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-rqt_plot-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. rqt_plot - 实时绘图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-rqt_console-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. rqt_console - 日志查看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-rqt_image_view-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. rqt_image_view - 图像显示
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 构建工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.3 构建工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colcon-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        colcon - 编译工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="colcon - 编译工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优化技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 代码编辑器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 代码编辑器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code（强烈推荐）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VS Code（强烈推荐）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs-code_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么推荐 VS Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        必装插件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="必装插件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. C/C++
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ROS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 其他推荐
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安装方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        其他编辑器选择
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="其他编辑器选择">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vim-neovim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        vim / neovim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pycharm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PyCharm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 终端工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.5 终端工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terminator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminator（推荐）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Terminator（推荐）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terminator_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要 Terminator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用快捷键
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tmux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tmux
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 调试工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.6 调试工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gdb-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gdb - C++ 调试器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdb-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pdb - Python 调试器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-code_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code 调试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#67" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 工具使用技巧总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.7 工具使用技巧总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        命令行工具技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可视化工具技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -902,6 +1946,1018 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 命令行工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 命令行工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ros2-run-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 run - 运行节点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 run - 运行节点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本用法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-node-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 node - 节点管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 node - 节点管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-topic-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 topic - 话题管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 topic - 话题管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-service-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 service - 服务管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 service - 服务管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-launch-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 launch - 启动文件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 launch - 启动文件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基本用法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-bag-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 bag - 数据录制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 bag - 数据录制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-param-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 param - 参数管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 param - 参数管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-interface-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 interface - 接口查看
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ros2 interface - 接口查看">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 可视化工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.2 可视化工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rviz2-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RViz2 - 3D 可视化工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RViz2 - 3D 可视化工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        启动命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要功能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gazebo-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gazebo - 仿真器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gazebo - 仿真器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要仿真
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        启动方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主要功能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rqt-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rqt - 图形化工具集
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="rqt - 图形化工具集">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rqt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用的 rqt 工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常用的 rqt 工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-rqt_graph-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. rqt_graph - 查看节点关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-rqt_plot-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. rqt_plot - 实时绘图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-rqt_console-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. rqt_console - 日志查看
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-rqt_image_view-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. rqt_image_view - 图像显示
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 构建工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.3 构建工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colcon-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        colcon - 编译工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="colcon - 编译工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        简介
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优化技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 代码编辑器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.4 代码编辑器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code（强烈推荐）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VS Code（强烈推荐）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vs-code_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么推荐 VS Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        必装插件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="必装插件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. C/C++
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ros" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ROS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 其他推荐
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安装方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        其他编辑器选择
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="其他编辑器选择">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vim-neovim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        vim / neovim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pycharm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PyCharm
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CLion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 终端工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.5 终端工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terminator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminator（推荐）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Terminator（推荐）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terminator_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要 Terminator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常用快捷键
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tmux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tmux
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#66" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 调试工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.6 调试工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gdb-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        gdb - C++ 调试器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdb-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pdb - Python 调试器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs-code_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VS Code 调试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#67" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 工具使用技巧总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.7 工具使用技巧总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        命令行工具技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可视化工具技巧
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -918,10 +2974,644 @@
 
 
 
-  <h1>06 开发工具</h1>
+<h1 id="_1">第六章：开发工具介绍——认识你的"武器库"<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="admonition quote">
+<p class="admonition-title">工欲善其事</p>
+<p><strong>工欲善其事，必先利其器。</strong></p>
+</div>
+<p>ROS2 提供了丰富的开发工具，</p>
+<p>熟悉这些工具能让你的开发效率大大提高。</p>
+<hr />
+<h2 id="61">6.1 命令行工具<a class="headerlink" href="#61" title="Permanent link">&para;</a></h2>
+<p>ROS2 自带一套命令行工具，用得最多的几个：</p>
+<hr />
+<h3 id="ros2-run-">ros2 run - 运行节点<a class="headerlink" href="#ros2-run-" title="Permanent link">&para;</a></h3>
+<h4 id="_2">基本用法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>包名<span class="w"> </span>节点名
+</code></pre></div>
+<hr />
+<h4 id="_3">实例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 运行小海龟节点</span>
+ros2<span class="w"> </span>run<span class="w"> </span>turtlesim<span class="w"> </span>turtlesim_node
 
-<p><strong>HTML_STRONG_TEST</strong></p>
-<p>**MD_BOLD_TEST**</p>
+<span class="c1"># 运行键盘控制节点</span>
+ros2<span class="w"> </span>run<span class="w"> </span>turtlesim<span class="w"> </span>turtle_teleop_key
+</code></pre></div>
+<hr />
+<h3 id="ros2-node-">ros2 node - 节点管理<a class="headerlink" href="#ros2-node-" title="Permanent link">&para;</a></h3>
+<h4 id="_4">常用命令<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 列出所有运行中的节点</span>
+ros2<span class="w"> </span>node<span class="w"> </span>list
+
+<span class="c1"># 查看节点详细信息</span>
+ros2<span class="w"> </span>node<span class="w"> </span>info<span class="w"> </span>/节点名
+</code></pre></div>
+<hr />
+<h4 id="_5">实例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 查看当前有哪些节点在运行</span>
+ros2<span class="w"> </span>node<span class="w"> </span>list
+
+<span class="c1"># 查看小海龟节点的详细信息</span>
+ros2<span class="w"> </span>node<span class="w"> </span>info<span class="w"> </span>/turtlesim
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">调试利器</p>
+<p>这个命令可以看到节点的：
+- 订阅了哪些话题
+- 发布了哪些话题
+- 提供了哪些服务
+- 使用了哪些参数</p>
+</div>
+<hr />
+<h3 id="ros2-topic-">ros2 topic - 话题管理<a class="headerlink" href="#ros2-topic-" title="Permanent link">&para;</a></h3>
+<h4 id="_6">常用命令<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 列出所有话题</span>
+ros2<span class="w"> </span>topic<span class="w"> </span>list
+
+<span class="c1"># 实时查看话题内容（调试神器）</span>
+ros2<span class="w"> </span>topic<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>/话题名
+
+<span class="c1"># 查看话题发布频率</span>
+ros2<span class="w"> </span>topic<span class="w"> </span>hz<span class="w"> </span>/话题名
+
+<span class="c1"># 手动发布消息</span>
+ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>/话题名<span class="w"> </span>类型<span class="w"> </span><span class="s2">&quot;数据&quot;</span>
+
+<span class="c1"># 查看话题信息</span>
+ros2<span class="w"> </span>topic<span class="w"> </span>info<span class="w"> </span>/话题名
+</code></pre></div>
+<hr />
+<h4 id="_7">实例<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 查看小海龟的速度指令</span>
+ros2<span class="w"> </span>topic<span class="w"> </span><span class="nb">echo</span><span class="w"> </span>/turtle1/cmd_vel
+
+<span class="c1"># 查看位置话题的发布频率</span>
+ros2<span class="w"> </span>topic<span class="w"> </span>hz<span class="w"> </span>/turtle1/pose
+
+<span class="c1"># 手动发布速度指令让小海龟移动</span>
+ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>/turtle1/cmd_vel<span class="w"> </span>geometry_msgs/msg/Twist<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span><span class="s2">&quot;{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}&quot;</span>
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">调试技巧</p>
+<p><code>ros2 topic echo</code> 是调试时最常用的命令，</p>
+<p>可以实时看到数据流动，非常直观。</p>
+</div>
+<hr />
+<h3 id="ros2-service-">ros2 service - 服务管理<a class="headerlink" href="#ros2-service-" title="Permanent link">&para;</a></h3>
+<h4 id="_8">常用命令<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 列出所有服务</span>
+ros2<span class="w"> </span>service<span class="w"> </span>list
+
+<span class="c1"># 调用服务</span>
+ros2<span class="w"> </span>service<span class="w"> </span>call<span class="w"> </span>/服务名<span class="w"> </span>类型<span class="w"> </span><span class="s2">&quot;请求数据&quot;</span>
+
+<span class="c1"># 查看服务类型</span>
+ros2<span class="w"> </span>service<span class="w"> </span><span class="nb">type</span><span class="w"> </span>/服务名
+</code></pre></div>
+<hr />
+<h4 id="_9">实例<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 调用清除轨迹的服务</span>
+ros2<span class="w"> </span>service<span class="w"> </span>call<span class="w"> </span>/clear<span class="w"> </span>std_srvs/srv/Empty
+
+<span class="c1"># 重置小海龟位置</span>
+ros2<span class="w"> </span>service<span class="w"> </span>call<span class="w"> </span>/reset<span class="w"> </span>std_srvs/srv/Empty
+
+<span class="c1"># 生成新的海龟</span>
+ros2<span class="w"> </span>service<span class="w"> </span>call<span class="w"> </span>/spawn<span class="w"> </span>turtlesim/srv/Spawn<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span><span class="s2">&quot;{x: 2.0, y: 2.0, theta: 0.0, name: &#39;turtle2&#39;}&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="ros2-launch-">ros2 launch - 启动文件<a class="headerlink" href="#ros2-launch-" title="Permanent link">&para;</a></h3>
+<h4 id="_10">基本用法<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>包名<span class="w"> </span>xxx.launch.py
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">launch 文件的作用</p>
+<p>一次启动多个节点，配置参数，非常方便。</p>
+</div>
+<hr />
+<h4 id="_11">实例<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 启动 navigation2 导航</span>
+ros2<span class="w"> </span>launch<span class="w"> </span>nav2_bringup<span class="w"> </span>navigation_launch.py
+</code></pre></div>
+<hr />
+<h3 id="ros2-bag-">ros2 bag - 数据录制<a class="headerlink" href="#ros2-bag-" title="Permanent link">&para;</a></h3>
+<h4 id="_12">常用命令<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 录制所有话题</span>
+ros2<span class="w"> </span>bag<span class="w"> </span>record<span class="w"> </span>-a
+
+<span class="c1"># 录制指定话题</span>
+ros2<span class="w"> </span>bag<span class="w"> </span>record<span class="w"> </span>/topic1<span class="w"> </span>/topic2
+
+<span class="c1"># 回放录制的数据</span>
+ros2<span class="w"> </span>bag<span class="w"> </span>play<span class="w"> </span>文件夹名
+
+<span class="c1"># 查看bag文件信息</span>
+ros2<span class="w"> </span>bag<span class="w"> </span>info<span class="w"> </span>文件夹名
+</code></pre></div>
+<hr />
+<h4 id="_13">实例<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 录制小海龟的所有数据</span>
+ros2<span class="w"> </span>bag<span class="w"> </span>record<span class="w"> </span>-a
+
+<span class="c1"># 回放刚才录制的数据</span>
+ros2<span class="w"> </span>bag<span class="w"> </span>play<span class="w"> </span>rosbag2_2026_01_15-10_30_25
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">应用场景</p>
+<ul>
+<li>记录实验数据用于分析</li>
+<li>离线调试</li>
+<li>回放测试场景</li>
+</ul>
+</div>
+<hr />
+<h3 id="ros2-param-">ros2 param - 参数管理<a class="headerlink" href="#ros2-param-" title="Permanent link">&para;</a></h3>
+<h4 id="_14">常用命令<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 列出节点的所有参数</span>
+ros2<span class="w"> </span>param<span class="w"> </span>list
+
+<span class="c1"># 获取参数值</span>
+ros2<span class="w"> </span>param<span class="w"> </span>get<span class="w"> </span>/节点名<span class="w"> </span>参数名
+
+<span class="c1"># 设置参数值</span>
+ros2<span class="w"> </span>param<span class="w"> </span><span class="nb">set</span><span class="w"> </span>/节点名<span class="w"> </span>参数名<span class="w"> </span>值
+
+<span class="c1"># 保存参数到文件</span>
+ros2<span class="w"> </span>param<span class="w"> </span>dump<span class="w"> </span>/节点名
+</code></pre></div>
+<hr />
+<h4 id="_15">实例<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 查看小海龟节点的参数</span>
+ros2<span class="w"> </span>param<span class="w"> </span>list<span class="w"> </span>/turtlesim
+
+<span class="c1"># 修改背景颜色</span>
+ros2<span class="w"> </span>param<span class="w"> </span><span class="nb">set</span><span class="w"> </span>/turtlesim<span class="w"> </span>background_r<span class="w"> </span><span class="m">255</span>
+</code></pre></div>
+<hr />
+<h3 id="ros2-interface-">ros2 interface - 接口查看<a class="headerlink" href="#ros2-interface-" title="Permanent link">&para;</a></h3>
+<h4 id="_16">常用命令<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 查看消息结构</span>
+ros2<span class="w"> </span>interface<span class="w"> </span>show<span class="w"> </span>geometry_msgs/msg/Twist
+
+<span class="c1"># 列出所有消息类型</span>
+ros2<span class="w"> </span>interface<span class="w"> </span>list
+</code></pre></div>
+<hr />
+<h4 id="_17">实例<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 查看 Twist 消息的结构</span>
+ros2<span class="w"> </span>interface<span class="w"> </span>show<span class="w"> </span>geometry_msgs/msg/Twist
+</code></pre></div>
+<p>输出：</p>
+<div class="highlight"><pre><span></span><code>Vector3 linear
+    float64 x
+    float64 y
+    float64 z
+Vector3 angular
+    float64 x
+    float64 y
+    float64 z
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">用途</p>
+<p>了解消息结构，方便编程时使用。</p>
+</div>
+<hr />
+<h2 id="62">6.2 可视化工具<a class="headerlink" href="#62" title="Permanent link">&para;</a></h2>
+<h3 id="rviz2-3d">RViz2 - 3D 可视化工具<a class="headerlink" href="#rviz2-3d" title="Permanent link">&para;</a></h3>
+<h4 id="_18">简介<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">核心工具</p>
+<p>RViz2 是 <strong>最常用的可视化工具</strong>，可以显示：
+- 机器人模型
+- 传感器数据
+- 路径规划结果
+- TF 坐标系
+- 地图</p>
+</div>
+<hr />
+<h4 id="_19">启动命令<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>rviz2
+</code></pre></div>
+<hr />
+<h4 id="_20">主要功能<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p><strong>显示机器人模型（URDF）</strong></p>
+<p>看机器人长什么样</p>
+<p>查看关节运动</p>
+</li>
+<li>
+<p><strong>显示传感器数据</strong></p>
+<p>激光雷达点云</p>
+<p>摄像头图像</p>
+<p>深度相机数据</p>
+</li>
+<li>
+<p><strong>显示导航信息</strong></p>
+<p>地图</p>
+<p>路径规划</p>
+<p>机器人位置</p>
+</li>
+<li>
+<p><strong>显示坐标变换（TF）</strong></p>
+<p>各个坐标系的关系</p>
+<p>实时更新</p>
+</li>
+</ol>
+<hr />
+<h4 id="_21">使用技巧<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">调试建议</p>
+<ul>
+<li>左侧面板添加你想显示的数据类型</li>
+<li>调整视角方便观察</li>
+<li>保存配置文件，下次直接加载</li>
+</ul>
+</div>
+<hr />
+<h3 id="gazebo-">Gazebo - 仿真器<a class="headerlink" href="#gazebo-" title="Permanent link">&para;</a></h3>
+<h4 id="_22">简介<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">仿真环境</p>
+<p>Gazebo 是 ROS2 生态里的标准仿真器，可以：
+- 创建虚拟环境
+- 模拟物理效果
+- 测试机器人
+- 不需要真实硬件</p>
+</div>
+<hr />
+<h4 id="_23">为什么需要仿真<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">仿真的优势</p>
+<ul>
+<li>✓ 真机器人太贵，撞坏了心疼</li>
+<li>✓ 在仿真里可以随便试错</li>
+<li>✓ 可以模拟各种极端情况</li>
+<li>✓ 开发效率高</li>
+</ul>
+</div>
+<hr />
+<h4 id="_24">启动方式<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 直接启动 Gazebo</span>
+gazebo
+
+<span class="c1"># 启动空白世界</span>
+ros2<span class="w"> </span>launch<span class="w"> </span>gazebo_ros<span class="w"> </span>gazebo.launch.py
+
+<span class="c1"># 启动带机器人的仿真</span>
+ros2<span class="w"> </span>launch<span class="w"> </span>turtlebot3_gazebo<span class="w"> </span>turtlebot3_world.launch.py
+</code></pre></div>
+<hr />
+<h4 id="_25">主要功能<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h4>
+<ol>
+<li>
+<p><strong>物理仿真</strong></p>
+<p>重力</p>
+<p>碰撞</p>
+<p>摩擦力</p>
+</li>
+<li>
+<p><strong>传感器仿真</strong></p>
+<p>激光雷达</p>
+<p>摄像头</p>
+<p>IMU</p>
+</li>
+<li>
+<p><strong>环境建模</strong></p>
+<p>可以自己创建场景</p>
+<p>添加障碍物</p>
+</li>
+</ol>
+<hr />
+<h3 id="rqt-">rqt - 图形化工具集<a class="headerlink" href="#rqt-" title="Permanent link">&para;</a></h3>
+<h4 id="_26">简介<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">工具集合</p>
+<p>rqt 是一系列图形化工具的集合。</p>
+</div>
+<hr />
+<h4 id="rqt">常用的 rqt 工具<a class="headerlink" href="#rqt" title="Permanent link">&para;</a></h4>
+<h5 id="1-rqt_graph-">1. rqt_graph - 查看节点关系<a class="headerlink" href="#1-rqt_graph-" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>rqt_graph<span class="w"> </span>rqt_graph
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">可视化神器</p>
+<p>可以一眼看出：
+- 有哪些节点在运行
+- 它们之间通过什么话题通信
+- 数据流向</p>
+</div>
+<hr />
+<h5 id="2-rqt_plot-">2. rqt_plot - 实时绘图<a class="headerlink" href="#2-rqt_plot-" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>rqt_plot<span class="w"> </span>rqt_plot
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">用途</p>
+<p>实时画出话题数据的曲线图，</p>
+<p>比如速度、位置随时间的变化。</p>
+</div>
+<hr />
+<h5 id="3-rqt_console-">3. rqt_console - 日志查看<a class="headerlink" href="#3-rqt_console-" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>rqt_console<span class="w"> </span>rqt_console
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">用途</p>
+<p>查看所有节点的日志输出，</p>
+<p>方便调试。</p>
+</div>
+<hr />
+<h5 id="4-rqt_image_view-">4. rqt_image_view - 图像显示<a class="headerlink" href="#4-rqt_image_view-" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>rqt_image_view<span class="w"> </span>rqt_image_view
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">用途</p>
+<p>显示摄像头话题的图像。</p>
+</div>
+<hr />
+<h2 id="63">6.3 构建工具<a class="headerlink" href="#63" title="Permanent link">&para;</a></h2>
+<h3 id="colcon-">colcon - 编译工具<a class="headerlink" href="#colcon-" title="Permanent link">&para;</a></h3>
+<h4 id="_27">简介<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">官方构建工具</p>
+<p>colcon 是 ROS2 的官方编译工具，</p>
+<p>用来编译你写的功能包。</p>
+</div>
+<hr />
+<h4 id="_28">常用命令<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 编译所有包</span>
+colcon<span class="w"> </span>build
+
+<span class="c1"># 只编译指定的包</span>
+colcon<span class="w"> </span>build<span class="w"> </span>--packages-select<span class="w"> </span>包名
+
+<span class="c1"># 编译指定包及其依赖</span>
+colcon<span class="w"> </span>build<span class="w"> </span>--packages-up-to<span class="w"> </span>包名
+
+<span class="c1"># 并行编译（加快速度）</span>
+colcon<span class="w"> </span>build<span class="w"> </span>--parallel-workers<span class="w"> </span><span class="m">4</span>
+
+<span class="c1"># 显示详细输出</span>
+colcon<span class="w"> </span>build<span class="w"> </span>--event-handlers<span class="w"> </span>console_direct+
+</code></pre></div>
+<hr />
+<h4 id="_29">使用流程<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 1. 进入工作空间</span>
+<span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+
+<span class="c1"># 2. 编译</span>
+colcon<span class="w"> </span>build
+
+<span class="c1"># 3. 加载环境（很重要！）</span>
+<span class="nb">source</span><span class="w"> </span>install/setup.bash
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">常见错误</p>
+<p>编译完后忘记 <code>source install/setup.bash</code>，</p>
+<p>导致找不到包。</p>
+</div>
+<hr />
+<h4 id="_30">优化技巧<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 只编译修改过的包</span>
+colcon<span class="w"> </span>build<span class="w"> </span>--packages-select<span class="w"> </span>my_package
+
+<span class="c1"># 清理后重新编译</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>build<span class="w"> </span>install<span class="w"> </span>log
+colcon<span class="w"> </span>build
+</code></pre></div>
+<hr />
+<h2 id="64">6.4 代码编辑器<a class="headerlink" href="#64" title="Permanent link">&para;</a></h2>
+<h3 id="vs-code">VS Code（强烈推荐）<a class="headerlink" href="#vs-code" title="Permanent link">&para;</a></h3>
+<h4 id="vs-code_1">为什么推荐 VS Code<a class="headerlink" href="#vs-code_1" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">优点</p>
+<ul>
+<li>✓ 免费开源</li>
+<li>✓ 功能强大</li>
+<li>✓ 插件丰富</li>
+<li>✓ 跨平台</li>
+<li>✓ 对 ROS2 支持好</li>
+</ul>
+</div>
+<hr />
+<h4 id="_31">必装插件<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h4>
+<h5 id="1-python">1. Python<a class="headerlink" href="#1-python" title="Permanent link">&para;</a></h5>
+<ul>
+<li>代码补全</li>
+<li>语法检查</li>
+<li>调试支持</li>
+</ul>
+<hr />
+<h5 id="2-cc">2. C/C++<a class="headerlink" href="#2-cc" title="Permanent link">&para;</a></h5>
+<ul>
+<li>如果要写 C++ 节点</li>
+</ul>
+<hr />
+<h5 id="3-ros">3. ROS<a class="headerlink" href="#3-ros" title="Permanent link">&para;</a></h5>
+<ul>
+<li>ROS 语法高亮</li>
+<li>自动补全 ROS 命令</li>
+</ul>
+<hr />
+<h5 id="4">4. 其他推荐<a class="headerlink" href="#4" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Markdown All in One</strong>：写文档</li>
+<li><strong>GitLens</strong>：Git 可视化</li>
+<li><strong>Better Comments</strong>：注释美化</li>
+</ul>
+<hr />
+<h4 id="_32">安装方法<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 方法一：官网下载</span>
+<span class="c1"># https://code.visualstudio.com</span>
+
+<span class="c1"># 方法二：命令行安装</span>
+sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>code<span class="w"> </span>--classic
+</code></pre></div>
+<hr />
+<h4 id="_33">使用技巧<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># 在当前目录打开 VS Code</span>
+code<span class="w"> </span>.
+
+<span class="c1"># 打开特定文件</span>
+code<span class="w"> </span>file.py
+</code></pre></div>
+<hr />
+<h3 id="_34">其他编辑器选择<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<h4 id="vim-neovim">vim / neovim<a class="headerlink" href="#vim-neovim" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">适合人群</p>
+<ul>
+<li>喜欢纯键盘操作</li>
+<li>想要极致的编辑效率</li>
+</ul>
+</div>
+<hr />
+<h4 id="pycharm">PyCharm<a class="headerlink" href="#pycharm" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">适合人群</p>
+<ul>
+<li>主要写 Python</li>
+<li>需要强大的调试功能</li>
+</ul>
+</div>
+<hr />
+<h4 id="clion">CLion<a class="headerlink" href="#clion" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">适合人群</p>
+<ul>
+<li>主要写 C++</li>
+<li>需要 IDE 级别的支持</li>
+</ul>
+</div>
+<hr />
+<h2 id="65">6.5 终端工具<a class="headerlink" href="#65" title="Permanent link">&para;</a></h2>
+<h3 id="terminator">Terminator（推荐）<a class="headerlink" href="#terminator" title="Permanent link">&para;</a></h3>
+<h4 id="terminator_1">为什么需要 Terminator<a class="headerlink" href="#terminator_1" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">多终端管理</p>
+<p>ROS2 开发经常要同时开好几个终端，</p>
+<p>Terminator 可以在一个窗口里分割出多个终端。</p>
+</div>
+<hr />
+<h4 id="_35">安装<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>terminator
+</code></pre></div>
+<hr />
+<h4 id="_36">常用快捷键<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl+Shift+E</code></td>
+<td>垂直分割</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+O</code></td>
+<td>水平分割</td>
+</tr>
+<tr>
+<td><code>Ctrl+Shift+W</code></td>
+<td>关闭当前终端</td>
+</tr>
+<tr>
+<td><code>Alt+方向键</code></td>
+<td>切换终端</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="tmux">tmux<a class="headerlink" href="#tmux" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">高级选择</p>
+<p>如果需要更强大的终端管理，</p>
+<p>可以学习 tmux。</p>
+</div>
+<hr />
+<h2 id="66">6.6 调试工具<a class="headerlink" href="#66" title="Permanent link">&para;</a></h2>
+<h3 id="gdb-c">gdb - C++ 调试器<a class="headerlink" href="#gdb-c" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 调试程序</span>
+gdb<span class="w"> </span>./程序名
+
+<span class="c1"># 常用命令</span>
+<span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span><span class="k">break</span><span class="w"> </span>main<span class="w">        </span><span class="c1"># 设置断点</span>
+<span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>run<span class="w">               </span><span class="c1"># 运行</span>
+<span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>next<span class="w">              </span><span class="c1"># 单步执行</span>
+<span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>print<span class="w"> </span>variable<span class="w">    </span><span class="c1"># 打印变量</span>
+</code></pre></div>
+<hr />
+<h3 id="pdb-python">pdb - Python 调试器<a class="headerlink" href="#pdb-python" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 在代码中插入断点</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pdb</span><span class="p">;</span> <span class="n">pdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
+
+<span class="c1"># 或者用 breakpoint()（Python 3.7+）</span>
+<span class="nb">breakpoint</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h3 id="vs-code_2">VS Code 调试<a class="headerlink" href="#vs-code_2" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">推荐方式</p>
+<p>VS Code 的图形化调试非常方便，</p>
+<p>比命令行调试直观多了。</p>
+</div>
+<hr />
+<h2 id="67">6.7 工具使用技巧总结<a class="headerlink" href="#67" title="Permanent link">&para;</a></h2>
+<h3 id="_37">命令行工具技巧<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">效率提升</p>
+<ol>
+<li>
+<p><strong>多用 Tab 补全</strong></p>
+<p>减少输入错误</p>
+</li>
+<li>
+<p><strong>善用历史命令</strong></p>
+<p>上下箭头翻历史</p>
+<p><code>Ctrl+R</code> 搜索历史命令</p>
+</li>
+<li>
+<p><strong>使用别名</strong></p>
+<p>在 <code>~/.bashrc</code> 里设置常用命令的别名</p>
+</li>
+</ol>
+</div>
+<hr />
+<h3 id="_38">可视化工具技巧<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">调试建议</p>
+<ol>
+<li>
+<p><strong>RViz2 保存配置</strong></p>
+<p>配置好一次，以后直接加载</p>
+</li>
+<li>
+<p><strong>rqt_graph 查看数据流</strong></p>
+<p>遇到通信问题先看图</p>
+</li>
+<li>
+<p><strong>录制数据包</strong></p>
+<p>重要实验记得录制</p>
+</li>
+</ol>
+</div>
+<hr />
+<h2 id="_39">本章小结<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h2>
+<p>通过这一章，你应该已经认识了：</p>
+<ol>
+<li>
+<p><strong>命令行工具</strong></p>
+<p>ros2 run、node、topic、service、launch、bag</p>
+</li>
+<li>
+<p><strong>可视化工具</strong></p>
+<p>RViz2、Gazebo、rqt 系列</p>
+</li>
+<li>
+<p><strong>构建工具</strong></p>
+<p>colcon</p>
+</li>
+<li>
+<p><strong>编辑器</strong></p>
+<p>VS Code（推荐）</p>
+</li>
+<li>
+<p><strong>其他工具</strong></p>
+<p>Terminator、gdb、pdb</p>
+</li>
+</ol>
+<hr />
+<h2 id="_40">下一章预告<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h2>
+<p>下一章我们会讲：</p>
+<blockquote>
+<p><strong>ROS2 支持哪些编程语言——选择适合你的</strong></p>
+</blockquote>
+<p>帮你了解 Python 和 C++ 在 ROS2 中的应用，</p>
+<p>以及如何选择适合自己的语言。</p>
 
 
 

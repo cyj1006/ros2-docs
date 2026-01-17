@@ -46,8 +46,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -920,7 +918,552 @@
 
   <h1>08 安装 ROS2</h1>
 
+<p># 第八章：Ubuntu 系统安装教程——搭建环境</p>
+<p>这一章手把手教你安装 Ubuntu 22.04 系统。</p>
+<p>我们采用 **虚拟机** 的方式，这是最安全的方式，新手照着做就行。</p>
+<hr />
+<p>## 8.1 准备工作</p>
+<p>在开始之前，需要下载两样东西：</p>
+<hr />
+<p>### 8.1.1 下载 VMware Workstation Player</p>
+<p>#### Windows 用户</p>
+<div class="admonition info">
+<p class="admonition-title">下载链接</p>
+</div>
+<p>&nbsp;   - 官网：https://www.vmware.com/products/workstation-player.html</p>
+<p>&nbsp;   - 选择免费版（Player）即可</p>
+<hr />
+<p>#### Mac 用户</p>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+</div>
+<p>&nbsp;   Mac 用户需要下载 **VMware Fusion**</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   或者使用 **Parallels Desktop**（更好用但需要付费）</p>
+<hr />
+<p>#### 安装 VMware</p>
+<p>1. 下载安装包</p>
+<p>2. 双击运行</p>
+<p>3. 一路下一步</p>
+<p>4. 选择"个人使用"（免费）</p>
+<div class="admonition tip">
+<p class="admonition-title">安装提示</p>
+</div>
+<p>&nbsp;   安装过程很简单，基本都是默认选项。</p>
+<hr />
+<p>### 8.1.2 下载 Ubuntu 22.04 ISO 镜像</p>
+<p>#### 官方下载</p>
+<div class="admonition info">
+<p class="admonition-title">官方网站</p>
+</div>
+<p>&nbsp;   https://ubuntu.com/download/desktop</p>
+<p>选择 **Ubuntu 22.04 LTS**</p>
+<hr />
+<p>#### 国内镜像（推荐，速度快）</p>
+<div class="admonition success">
+<p class="admonition-title">推荐下载源</p>
+</div>
+<p>&nbsp;   - **清华大学镜像站**</p>
+<p>&nbsp;     - https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04/</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - **阿里云镜像站**</p>
+<p>&nbsp;     - https://mirrors.aliyun.com/ubuntu-releases/22.04/</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - **中科大镜像站**</p>
+<p>&nbsp;     - https://mirrors.ustc.edu.cn/ubuntu-releases/22.04/</p>
+<hr />
+<p>#### 选择正确的文件</p>
+<div class="admonition warning">
+<p class="admonition-title">注意选择</p>
+</div>
+<p>&nbsp;   下载文件名类似：</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   <code>ubuntu-22.04.x-desktop-amd64.iso</code></p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - **desktop**：桌面版（我们要的）</p>
+<p>&nbsp;   - **amd64**：64 位系统（大部分电脑）</p>
+<hr />
+<p>### 8.1.3 检查硬件要求</p>
+<p>确保你的电脑满足以下要求：</p>
+<p>| 项目 | 最低要求 | 推荐配置 |</p>
+<p>|------|---------|---------|</p>
+<p>| **CPU** | 双核 | 四核及以上 |</p>
+<p>| **内存** | 4GB | 8GB 及以上 |</p>
+<p>| **硬盘空间** | 50GB | 100GB 及以上 |</p>
+<div class="admonition tip">
+<p class="admonition-title">硬盘空间说明</p>
+</div>
+<p>&nbsp;   这里说的是给虚拟机分配的空间，</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   你的实际硬盘要更大一些。</p>
+<hr />
+<p>## 8.2 创建虚拟机</p>
+<p>### 8.2.1 启动 VMware</p>
+<p>打开 VMware Workstation Player</p>
+<p>点击 **"创建新虚拟机"**</p>
+<hr />
+<p>### 8.2.2 选择安装方式</p>
+<div class="admonition info">
+<p class="admonition-title">安装源选择</p>
+</div>
+<p>&nbsp;   选择 **"安装程序光盘映像文件(iso)"**</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   点击 **"浏览"**，选择刚才下载的 Ubuntu ISO 文件</p>
+<hr />
+<p>### 8.2.3 配置用户信息</p>
+<p>VMware 会自动检测到 Ubuntu 安装程序，要求你输入：</p>
+<div class="admonition warning">
+<p class="admonition-title">重要提醒</p>
+</div>
+<p>&nbsp;   - **全名**：可以是中文</p>
+<p>&nbsp;   - **用户名**：**只能用英文小写，不能有空格**</p>
+<p>&nbsp;   - **密码**：自己设一个，别忘了</p>
+<p>**示例：**</p>
+<div class="highlight"><pre><span></span><code>全名：张三
 
+用户名：zhangsan
+
+密码：\*\*\*\*\*\*\*\*
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">常见错误</p>
+</div>
+<p>&nbsp;   用户名不能用中文、大写字母、空格！</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   比如：<code>Zhang San</code>、<code>ZhangSan</code>、<code>张三</code> 都是错的</p>
+<hr />
+<p>### 8.2.4 配置虚拟机位置</p>
+<div class="admonition info">
+<p class="admonition-title">存储位置</p>
+</div>
+<p>&nbsp;   - **虚拟机名称**：Ubuntu 22.04</p>
+<p>&nbsp;   - **位置**：选择一个空间 最好不要放在 C 盘（Windows）</p>
+<hr />
+<p>### 8.2.5 配置磁盘大小</p>
+<div class="admonition success">
+<p class="admonition-title">推荐设置</p>
+</div>
+<p>&nbsp;   - **最大磁盘大小**：100GB</p>
+<p>&nbsp;   - **存储方式**：选择 "将虚拟磁盘拆分成多个文件"</p>
+<div class="admonition info">
+<p class="admonition-title">说明</p>
+</div>
+<p>&nbsp;   虚拟机使用的是 **动态分配**，</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   不会立刻占用 100GB，</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   而是用多少占多少。</p>
+<hr />
+<p>### 8.2.6 自定义硬件</p>
+<p>点击 **"自定义硬件"**，进行以下调整：</p>
+<hr />
+<p>#### 内存</p>
+<div class="admonition success">
+<p class="admonition-title">推荐设置</p>
+</div>
+<p>&nbsp;   - 最少：4GB</p>
+<p>&nbsp;   - 推荐：8GB</p>
+<p>&nbsp;   - 如果你电脑内存够大：16GB</p>
+<hr />
+<p>#### 处理器</p>
+<div class="admonition success">
+<p class="admonition-title">推荐设置</p>
+</div>
+<p>&nbsp;   - **处理器数量**：1</p>
+<p>&nbsp;   - **每个处理器的核心数量**：4</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   （总共 4 核）</p>
+<div class="admonition tip">
+<p class="admonition-title">核心分配建议</p>
+</div>
+<p>&nbsp;   给虚拟机分配你 CPU 的一半核心数。</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   比如你的 CPU 是 8 核，就给虚拟机 4 核。</p>
+<hr />
+<p>#### 显示器（重要！）</p>
+<div class="admonition danger">
+<p class="admonition-title">必须设置</p>
+</div>
+<p>&nbsp;   **一定要勾选 "加速 3D 图形"**</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   否则 Gazebo 会黑屏！</p>
+<div class="admonition success">
+<p class="admonition-title">推荐设置</p>
+</div>
+<p>&nbsp;   - ☑ 加速 3D 图形</p>
+<p>&nbsp;   - 图形内存：2GB 或更多</p>
+<hr />
+<p>#### 网络适配器</p>
+<div class="admonition info">
+<p class="admonition-title">默认设置</p>
+</div>
+<p>&nbsp;   保持默认的 **NAT 模式** 即可</p>
+<hr />
+<p>#### 其他设备</p>
+<div class="admonition info">
+<p class="admonition-title">可选</p>
+</div>
+<p>&nbsp;   - 可以移除打印机、软盘等用不到的设备</p>
+<p>&nbsp;   - 保持 CD/DVD 连接 ISO 镜像</p>
+<hr />
+<p>### 8.2.7 完成创建</p>
+<p>点击 **"完成"**</p>
+<p>虚拟机创建完成，但还没有启动。</p>
+<hr />
+<p>## 8.3 安装 Ubuntu</p>
+<p>### 8.3.1 启动虚拟机</p>
+<p>在 VMware 主界面，点击 **"开启此虚拟机"**</p>
+<hr />
+<p>### 8.3.2 等待自动安装</p>
+<div class="admonition info">
+<p class="admonition-title">自动化安装</p>
+</div>
+<p>&nbsp;   由于我们使用了 VMware 的简易安装功能，</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   Ubuntu 会 **自动安装**。</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   整个过程大约 10-20 分钟，不需要你操作。</p>
+<hr />
+<p>#### 你会看到：</p>
+<p>1. Ubuntu 安装界面</p>
+<p>2. 自动选择语言、键盘</p>
+<p>3. 自动分区</p>
+<p>4. 自动安装软件</p>
+<p>5. 自动重启</p>
+<div class="admonition tip">
+<p class="admonition-title">耐心等待</p>
+</div>
+<p>&nbsp;   这期间可以去喝杯水，休息一下。</p>
+<hr />
+<p>### 8.3.3 首次登录</p>
+<p>安装完成后，虚拟机会自动重启。</p>
+<div class="admonition success">
+<p class="admonition-title">登录</p>
+</div>
+<p>&nbsp;   输入你之前设置的密码，登录系统。</p>
+<hr />
+<p>### 8.3.4 初始配置</p>
+<p>首次登录会有一些引导界面：</p>
+<p>1. **在线账号**：可以跳过</p>
+<p>2. **Livepatch**：可以跳过</p>
+<p>3. **帮助改进 Ubuntu**：选择"否"</p>
+<p>4. **隐私设置**：根据个人喜好</p>
+<div class="admonition tip">
+<p class="admonition-title">快速设置</p>
+</div>
+<p>&nbsp;   这些都可以跳过，不影响使用。</p>
+<hr />
+<p>## 8.4 安装后的配置</p>
+<p>### 8.4.1 安装 VMware Tools</p>
+<p>VMware Tools 可以提供：</p>
+<p>- 更好的显示效果</p>
+<p>- 共享文件夹</p>
+<p>- 复制粘贴功能</p>
+<hr />
+<p>#### 安装步骤</p>
+<div class="admonition info">
+<p class="admonition-title">通常会自动安装</p>
+</div>
+<p>&nbsp;   现代版本的 Ubuntu 和 VMware 通常会自动安装 VMware Tools。</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   如果没有自动安装：</p>
+<p>1. 在 VMware 菜单选择 **"虚拟机" → "安装 VMware Tools"**</p>
+<p>2. Ubuntu 桌面会出现一个光盘图标</p>
+<p>3. 打开终端，运行：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/media/你的用户名/VMware<span class="se">\\</span><span class="w"> </span>Tools
+
+tar<span class="w"> </span>xzvf<span class="w"> </span>VMwareTools-<span class="se">\*</span>.tar.gz<span class="w"> </span>-C<span class="w"> </span>/tmp
+
+<span class="nb">cd</span><span class="w"> </span>/tmp/vmware-tools-distrib
+
+sudo<span class="w"> </span>./vmware-install.pl
+</code></pre></div>
+<p>4. 一路回车默认选项</p>
+<p>5. 重启虚拟机</p>
+<hr />
+<p>### 8.4.2 更换软件源（重要！）</p>
+<p>Ubuntu 默认使用国外源，下载速度 **非常慢**。</p>
+<div class="admonition success">
+<p class="admonition-title">必须换成国内源</p>
+</div>
+<p>&nbsp;   换成国内源后，下载速度能快 **10 倍以上**。</p>
+<hr />
+<p>#### 方法一：图形化界面</p>
+<p>1. 打开 **"软件和更新"**（Software \&amp; Updates）</p>
+<p>&nbsp;  - 可以在应用程序菜单里搜索</p>
+<p>2. 在 **"下载自"** 那里点击下拉菜单</p>
+<p>3. 选择 **"其他站点"**</p>
+<p>4. 点击 **"选择最佳服务器"**</p>
+<p>&nbsp;  - 或者手动选择国内镜像：</p>
+<p>&nbsp;    - 阿里云</p>
+<p>&nbsp;    - 清华大学</p>
+<p>&nbsp;    - 中科大</p>
+<p>5. 点击 **"选择服务器"**</p>
+<p>6. 提示输入密码，输入你的密码</p>
+<p>7. 点击 **"关闭"**，会提示更新软件列二：命令行（推荐，更快）</p>
+<div class="highlight"><pre><span></span><code><span class="se">\#</span><span class="w"> </span>备份原来的源
+
+sudo<span class="w"> </span>cp<span class="w"> </span>/etc/apt/sources.list<span class="w"> </span>/etc/apt/sources.list.backup
+
+
+
+<span class="se">\#</span><span class="w"> </span>修改源文件
+
+sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apt/sources.list
+</code></pre></div>
+<p>删除所有内容，替换为以下内容（阿里云镜像）：</p>
+<div class="highlight"><pre><span></span><code>deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+</code></pre></div>
+<p>保存退出：<code>Ctrl+O</code> → 回车 → <code>Ctrl+X</code></p>
+<hr />
+<p>### 8.4.3 更新系统</p>
+<p>换好源后，立刻更新系统：</p>
+<div class="highlight"><pre><span></span><code><span class="se">\#</span><span class="w"> </span>更新软件包列表
+
+sudo<span class="w"> </span>apt<span class="w"> </span>update
+
+
+
+<span class="se">\#</span><span class="w"> </span>升级已安装的软件
+
+sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+
+
+
+<span class="se">\#</span><span class="w"> </span>清理不需要的包
+
+sudo<span class="w"> </span>apt<span class="w"> </span>autoremove<span class="w"> </span>-y
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">更新时间</p>
+</div>
+<p>&nbsp;   第一次更新可能需要 5-10 分钟，</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   取决于网速和系统更新的内容。</p>
+<hr />
+<p>### 8.4.4 安装常用工具</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span><span class="se">\\</span>
+
+<span class="p">&amp;</span>nbsp<span class="p">;</span><span class="w">   </span>git<span class="w"> </span><span class="se">\\</span>
+
+<span class="p">&amp;</span>nbsp<span class="p">;</span><span class="w">   </span>vim<span class="w"> </span><span class="se">\\</span>
+
+<span class="p">&amp;</span>nbsp<span class="p">;</span><span class="w">   </span>curl<span class="w"> </span><span class="se">\\</span>
+
+<span class="p">&amp;</span>nbsp<span class="p">;</span><span class="w">   </span>wget<span class="w"> </span><span class="se">\\</span>
+
+<span class="p">&amp;</span>nbsp<span class="p">;</span><span class="w">   </span>terminator<span class="w"> </span><span class="se">\\</span>
+
+<span class="p">&amp;</span>nbsp<span class="p">;</span><span class="w">   </span>tree<span class="w"> </span><span class="se">\\</span>
+
+<span class="p">&amp;</span>nbsp<span class="p">;</span><span class="w">   </span>net-tools<span class="w"> </span><span class="se">\\</span>
+
+<span class="p">&amp;</span>nbsp<span class="p">;</span><span class="w">   </span>htop
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">工具说明</p>
+</div>
+<p>&nbsp;   - **git**：版本控制</p>
+<p>&nbsp;   - **vim**：文本编辑器</p>
+<p>&nbsp;   - **curl/wget**：下载工具</p>
+<p>&nbsp;   - **terminator**：好用的终端</p>
+<p>&nbsp;   - **tree**：目录树显示</p>
+<p>&nbsp;   - **net-tools**：网络工具</p>
+<p>&nbsp;   - **htop**：系统监控</p>
+<hr />
+<p>### 8.4.5 安装中文输入法（可选）</p>
+<p>如果需要在 Ubuntu 里输入中文：</p>
+<div class="highlight"><pre><span></span><code><span class="se">\#</span><span class="w"> </span>安装<span class="w"> </span>ibus<span class="w"> </span>拼音输入法
+
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>ibus-pinyin
+
+
+
+<span class="se">\#</span><span class="w"> </span>重启<span class="w"> </span>ibus
+
+ibus<span class="w"> </span>restart
+
+
+
+<span class="se">\#</span><span class="w"> </span>或者安装搜狗输入法（需要额外步骤）
+</code></pre></div>
+<hr />
+<p>### 8.4.6 配置 SSH（可选）</p>
+<p>如果想从 Windows 通过 SSH 连接虚拟机：</p>
+<div class="highlight"><pre><span></span><code><span class="se">\#</span><span class="w"> </span>安装<span class="w"> </span>SSH<span class="w"> </span>服务器
+
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>openssh-server
+
+
+
+<span class="se">\#</span><span class="w"> </span>启动<span class="w"> </span>SSH<span class="w"> </span>服务
+
+sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>ssh
+
+
+
+<span class="se">\#</span><span class="w"> </span>设置开机自启
+
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>ssh
+
+
+
+<span class="se">\#</span><span class="w"> </span>查看<span class="w"> </span>IP<span class="w"> </span>地址
+
+ip<span class="w"> </span>addr<span class="w"> </span>show
+</code></pre></div>
+<p>然后在 Windows 可以用 **PuTTY** 或 **MobaXterm** 连接。</p>
+<hr />
+<p>## 8.5 虚拟机使用技巧</p>
+<p>### 8.5.1 快照功能（非常重要！）</p>
+<div class="admonition success">
+<p class="admonition-title">强烈建议</p>
+</div>
+<p>&nbsp;   在装 ROS2 之前，给虚拟机拍个快照。</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   万一后面折腾坏了，可以一键恢复。</p>
+<hr />
+<p>#### 创建快照</p>
+<p>1. 确保虚拟机已关机或挂起</p>
+<p>2. 在 VMware 菜单选择 **"虚拟机" → "快照" → "拍摄快照"**</p>
+<p>3. 输入快照名称，如 **"系统安装完成"**</p>
+<p>4. 点击 **"拍摄快照"**</p>
+<hr />
+<p>#### 恢复快照</p>
+<p>如果系统出问题了：</p>
+<p>1. 关闭虚拟机</p>
+<p>2. **"虚拟机" → "快照" → "快照管理器"**</p>
+<p>3. 选择要恢复的快照</p>
+<p>4. 点击 **"恢复"**</p>
+<div class="admonition tip">
+<p class="admonition-title">快照建议</p>
+</div>
+<p>&nbsp;   建议在以下时间点拍快照：</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - 系统安装完成</p>
+<p>&nbsp;   - ROS2 安装完成</p>
+<p>&nbsp;   - 重要项目开始前</p>
+<hr />
+<p>### 8.5.2 共享文件夹</p>
+<p>可以在 Windows 和 Ubuntu 之间共享文件。</p>
+<hr />
+<p>#### 设置方法</p>
+<p>1. **"虚拟机" → "设置" → "选项" → "共享文件夹"**</p>
+<p>2. 选择 **"总是启用"**</p>
+<p>3. 点击 **"添加"**</p>
+<p>4. 选择 Windows 上的文件夹</p>
+<p>5. 给它起个名字</p>
+<hr />
+<p>#### 访问共享文件夹</p>
+<p>在 Ubuntu 里：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/mnt/hgfs/共享文件夹名称
+</code></pre></div>
+<hr />
+<p>### 8.5.3 全屏显示</p>
+<div class="admonition tip">
+<p class="admonition-title">快捷键</p>
+</div>
+<p>&nbsp;   - **进入全屏**：<code>Ctrl+Alt+Enter</code></p>
+<p>&nbsp;   - **退出全屏**：<code>Ctrl+Alt</code></p>
+<hr />
+<p>### 8.5.4 复制粘贴</p>
+<p>VMware Tools 安装后，可以在 Windows 和 Ubuntu 之间直接复制粘贴文本。</p>
+<div class="admonition info">
+<p class="admonition-title">如果不行</p>
+</div>
+<p>&nbsp;   重启虚拟机通常能解决问题。</p>
+<hr />
+<p>## 8.6 常见问题</p>
+<p>### 问题1：虚拟机启动很慢</p>
+<div class="admonition tip">
+<p class="admonition-title">解决方法</p>
+</div>
+<p>&nbsp;   - 确保分配了足够的内存（8GB）</p>
+<p>&nbsp;   - 确保 SSD 有足够空间</p>
+<p>&nbsp;   - 关闭不必要的后台程序</p>
+<hr />
+<p>### 问题2：Gazebo 黑屏</p>
+<div class="admonition warning">
+<p class="admonition-title">最常见问题</p>
+</div>
+<p>&nbsp;   **原因：** 没有开启 3D 加速</p>
+<p>**解决方法：**</p>
+<p>1. 关闭虚拟机</p>
+<p>2. 编辑虚拟机设置</p>
+<p>3. 显示器 → 勾选 "加速 3D 图形"</p>
+<p>4. 重启虚拟机</p>
+<hr />
+<p>### 问题3：网络连接不上</p>
+<div class="admonition info">
+<p class="admonition-title">检查步骤</p>
+</div>
+<p>&nbsp;   1. 检查虚拟机设置 → 网络适配器 → 确保是 NAT 模式</p>
+<p>&nbsp;   2. 在 Ubuntu 里运行：</p>
+<p>&nbsp;      ```bash</p>
+<p>&nbsp;      ip addr show</p>
+<p>&nbsp;      ```</p>
+<p>&nbsp;   3. 如果没有 IP，重启虚拟机</p>
+<hr />
+<p>### 问题4：分辨率调整不了</p>
+<div class="admonition tip">
+<p class="admonition-title">解决方法</p>
+</div>
+<p>&nbsp;   1. 确保安装了 VMware Tools</p>
+<p>&nbsp;   2. 重启虚拟机</p>
+<p>&nbsp;   3. 在 Ubuntu 设置 → 显示里调整</p>
+<hr />
+<p>## 8.7 性能优化建议</p>
+<p>### 8.7.1 关闭不必要的后台服务</p>
+<div class="highlight"><pre><span></span><code><span class="se">\#</span><span class="w"> </span>禁用自动更新（可选）
+
+sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>unattended-upgrades
+</code></pre></div>
+<hr />
+<p>### 8.7.2 调整虚拟机配置</p>
+<div class="admonition info">
+<p class="admonition-title">如果电脑性能不够</p>
+</div>
+<p>&nbsp;   可以适当降低：</p>
+<p>&nbsp;   - 内存：降到 6GB 或 4GB</p>
+<p>&nbsp;   - CPU 核心：降到 2 核</p>
+<p>&nbsp;   - 3D 图形内存：降到 1GB</p>
+<hr />
+<p>### 8.7.3 使用 SSD</p>
+<div class="admonition success">
+<p class="admonition-title">最有效的优化</p>
+</div>
+<p>&nbsp;   如果可能，把虚拟机文件放在 SSD 上，</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   速度会快很多。</p>
+<hr />
+<p>## 本章小结</p>
+<p>通过这一章，你应该已经：</p>
+<p>1. **成功安装了 Ubuntu 22.04 虚拟机**</p>
+<p>&nbsp;  - 下载了 VMware 和 Ubuntu ISO</p>
+<p>&nbsp;  - 创建并配置了虚拟机</p>
+<p>&nbsp;  - 完成了系统安装</p>
+<p>2. **完成了基本配置**</p>
+<p>&nbsp;  - 更换了软件源</p>
+<p>&nbsp;  - 更新了系统</p>
+<p>&nbsp;  - 安装了常用工具</p>
+<p>3. **学会了虚拟机的使用**</p>
+<p>&nbsp;  - 创建快照</p>
+<p>&nbsp;  - 共享文件夹</p>
+<p>&nbsp;  - 常见问题处理</p>
+<hr />
+<p>## 下一章预告</p>
+<p>下一章我们会进入 **最激动人心的部分**：</p>
+<blockquote>
+<p>**ROS2 安装教程——安装核心软件**</p>
+</blockquote>
+<p>我会推荐使用 **鱼香 ROS 的一键安装脚本**，</p>
+<p>让安装过程变得超级简单。</p>
 
 
 

@@ -46,8 +46,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -66,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ubuntu" class="md-skip">
+        <a href="#ubuntu-20042204" class="md-skip">
           Skip to content
         </a>
       
@@ -421,7 +419,7 @@
   <a href="#41" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1 结论先行：新手推荐的系统组合
+        4.1 强烈建议
       
     </span>
   </a>
@@ -429,22 +427,34 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#42-ros2-ubuntu" class="md-nav__link">
+  <a href="#42-ubuntu-2404" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2 为什么学习 ROS2 强烈推荐 Ubuntu
+        4.2 为什么不推荐 Ubuntu 24.04
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4.2 为什么学习 ROS2 强烈推荐 Ubuntu">
+    <nav class="md-nav" aria-label="4.2 为什么不推荐 Ubuntu 24.04">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#421-ubuntu-ros" class="md-nav__link">
+  <a href="#gazebo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2.1 Ubuntu 是 ROS 官方的“主战场”
+        主要原因：Gazebo 仿真器的兼容性问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="主要原因：Gazebo 仿真器的兼容性问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gazebo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gazebo 的重要性
       
     </span>
   </a>
@@ -452,22 +462,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#422-windows-macos" class="md-nav__link">
+  <a href="#ubuntu-2404" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2.2 Windows / macOS 的现实问题
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4.2.2 Windows / macOS 的现实问题">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Windows
+        Ubuntu 24.04 的问题
       
     </span>
   </a>
@@ -475,10 +473,77 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
+  <a href="#gazebo_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        macOS
+        新版 Gazebo 的尴尬
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2404" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        你要是用 24.04，会发现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 版本对应关系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 版本对应关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        我的建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="我的建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么推荐这个组合？
       
     </span>
   </a>
@@ -496,33 +561,34 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#43-ubuntu-ros2" class="md-nav__link">
+  <a href="#44" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3 Ubuntu 版本与 ROS2 版本的对应关系
+        4.4 系统安装方式怎么选
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#44-ubuntu-2404" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.4 为什么不推荐新手直接用 Ubuntu 24.04
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4.4 为什么不推荐新手直接用 Ubuntu 24.04">
+    <nav class="md-nav" aria-label="4.4 系统安装方式怎么选">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#441" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.4.1 教程和生态尚未完全跟上
+        方式一：虚拟机（最推荐新手）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方式一：虚拟机（最推荐新手）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是虚拟机
       
     </span>
   </a>
@@ -530,10 +596,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#442-gazebo" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.4.2 Gazebo / 仿真兼容性问题
+        优点
       
     </span>
   </a>
@@ -541,10 +607,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#443" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.4.3 新手最重要的是“稳定”，不是“新”
+        缺点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配置建议
       
     </span>
   </a>
@@ -555,24 +632,24 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#45-ubuntu" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5 安装方式对比：我该怎么装 Ubuntu？
+        方式二：双系统
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4.5 安装方式对比：我该怎么装 Ubuntu？">
+    <nav class="md-nav" aria-label="方式二：双系统">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#451" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5.1 虚拟机（不推荐长期使用）
+        什么是双系统
       
     </span>
   </a>
@@ -580,10 +657,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#452" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5.2 双系统（强烈推荐）
+        优点
       
     </span>
   </a>
@@ -591,13 +668,146 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#453-wsl2" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5.3 WSL2（有条件可用）
+        缺点
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsl2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方式三：WSL2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方式三：WSL2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsl2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是 WSL2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        缺点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 我的建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5 我的建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        针对不同情况的建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="针对不同情况的建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如果你是纯新手
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如果你有一定经验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如果你只是想试试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -610,7 +820,107 @@
   <a href="#46" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.6 我的最终建议（请认真看）
+        4.6 硬件要求
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6 硬件要求">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最低配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        推荐配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理想配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.7 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题1：我的电脑配置不够怎么办？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题2：我能用 Mac 吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ubuntu-2404" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题3：我已经装了 Ubuntu 24.04 怎么办？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8 版本选择决策树
       
     </span>
   </a>
@@ -618,7 +928,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_23" class="md-nav__link">
     <span class="md-ellipsis">
       
         本章小结
@@ -629,7 +939,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
       
         下一章预告
@@ -1181,7 +1491,7 @@
   <a href="#41" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1 结论先行：新手推荐的系统组合
+        4.1 强烈建议
       
     </span>
   </a>
@@ -1189,22 +1499,34 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#42-ros2-ubuntu" class="md-nav__link">
+  <a href="#42-ubuntu-2404" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2 为什么学习 ROS2 强烈推荐 Ubuntu
+        4.2 为什么不推荐 Ubuntu 24.04
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4.2 为什么学习 ROS2 强烈推荐 Ubuntu">
+    <nav class="md-nav" aria-label="4.2 为什么不推荐 Ubuntu 24.04">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#421-ubuntu-ros" class="md-nav__link">
+  <a href="#gazebo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2.1 Ubuntu 是 ROS 官方的“主战场”
+        主要原因：Gazebo 仿真器的兼容性问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="主要原因：Gazebo 仿真器的兼容性问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gazebo_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gazebo 的重要性
       
     </span>
   </a>
@@ -1212,22 +1534,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#422-windows-macos" class="md-nav__link">
+  <a href="#ubuntu-2404" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2.2 Windows / macOS 的现实问题
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4.2.2 Windows / macOS 的现实问题">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Windows
+        Ubuntu 24.04 的问题
       
     </span>
   </a>
@@ -1235,10 +1545,77 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#macos" class="md-nav__link">
+  <a href="#gazebo_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        macOS
+        新版 Gazebo 的尴尬
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2404" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        你要是用 24.04，会发现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        结论
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 版本对应关系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 版本对应关系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        我的建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="我的建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么推荐这个组合？
       
     </span>
   </a>
@@ -1256,33 +1633,34 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#43-ubuntu-ros2" class="md-nav__link">
+  <a href="#44" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3 Ubuntu 版本与 ROS2 版本的对应关系
+        4.4 系统安装方式怎么选
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#44-ubuntu-2404" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4.4 为什么不推荐新手直接用 Ubuntu 24.04
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4.4 为什么不推荐新手直接用 Ubuntu 24.04">
+    <nav class="md-nav" aria-label="4.4 系统安装方式怎么选">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#441" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.4.1 教程和生态尚未完全跟上
+        方式一：虚拟机（最推荐新手）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方式一：虚拟机（最推荐新手）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是虚拟机
       
     </span>
   </a>
@@ -1290,10 +1668,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#442-gazebo" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.4.2 Gazebo / 仿真兼容性问题
+        优点
       
     </span>
   </a>
@@ -1301,10 +1679,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#443" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.4.3 新手最重要的是“稳定”，不是“新”
+        缺点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        配置建议
       
     </span>
   </a>
@@ -1315,24 +1704,24 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#45-ubuntu" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5 安装方式对比：我该怎么装 Ubuntu？
+        方式二：双系统
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4.5 安装方式对比：我该怎么装 Ubuntu？">
+    <nav class="md-nav" aria-label="方式二：双系统">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#451" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5.1 虚拟机（不推荐长期使用）
+        什么是双系统
       
     </span>
   </a>
@@ -1340,10 +1729,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#452" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5.2 双系统（强烈推荐）
+        优点
       
     </span>
   </a>
@@ -1351,13 +1740,146 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#453-wsl2" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5.3 WSL2（有条件可用）
+        缺点
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsl2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方式三：WSL2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方式三：WSL2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsl2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么是 WSL2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        缺点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 我的建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5 我的建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        针对不同情况的建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="针对不同情况的建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如果你是纯新手
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如果你有一定经验
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        如果你只是想试试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1370,7 +1892,107 @@
   <a href="#46" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.6 我的最终建议（请认真看）
+        4.6 硬件要求
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.6 硬件要求">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最低配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        推荐配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理想配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.7 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.7 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题1：我的电脑配置不够怎么办？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题2：我能用 Mac 吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ubuntu-2404" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题3：我已经装了 Ubuntu 24.04 怎么办？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.8 版本选择决策树
       
     </span>
   </a>
@@ -1378,7 +2000,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_23" class="md-nav__link">
     <span class="md-ellipsis">
       
         本章小结
@@ -1389,7 +2011,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
       
         下一章预告
@@ -1416,261 +2038,345 @@
 
 
 
-<h1 id="ubuntu">为什么选择 Ubuntu（系统与版本选择）<a class="headerlink" href="#ubuntu" title="Permanent link">&para;</a></h1>
-<p>在真正开始安装 ROS2 之前，我们必须先解决一个<strong>现实而关键的问题</strong>：</p>
-<blockquote>
-<p><strong>我到底该用什么操作系统来学 ROS2？</strong></p>
-</blockquote>
-<p>这个问题如果选错，后面你遇到的很多报错、环境问题、教程对不上，  </p>
-<p><strong>都不是你的错，而是系统选择一开始就埋下了坑</strong>。</p>
-<hr />
-<h2 id="41">4.1 结论先行：新手推荐的系统组合<a class="headerlink" href="#41" title="Permanent link">&para;</a></h2>
+<h1 id="ubuntu-20042204">第四章：为什么选择 Ubuntu 20.04/22.04——这个选择很重要，别踩坑<a class="headerlink" href="#ubuntu-20042204" title="Permanent link">&para;</a></h1>
+<h2 id="41">4.1 强烈建议<a class="headerlink" href="#41" title="Permanent link">&para;</a></h2>
 <div class="admonition success">
-<p class="admonition-title">直接结论（新手必看）</p>
+<p class="admonition-title">核心推荐</p>
+<p><strong>用 Ubuntu 20.04 或者 22.04！</strong></p>
 </div>
-<p>&nbsp;   <strong>Ubuntu 22.04 + ROS2 Humble</strong>  </p>
-<p>&nbsp;   是目前对新手来说 <strong>最稳定、教程最多、踩坑最少</strong> 的组合。</p>
-<p>如果你暂时记不住所有理由，<strong>记住这一条就够了</strong>。</p>
-<hr />
-<h2 id="42-ros2-ubuntu">4.2 为什么学习 ROS2 强烈推荐 Ubuntu<a class="headerlink" href="#42-ros2-ubuntu" title="Permanent link">&para;</a></h2>
-<p>ROS2 是一个跨平台框架，理论上支持：</p>
-<ul>
-<li>
-<p>Linux</p>
-</li>
-<li>
-<p>Windows</p>
-</li>
-<li>
-<p>macOS</p>
-</li>
-</ul>
-<p>但在<strong>真实学习和开发场景中</strong>，三者体验差异非常大。</p>
-<hr />
-<h3 id="421-ubuntu-ros">4.2.1 Ubuntu 是 ROS 官方的“主战场”<a class="headerlink" href="#421-ubuntu-ros" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">事实说明</p>
-</div>
-<p>&nbsp;   ROS 官方文档、示例、教程，<strong>几乎全部以 Ubuntu 为第一优先级</strong>。</p>
-<p>这意味着：</p>
-<ul>
-<li>
-<p>文档示例默认 Ubuntu</p>
-</li>
-<li>
-<p>社区解答默认 Ubuntu</p>
-</li>
-<li>
-<p>新功能优先在 Ubuntu 上测试</p>
-</li>
-</ul>
-<p>如果你用 Ubuntu，<strong>90% 的教程可以照抄照做</strong>。</p>
-<hr />
-<h3 id="422-windows-macos">4.2.2 Windows / macOS 的现实问题<a class="headerlink" href="#422-windows-macos" title="Permanent link">&para;</a></h3>
-<h4 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h4>
-<ul>
-<li>ROS2 支持 Windows，但：</li>
-</ul>
-<p>&nbsp; - 教程少</p>
-<p>&nbsp; - 第三方包不完整</p>
-<p>&nbsp; - Gazebo / RViz 兼容性差</p>
-<ul>
-<li>非常不适合新手作为主学习环境</li>
-</ul>
-<h4 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h4>
-<ul>
-<li>
-<p>更偏向开发测试</p>
-</li>
-<li>
-<p>驱动和硬件支持较弱</p>
-</li>
-<li>
-<p>社区资源更少</p>
-</li>
-</ul>
+<p>这不是我个人偏好，是实践得出来的结论。</p>
 <div class="admonition warning">
-<p class="admonition-title">新手常见误区</p>
+<p class="admonition-title">血泪教训</p>
+<p>我见过太多同学因为用了其他版本的系统，</p>
+<p>结果各种问题搞得焦头烂额。</p>
 </div>
-<p>&nbsp;   “我电脑是 Windows，所以我要在 Windows 上学 ROS2”  </p>
-<p>&nbsp;   这是<strong>非常容易走弯路的想法</strong>。</p>
 <hr />
-<h2 id="43-ubuntu-ros2">4.3 Ubuntu 版本与 ROS2 版本的对应关系<a class="headerlink" href="#43-ubuntu-ros2" title="Permanent link">&para;</a></h2>
-<p>ROS2 的发行版与 Ubuntu 版本是<strong>强绑定关系</strong>。</p>
+<h2 id="42-ubuntu-2404">4.2 为什么不推荐 Ubuntu 24.04<a class="headerlink" href="#42-ubuntu-2404" title="Permanent link">&para;</a></h2>
+<p>虽然 24.04 是最新的 LTS 版本，但学 ROS2 的话，我真不推荐。</p>
+<hr />
+<h3 id="gazebo">主要原因：Gazebo 仿真器的兼容性问题<a class="headerlink" href="#gazebo" title="Permanent link">&para;</a></h3>
+<h4 id="gazebo_1">Gazebo 的重要性<a class="headerlink" href="#gazebo_1" title="Permanent link">&para;</a></h4>
 <div class="admonition info">
-<p class="admonition-title">核心原则</p>
+<p class="admonition-title">核心工具</p>
+<p>Gazebo 是 ROS2 生态里 <strong>最重要的仿真工具</strong>，</p>
+<p>让你不用真机器人就能测试代码。</p>
 </div>
-<p>&nbsp;   <strong>不要混搭版本，不要追新，不要随便升级系统。</strong></p>
-<p>下面是最常见、也是最安全的组合：</p>
-<p>| Ubuntu 版本 | 推荐 ROS2 版本 | 适合人群 |</p>
-<p>|-----------|---------------|---------|</p>
-<p>| 20.04 LTS | Foxy | 老项目 / 教材 |</p>
-<p>| 22.04 LTS | <strong>Humble</strong> | <strong>新手首选</strong> |</p>
-<p>| 24.04 LTS | Jazzy | 有经验者 |</p>
 <hr />
-<h2 id="44-ubuntu-2404">4.4 为什么不推荐新手直接用 Ubuntu 24.04<a class="headerlink" href="#44-ubuntu-2404" title="Permanent link">&para;</a></h2>
-<p>很多新手会有一个直觉：</p>
-<blockquote>
-<p><strong>“版本越新，肯定越好。”</strong></p>
-</blockquote>
-<p>但在 ROS2 学习中，这个直觉 <strong>往往是错的</strong>。</p>
+<h4 id="ubuntu-2404">Ubuntu 24.04 的问题<a class="headerlink" href="#ubuntu-2404" title="Permanent link">&para;</a></h4>
+<div class="admonition danger">
+<p class="admonition-title">严重限制</p>
+<p>经典版 Gazebo 在 Ubuntu 24.04 上 <strong>已经不支持了</strong>。</p>
+</div>
 <hr />
-<h3 id="441">4.4.1 教程和生态尚未完全跟上<a class="headerlink" href="#441" title="Permanent link">&para;</a></h3>
+<h4 id="gazebo_2">新版 Gazebo 的尴尬<a class="headerlink" href="#gazebo_2" title="Permanent link">&para;</a></h4>
+<p>新版 Gazebo（以前叫 Ignition）虽然更强大，但问题是：</p>
 <ul>
-<li>
-<p>大量教程仍以 20.04 / 22.04 为主</p>
-</li>
-<li>
-<p>搜到的问题答案可能不适用于 24.04</p>
-</li>
-<li>
-<p>很多第三方包尚未完全适配</p>
-</li>
+<li>大量的教程、示例、功能包都是基于 <strong>经典版</strong> 写的</li>
+<li>还没适配新版</li>
 </ul>
 <hr />
-<h3 id="442-gazebo">4.4.2 Gazebo / 仿真兼容性问题<a class="headerlink" href="#442-gazebo" title="Permanent link">&para;</a></h3>
+<h3 id="2404">你要是用 24.04，会发现<a class="headerlink" href="#2404" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
-<p class="admonition-title">真实踩坑点</p>
+<p class="admonition-title">实际困难</p>
+<ol>
+<li><strong>网上的教程跑不通</strong></li>
+<li>
+<p>因为教程用的是经典 Gazebo</p>
+</li>
+<li>
+<p><strong>很多现成的仿真包装不上</strong></p>
+</li>
+<li>
+<p><strong>遇到问题搜不到解决办法</strong></p>
+</li>
+<li>因为用 24.04 的人还太少</li>
+</ol>
 </div>
-<p>&nbsp;   新手最容易卡在 <strong>仿真无法启动、模型加载失败、界面异常</strong>。</p>
-<p>这些问题往往不是你操作错了，而是：</p>
-<ul>
-<li>
-<p>版本组合不成熟</p>
-</li>
-<li>
-<p>依赖尚未稳定</p>
-</li>
-</ul>
 <hr />
-<h3 id="443">4.4.3 新手最重要的是“稳定”，不是“新”<a class="headerlink" href="#443" title="Permanent link">&para;</a></h3>
+<h3 id="_1">结论<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">避坑指南</p>
+<p>别图新，老老实实用 20.04 或 22.04。</p>
+</div>
+<hr />
+<h2 id="43">4.3 版本对应关系<a class="headerlink" href="#43" title="Permanent link">&para;</a></h2>
+<p>这是官方推荐的版本配对：</p>
+<table>
+<thead>
+<tr>
+<th>Ubuntu 版本</th>
+<th>ROS2 版本</th>
+<th>推荐程度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ubuntu 20.04</td>
+<td>ROS2 Foxy</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>Ubuntu 22.04</td>
+<td>ROS2 Humble</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>Ubuntu 24.04</td>
+<td>ROS2 Jazzy</td>
+<td>⭐⭐ (Gazebo有问题，不推荐新手用)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_2">我的建议<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
-<p class="admonition-title">学习原则</p>
+<p class="admonition-title">最佳选择</p>
+<p><strong>Ubuntu 22.04 + ROS2 Humble</strong></p>
+<p>这是目前最稳定、资源最丰富的组合。</p>
 </div>
-<p>&nbsp;   学习阶段，<strong>稳定 &gt; 新版本 &gt; 花哨功能</strong>。</p>
-<p>等你对 ROS2 足够熟悉，再尝试新系统，成本会低得多。</p>
 <hr />
-<h2 id="45-ubuntu">4.5 安装方式对比：我该怎么装 Ubuntu？<a class="headerlink" href="#45-ubuntu" title="Permanent link">&para;</a></h2>
-<p>对于大多数新手来说，常见有三种方式。</p>
+<h4 id="_3">为什么推荐这个组合？<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>长期支持（LTS）</strong></li>
+<li>Ubuntu 22.04 支持到 2027 年</li>
+<li>
+<p>ROS2 Humble 支持到 2027 年</p>
+</li>
+<li>
+<p><strong>资源最丰富</strong></p>
+</li>
+<li>教程多</li>
+<li>功能包完善</li>
+<li>
+<p>社区活跃</p>
+</li>
+<li>
+<p><strong>稳定性最好</strong></p>
+</li>
+<li>经过充分测试</li>
+<li>Bug 较少</li>
+</ol>
 <hr />
-<h3 id="451">4.5.1 虚拟机（不推荐长期使用）<a class="headerlink" href="#451" title="Permanent link">&para;</a></h3>
-<p><strong>优点</strong></p>
+<h2 id="44">4.4 系统安装方式怎么选<a class="headerlink" href="#44" title="Permanent link">&para;</a></h2>
+<p>有三种方式可以运行 Ubuntu：</p>
+<hr />
+<h3 id="_4">方式一：虚拟机（最推荐新手）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h4 id="_5">什么是虚拟机<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>就是在你现有的 Windows 或 Mac 上装个 VMware 或 VirtualBox，</p>
+<p>在里面装 Ubuntu。</p>
+<hr />
+<h4 id="_6">优点<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">新手友好</p>
 <ul>
-<li>
-<p>不影响原系统</p>
-</li>
-<li>
-<p>安装简单</p>
-</li>
+<li>✓ 不影响你原来的系统</li>
+<li>✓ 随便折腾，搞砸了还能回滚</li>
+<li>✓ 安装简单，风险低</li>
 </ul>
-<p><strong>缺点</strong></p>
+</div>
+<hr />
+<h4 id="_7">缺点<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">性能损耗</p>
 <ul>
-<li>
-<p>性能较差</p>
-</li>
-<li>
-<p>USB、显卡、仿真体验不佳</p>
-</li>
+<li>性能有损耗，大概只有原生的七八成</li>
+<li>复杂的仿真可能会卡</li>
 </ul>
+</div>
+<hr />
+<h4 id="_8">配置建议<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>如果用虚拟机，建议配置：</p>
+<div class="highlight"><pre><span></span><code>内存：8G
+硬盘：100G
+CPU：分配一半核心
+显示：记得开 3D 加速（不然 Gazebo 会黑屏）
+</code></pre></div>
+<hr />
+<h3 id="_9">方式二：双系统<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h4 id="_10">什么是双系统<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p>就是电脑上同时装 Windows 和 Ubuntu，</p>
+<p>开机时选启动哪个。</p>
+<hr />
+<h4 id="_11">优点<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">性能最佳</p>
+<ul>
+<li>✓ 性能是最好的</li>
+<li>✓ 适合长期用</li>
+</ul>
+</div>
+<hr />
+<h4 id="_12">缺点<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<div class="admonition danger">
+<p class="admonition-title">有风险</p>
+<ul>
+<li>安装有一定风险</li>
+<li>操作不当可能把原来的系统搞坏</li>
+</ul>
+</div>
+<hr />
+<h4 id="_13">建议<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">稳妥做法</p>
+<p>先用虚拟机熟悉一下 Linux，</p>
+<p>有点经验了再装双系统。</p>
+</div>
+<hr />
+<h3 id="wsl2">方式三：WSL2<a class="headerlink" href="#wsl2" title="Permanent link">&para;</a></h3>
+<h4 id="wsl2_1">什么是 WSL2<a class="headerlink" href="#wsl2_1" title="Permanent link">&para;</a></h4>
+<p>这是微软自己搞的，在 Windows 里跑 Linux。</p>
+<hr />
+<h4 id="_14">优点<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
 <div class="admonition info">
-<p class="admonition-title">适合谁</p>
+<p class="admonition-title">便利性</p>
+<ul>
+<li>✓ 安装简单</li>
+<li>✓ 性能也还行</li>
+</ul>
 </div>
-<p>&nbsp;   只是 <strong>简单体验</strong> ROS2 的人。</p>
 <hr />
-<h3 id="452">4.5.2 双系统（强烈推荐）<a class="headerlink" href="#452" title="Permanent link">&para;</a></h3>
-<p><strong>优点</strong></p>
+<h4 id="_15">缺点<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">图形支持</p>
 <ul>
-<li>
-<p>原生性能</p>
-</li>
-<li>
-<p>完整硬件支持</p>
-</li>
-<li>
-<p>最接近真实开发环境</p>
-</li>
+<li>图形界面支持需要额外配置</li>
+<li>Gazebo 可能需要折腾一下</li>
 </ul>
-<p><strong>缺点</strong></p>
-<ul>
-<li>
-<p>需要分区</p>
-</li>
-<li>
-<p>初次安装有一点门槛</p>
-</li>
-</ul>
+</div>
+<hr />
+<h2 id="45">4.5 我的建议<a class="headerlink" href="#45" title="Permanent link">&para;</a></h2>
+<h3 id="_16">针对不同情况的建议<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h4 id="_17">如果你是纯新手<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
 <div class="admonition success">
 <p class="admonition-title">推荐方案</p>
+<p><strong>用虚拟机，安全省心。</strong></p>
 </div>
-<p>&nbsp;   <strong>如果你认真学 ROS2，这是性价比最高的选择。</strong></p>
 <hr />
-<h3 id="453-wsl2">4.5.3 WSL2（有条件可用）<a class="headerlink" href="#453-wsl2" title="Permanent link">&para;</a></h3>
-<p><strong>优点</strong></p>
-<ul>
-<li>
-<p>不用重装系统</p>
-</li>
-<li>
-<p>Linux 体验相对完整</p>
-</li>
-</ul>
-<p><strong>缺点</strong></p>
-<ul>
-<li>
-<p>图形界面、仿真配置复杂</p>
-</li>
-<li>
-<p>新手容易卡在环境配置</p>
-</li>
-</ul>
+<h4 id="_18">如果你有一定经验<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<p>等玩熟了，觉得虚拟机性能不够用了，</p>
+<p>再考虑装双系统。</p>
+<hr />
+<h4 id="_19">如果你只是想试试<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">轻量方案</p>
+<p>WSL2 可以快速上手，</p>
+<p>但长期学习还是建议虚拟机或双系统。</p>
+</div>
+<hr />
+<h2 id="46">4.6 硬件要求<a class="headerlink" href="#46" title="Permanent link">&para;</a></h2>
+<h3 id="_20">最低配置<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>CPU：双核
+内存：4GB
+硬盘：50GB
+</code></pre></div>
 <div class="admonition warning">
-<p class="admonition-title">新手提示</p>
+<p class="admonition-title">仅够基础学习</p>
+<p>这个配置只能跑基础功能，</p>
+<p>仿真会很卡。</p>
 </div>
-<p>&nbsp;   <strong>不熟悉 Linux 的新手，不建议一开始就选 WSL2</strong>。</p>
 <hr />
-<h2 id="46">4.6 我的最终建议（请认真看）<a class="headerlink" href="#46" title="Permanent link">&para;</a></h2>
+<h3 id="_21">推荐配置<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>CPU：四核及以上
+内存：8GB 及以上
+硬盘：100GB 及以上
+</code></pre></div>
 <div class="admonition success">
-<p class="admonition-title">最终推荐路线</p>
+<p class="admonition-title">流畅体验</p>
+<p>这个配置可以流畅运行仿真。</p>
 </div>
-<p>&nbsp;   1. 安装 <strong>Ubuntu 22.04（双系统）</strong>  </p>
-<p>&nbsp;   2. 使用 <strong>ROS2 Humble</strong>  </p>
-<p>&nbsp;   3. 按官方教程一步一步来  </p>
-<p>这样做的结果是：</p>
-<ul>
-<li>
-<p>教程对得上</p>
-</li>
-<li>
-<p>搜索能搜到答案</p>
-</li>
-<li>
-<p>出问题更容易解决</p>
-</li>
-</ul>
 <hr />
-<h2 id="_1">本章小结<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>通过这一章，你应该已经明确：</p>
-<ul>
-<li>
-<p>ROS2 学习首选 Ubuntu  </p>
-</li>
-<li>
-<p>新手推荐 Ubuntu 22.04 + ROS2 Humble  </p>
-</li>
-<li>
-<p>不要盲目追新版本  </p>
-</li>
-<li>
-<p>系统选择正确，学习难度直接下降一半  </p>
-</li>
-</ul>
+<h3 id="_22">理想配置<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>CPU：六核及以上
+内存：16GB 及以上
+硬盘：200GB 及以上
+显卡：独显（NVIDIA 最好）
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">专业开发</p>
+<p>这个配置适合深度学习、复杂仿真等场景。</p>
+</div>
 <hr />
-<h2 id="_2">下一章预告<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>下一章我们会进入真正的“学习准备阶段”：</p>
+<h2 id="47">4.7 常见问题<a class="headerlink" href="#47" title="Permanent link">&para;</a></h2>
+<h3 id="1">问题1：我的电脑配置不够怎么办？<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">解决方案</p>
+<ul>
+<li>可以先用虚拟机学习基础知识</li>
+<li>需要仿真时去实验室或机房虑云服务器</li>
+</ul>
+</div>
+<hr />
+<h3 id="2-mac">问题2：我能用 Mac 吗？<a class="headerlink" href="#2-mac" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Mac 用户</p>
+<p>可以，但：
+- 虚拟机性能会更差（特别是 M 系列芯片）
+- 部分硬件驱动可能有问题
+- 建议有条件还是用 Linux 原生</p>
+</div>
+<hr />
+<h3 id="3-ubuntu-2404">问题3：我已经装了 Ubuntu 24.04 怎么办？<a class="headerlink" href="#3-ubuntu-2404" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">建议</p>
+<p>如果还没开始学 ROS2：
+- 重装 Ubuntu 22.04</p>
+<p>如果已经学了一段时间：
+- 可以继续用，但要有心理准备遇到兼容性问题</p>
+</div>
+<hr />
+<h2 id="48">4.8 版本选择决策树<a class="headerlink" href="#48" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>你想学 ROS2
+    ↓
+选择 Ubuntu 版本
+    ↓
+有电脑吗？
+    ├── 有 → 配置够吗？（8G+ 内存）
+    │         ├── 够 → 纯新手？
+    │         │        ├── 是 → 虚拟机 + Ubuntu 22.04
+    │         │        └── 否 → 双系统 + Ubuntu 22.04
+    │         └── 不够 → 虚拟机（降低配置）或机房
+    └── 没有 → 考虑云服务器或借用机房
+</code></pre></div>
+<hr />
+<h2 id="_23">本章小结<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<p>通过这一章，你应该已经明白：</p>
+<ol>
+<li><strong>版本选择很重要</strong></li>
+<li>推荐 Ubuntu 22.04 + ROS2 Humble</li>
+<li>
+<p>不推荐 Ubuntu 24.04（Gazebo 兼容性问题）</p>
+</li>
+<li>
+<p><strong>安装方式的选择</strong></p>
+</li>
+<li>新手：虚拟机</li>
+<li>有经验：双系统</li>
+<li>
+<p>尝鲜：WSL2</p>
+</li>
+<li>
+<p><strong>硬件要求</strong></p>
+</li>
+<li>最低：4GB 内存</li>
+<li>推荐：8GB 内存</li>
+<li>
+<p>理想：16GB 内存</p>
+</li>
+<li>
+<p><strong>避坑指南</strong></p>
+</li>
+<li>别盲目追新版本</li>
+<li>选择成熟稳定的组合</li>
+<li>根据自己情况选择安装方式</li>
+</ol>
+<hr />
+<h2 id="_24">下一章预告<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h2>
+<p>下一章我们会讲：</p>
 <blockquote>
-<p><strong>在写 ROS2 代码之前，你需要提前准备哪些基础？</strong></p>
+<p><strong>学习 ROS2 前需要准备什么——先打好基础</strong></p>
 </blockquote>
-<p>这一步准备得越充分，后面学得越轻松。</p>
+<p>帮你了解需要掌握哪些前置知识，</p>
+<p>避免学习过程中遇到不必要的障碍。</p>
 
 
 

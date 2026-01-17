@@ -46,8 +46,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -66,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#02-ros2" class="md-skip">
+        <a href="#ros2" class="md-skip">
           Skip to content
         </a>
       
@@ -365,31 +363,43 @@
   <a href="#21-ros2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1 ROS2 主要解决哪些问题
+        2.1 ROS2 主要解决什么问题
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2.1 ROS2 主要解决哪些问题">
+    <nav class="md-nav" aria-label="2.1 ROS2 主要解决什么问题">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#211" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1.1 通信问题（最核心）
+        问题一：通信问题
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2.1.1 通信问题（最核心）">
+    <nav class="md-nav" aria-label="问题一：通信问题">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#topic" class="md-nav__link">
+  <a href="#ros2_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        话题（Topic）：持续广播的数据流
+        ROS2 提供了好几种通信方式：
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROS2 提供了好几种通信方式：">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 话题（Topic）—— 像广播电台
       
     </span>
   </a>
@@ -397,10 +407,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#service" class="md-nav__link">
+  <a href="#2-service" class="md-nav__link">
     <span class="md-ellipsis">
       
-        服务（Service）：一问一答
+        2. 服务（Service）—— 像打电话
       
     </span>
   </a>
@@ -408,10 +418,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#action" class="md-nav__link">
+  <a href="#3-action" class="md-nav__link">
     <span class="md-ellipsis">
       
-        动作（Action）：有过程的任务
+        3. 动作（Action）—— 像网购
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题二：硬件抽象
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="问题二：硬件抽象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ros2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ROS2 的解决方案
       
     </span>
   </a>
@@ -424,10 +467,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#212" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1.2 硬件抽象（非常重要）
+        问题三：工具支持
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="问题三：工具支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rviz2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RViz2
       
     </span>
   </a>
@@ -435,13 +490,40 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#213" class="md-nav__link">
+  <a href="#gazebo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1.3 工具支持（工程效率）
+        Gazebo
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-bag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 bag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rqt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rqt 系列图形化工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -463,10 +545,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        移动机器人
+        1. 移动机器人
       
     </span>
   </a>
@@ -474,10 +556,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        机械臂
+        2. 机械臂
       
     </span>
   </a>
@@ -485,10 +567,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        无人机
+        3. 无人机
       
     </span>
   </a>
@@ -496,10 +578,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        自动驾驶（研发阶段）
+        4. 自动驾驶
       
     </span>
   </a>
@@ -515,15 +597,226 @@
   <a href="#23" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3 一个完整机器人系统的例子
+        2.3 举个具体例子
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 举个具体例子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景设定
       
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        在 ROS2 里的软件架构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="在 ROS2 里的软件架构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最底层：传感器层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        中间层：感知层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        上层：决策层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        底层：执行层
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        架构优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#24-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 ROS2 的典型工作流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 ROS2 的典型工作流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤一：感知
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤二：处理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤三：决策
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤四：执行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤五：反馈
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 实际应用案例分享
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 实际应用案例分享">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例一：仓库搬运机器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例二：服务机器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例三：巡检机器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
       
         本章小结
@@ -534,7 +827,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
       
         下一章预告
@@ -1142,31 +1435,43 @@
   <a href="#21-ros2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1 ROS2 主要解决哪些问题
+        2.1 ROS2 主要解决什么问题
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2.1 ROS2 主要解决哪些问题">
+    <nav class="md-nav" aria-label="2.1 ROS2 主要解决什么问题">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#211" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1.1 通信问题（最核心）
+        问题一：通信问题
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2.1.1 通信问题（最核心）">
+    <nav class="md-nav" aria-label="问题一：通信问题">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#topic" class="md-nav__link">
+  <a href="#ros2_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        话题（Topic）：持续广播的数据流
+        ROS2 提供了好几种通信方式：
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROS2 提供了好几种通信方式：">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 话题（Topic）—— 像广播电台
       
     </span>
   </a>
@@ -1174,10 +1479,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#service" class="md-nav__link">
+  <a href="#2-service" class="md-nav__link">
     <span class="md-ellipsis">
       
-        服务（Service）：一问一答
+        2. 服务（Service）—— 像打电话
       
     </span>
   </a>
@@ -1185,10 +1490,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#action" class="md-nav__link">
+  <a href="#3-action" class="md-nav__link">
     <span class="md-ellipsis">
       
-        动作（Action）：有过程的任务
+        3. 动作（Action）—— 像网购
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题二：硬件抽象
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="问题二：硬件抽象">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ros2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ROS2 的解决方案
       
     </span>
   </a>
@@ -1201,10 +1539,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#212" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1.2 硬件抽象（非常重要）
+        问题三：工具支持
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="问题三：工具支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rviz2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RViz2
       
     </span>
   </a>
@@ -1212,13 +1562,40 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#213" class="md-nav__link">
+  <a href="#gazebo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.1.3 工具支持（工程效率）
+        Gazebo
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2-bag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ros2 bag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rqt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rqt 系列图形化工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1240,10 +1617,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        移动机器人
+        1. 移动机器人
       
     </span>
   </a>
@@ -1251,10 +1628,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        机械臂
+        2. 机械臂
       
     </span>
   </a>
@@ -1262,10 +1639,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        无人机
+        3. 无人机
       
     </span>
   </a>
@@ -1273,10 +1650,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        自动驾驶（研发阶段）
+        4. 自动驾驶
       
     </span>
   </a>
@@ -1292,15 +1669,226 @@
   <a href="#23" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2.3 一个完整机器人系统的例子
+        2.3 举个具体例子
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 举个具体例子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        场景设定
       
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#ros2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        在 ROS2 里的软件架构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="在 ROS2 里的软件架构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最底层：传感器层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        中间层：感知层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        上层：决策层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        底层：执行层
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        架构优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#24-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 ROS2 的典型工作流程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4 ROS2 的典型工作流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤一：感知
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤二：处理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤三：决策
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤四：执行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤五：反馈
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 实际应用案例分享
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5 实际应用案例分享">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例一：仓库搬运机器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例二：服务机器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        案例三：巡检机器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
       
         本章小结
@@ -1311,7 +1899,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
       
         下一章预告
@@ -1338,343 +1926,346 @@
 
 
 
-<h1 id="02-ros2">02 ROS2 能干什么<a class="headerlink" href="#02-ros2" title="Permanent link">&para;</a></h1>
-<p>在上一章，我们解决了一个基础问题：</p>
-<blockquote>
-<p>ROS2 是什么？</p>
-</blockquote>
-<p>这一章我们继续往前一步，回答一个更现实的问题：</p>
-<blockquote>
-<p>学 ROS2，到底能干什么？</p>
-</blockquote>
-<p>如果你只停留在“概念理解”，那 ROS2 会显得很抽象；  </p>
-<p>但一旦你看到它在<strong>真实机器人系统中的位置</strong>，一切就会变得清晰。</p>
-<hr />
-<h2 id="21-ros2">2.1 ROS2 主要解决哪些问题<a class="headerlink" href="#21-ros2" title="Permanent link">&para;</a></h2>
-<p>机器人并不是一个“程序”，而是一个<strong>由很多部分组成的复杂系统</strong>。</p>
-<p>它通常包括：</p>
+<h1 id="ros2">第二章：ROS2能干什么——了解它的实际用途<a class="headerlink" href="#ros2" title="Permanent link">&para;</a></h1>
+<h2 id="21-ros2">2.1 ROS2 主要解决什么问题<a class="headerlink" href="#21-ros2" title="Permanent link">&para;</a></h2>
+<p>机器人是个复杂的系统，有：</p>
 <ul>
-<li>
-<p>各种传感器（摄像头、雷达、IMU）</p>
-</li>
-<li>
-<p>执行机构（轮子、电机、机械臂）</p>
-</li>
-<li>
-<p>计算单元（工控机、嵌入式板）</p>
-</li>
+<li>眼睛（摄像头）</li>
+<li>耳朵（麦克风）</li>
+<li>脚（轮子/腿）</li>
+<li>大脑（计算机）</li>
+<li>……</li>
 </ul>
-<p>ROS2 主要帮你解决下面三个核心问题。</p>
+<p>这些东西要协调工作，ROS2 主要帮你解决三个问题：</p>
 <hr />
-<h3 id="211">2.1.1 通信问题（最核心）<a class="headerlink" href="#211" title="Permanent link">&para;</a></h3>
-<p>想象一个场景：</p>
-<ul>
-<li>
-<p>摄像头“看到”前方有障碍物</p>
-</li>
-<li>
-<p>控制轮子的程序必须立刻知道这件事</p>
-</li>
-<li>
-<p>决策模块要根据这些信息改变运动策略</p>
-</li>
-</ul>
+<h3 id="_1">问题一：通信问题<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>举个例子：</p>
+<div class="admonition example">
+<p class="admonition-title">实际场景</p>
+<p>机器人的摄像头看到前面有堵墙，</p>
+<p>它得告诉控制轮子的程序：</p>
+<p>"哥们儿，前面有东西，别往前走了！"</p>
+</div>
+<p>这个"告诉"的过程，就是 <strong>通信</strong>。</p>
+<hr />
+<h4 id="ros2_1">ROS2 提供了好几种通信方式：<a class="headerlink" href="#ros2_1" title="Permanent link">&para;</a></h4>
+<h5 id="1-topic">1. 话题（Topic）—— 像广播电台<a class="headerlink" href="#1-topic" title="Permanent link">&para;</a></h5>
 <div class="admonition info">
-<p class="admonition-title">关键问题</p>
+<p class="admonition-title">工作原理</p>
+<ul>
+<li>一个节点不停地"广播"数据</li>
+<li>其他想听的节点就"收听"</li>
+<li>发的人不管谁在听</li>
+<li>听的人也不管谁在发</li>
+</ul>
 </div>
-<p>&nbsp;   这些模块如何交换数据，才不会乱套？</p>
-<p>ROS2 为此提供了三种标准通信方式。</p>
+<p><strong>适用场景：</strong> 传感器数据这种持续产生的数据流</p>
+<p><strong>举例：</strong></p>
+<ul>
+<li>摄像头节点不停地发图像</li>
+<li>图像处理节点订阅这些图像来处理</li>
+<li>显示节点订阅来显示给你看</li>
+</ul>
+<p>大家各干各的，互不干扰。</p>
 <hr />
-<h4 id="topic">话题（Topic）：持续广播的数据流<a class="headerlink" href="#topic" title="Permanent link">&para;</a></h4>
-<div class="admonition tip">
-<p class="admonition-title">一句话理解</p>
-</div>
-<p>&nbsp;   话题就像广播电台。</p>
-<ul>
-<li>
-<p>发布者：不停地往外“播数据”</p>
-</li>
-<li>
-<p>订阅者：只关心自己想听的内容</p>
-</li>
-<li>
-<p>发布者和订阅者互不认识、互不依赖</p>
-</li>
-</ul>
-<p><strong>典型场景：</strong></p>
-<ul>
-<li>
-<p>摄像头发布图像</p>
-</li>
-<li>
-<p>雷达发布距离数据</p>
-</li>
-<li>
-<p>里程计发布位姿信息</p>
-</li>
-</ul>
-<hr />
-<h4 id="service">服务（Service）：一问一答<a class="headerlink" href="#service" title="Permanent link">&para;</a></h4>
-<div class="admonition tip">
-<p class="admonition-title">一句话理解</p>
-</div>
-<p>&nbsp;   服务就像打电话。</p>
-<ul>
-<li>
-<p>客户端发送请求</p>
-</li>
-<li>
-<p>服务端处理后返回结果</p>
-</li>
-<li>
-<p>请求方必须等待回应</p>
-</li>
-</ul>
-<p><strong>典型场景：</strong></p>
-<ul>
-<li>
-<p>查询当前电量</p>
-</li>
-<li>
-<p>清空地图</p>
-</li>
-<li>
-<p>重置某个状态</p>
-</li>
-</ul>
-<hr />
-<h4 id="action">动作（Action）：有过程的任务<a class="headerlink" href="#action" title="Permanent link">&para;</a></h4>
-<div class="admonition tip">
-<p class="admonition-title">一句话理解</p>
-</div>
-<p>&nbsp;   动作就像网购。</p>
-<ul>
-<li>
-<p>你下单（发送目标）</p>
-</li>
-<li>
-<p>系统不断告诉你进度</p>
-</li>
-<li>
-<p>最终完成或失败</p>
-</li>
-<li>
-<p>中途还可以取消</p>
-</li>
-</ul>
-<p><strong>典型场景：</strong></p>
-<ul>
-<li>
-<p>导航到目标点</p>
-</li>
-<li>
-<p>机械臂执行抓取动作</p>
-</li>
-</ul>
-<hr />
-<h3 id="212">2.1.2 硬件抽象（非常重要）<a class="headerlink" href="#212" title="Permanent link">&para;</a></h3>
-<p>不同厂商的硬件，接口几乎都不一样：</p>
-<ul>
-<li>
-<p>摄像头 A 用 USB</p>
-</li>
-<li>
-<p>摄像头 B 用网口</p>
-</li>
-<li>
-<p>激光雷达型号各不相同</p>
-</li>
-</ul>
-<p>如果你<strong>直接和硬件打交道</strong>：</p>
-<ul>
-<li>
-<p>换一个设备就要改一堆代码</p>
-</li>
-<li>
-<p>项目几乎无法复用</p>
-</li>
-</ul>
+<h5 id="2-service">2. 服务（Service）—— 像打电话<a class="headerlink" href="#2-service" title="Permanent link">&para;</a></h5>
 <div class="admonition info">
-<p class="admonition-title">ROS2 的做法</p>
+<p class="admonition-title">工作原理</p>
+<ul>
+<li>你发一个请求</li>
+<li>对方处理完了给你回复</li>
+<li>你得等着对方回复才能继续</li>
+</ul>
 </div>
-<p>&nbsp;   ROS2 在硬件和算法之间，加了一层统一接口。</p>
-<p>不管你用什么牌子的设备：</p>
-<ul>
-<li>
-<p>图像 → 统一格式</p>
-</li>
-<li>
-<p>雷达 → 统一格式</p>
-</li>
-<li>
-<p>控制指令 → 统一格式</p>
-</li>
-</ul>
-<p>这样你写的算法，就可以跨硬件复用。</p>
+<p><strong>适用场景：</strong> "问一下"的场景</p>
+<p><strong>举例：</strong> 问问机器人现在电量多少</p>
 <hr />
-<h3 id="213">2.1.3 工具支持（工程效率）<a class="headerlink" href="#213" title="Permanent link">&para;</a></h3>
-<p>ROS2 不只是通信框架，还自带大量工程工具：</p>
+<h5 id="3-action">3. 动作（Action）—— 像网购<a class="headerlink" href="#3-action" title="Permanent link">&para;</a></h5>
+<div class="admonition info">
+<p class="admonition-title">工作原理</p>
 <ul>
-<li>
-<p><strong>RViz2</strong>：3D 可视化机器人状态</p>
-</li>
-<li>
-<p><strong>Gazebo</strong>：仿真环境，虚拟测试机器人</p>
-</li>
-<li>
-<p><strong>ros2 bag</strong>：录制和回放数据</p>
-</li>
-<li>
-<p><strong>rqt 系列工具</strong>：查看节点、话题、日志</p>
-</li>
+<li>你下单（发送目标）</li>
+<li>然后物流一直告诉你到哪了（反馈）</li>
+<li>最后收到货（结果）</li>
+<li>中间你还能取消订单</li>
 </ul>
+</div>
+<p><strong>适用场景：</strong> 需要较长时间的任务</p>
+<p><strong>举例：</strong> 让机器人走到某个地方</p>
+<hr />
+<h3 id="_2">问题二：硬件抽象<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>不同厂家的摄像头、雷达、电机，底层接口都不一样。</p>
+<div class="admonition warning">
+<p class="admonition-title">没有 ROS2 的情况</p>
+<p>如果你要直接跟硬件打交道，</p>
+<p>每换一个设备就得重新学一遍，烦死了。</p>
+</div>
+<hr />
+<h4 id="ros2_2">ROS2 的解决方案<a class="headerlink" href="#ros2_2" title="Permanent link">&para;</a></h4>
 <div class="admonition success">
-<p class="admonition-title">工程意义</p>
+<p class="admonition-title">统一接口</p>
+<ul>
+<li>不管你用什么牌子的摄像头，图像数据都是同一种格式</li>
+<li>不管什么牌子的激光雷达，数据格式也是统一的</li>
+</ul>
 </div>
-<p>&nbsp;   这些工具让你可以在没有真实机器人的情况下完成大部分开发和调试。</p>
+<p><strong>好处：</strong></p>
+<p>你写的程序换个设备也能用，不用改代码。</p>
+<hr />
+<h3 id="_3">问题三：工具支持<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>ROS2 自带很多实用工具：</p>
+<h4 id="rviz2">RViz2<a class="headerlink" href="#rviz2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>可以 3D 显示机器人的状态</li>
+<li>显示传感器数据</li>
+<li>显示规划的路径</li>
+</ul>
+<p><strong>用途：</strong> 调试的时候特别有用</p>
+<hr />
+<h4 id="gazebo">Gazebo<a class="headerlink" href="#gazebo" title="Permanent link">&para;</a></h4>
+<ul>
+<li>是个仿真器</li>
+<li>可以在虚拟环境里测试机器人</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">为什么需要仿真</p>
+<p>真机器人贵啊，撞坏了心疼，</p>
+<p>在仿真里随便撞。</p>
+</div>
+<hr />
+<h4 id="ros2-bag">ros2 bag<a class="headerlink" href="#ros2-bag" title="Permanent link">&para;</a></h4>
+<ul>
+<li>可以把机器人运行时的数据录下来</li>
+<li>之后回放分析</li>
+</ul>
+<hr />
+<h4 id="rqt">rqt 系列图形化工具<a class="headerlink" href="#rqt" title="Permanent link">&para;</a></h4>
+<ul>
+<li>画图</li>
+<li>看日志</li>
+<li>查看节点关系</li>
+</ul>
+<p>都挺方便的。</p>
 <hr />
 <h2 id="22-ros2">2.2 ROS2 都用在哪些地方<a class="headerlink" href="#22-ros2" title="Permanent link">&para;</a></h2>
-<p>学 ROS2，并不是“只能做一种机器人”。下面是几个常见应用场景。</p>
+<p>说几个常见的：</p>
+<h3 id="1">1. 移动机器人<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">应用实例</p>
+<ul>
+<li>扫地机器人</li>
+<li>送餐机器人</li>
+<li>仓库搬运机器人</li>
+</ul>
+</div>
+<p><strong>主要功能：</strong></p>
+<ul>
+<li>SLAM 建图</li>
+<li>导航避障</li>
+</ul>
+<p>ROS2 都有现成的包。</p>
 <hr />
-<h3 id="_1">移动机器人<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="2">2. 机械臂<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">应用实例</p>
 <ul>
-<li>
-<p>扫地机器人</p>
-</li>
-<li>
-<p>送餐机器人</p>
-</li>
-<li>
-<p>仓库搬运机器人</p>
-</li>
+<li>工厂里焊接的</li>
+<li>喷漆的</li>
+<li>现在挺火的协作机器人</li>
 </ul>
-<p>常用功能：</p>
-<ul>
-<li>
-<p>SLAM 建图</p>
-</li>
-<li>
-<p>导航与避障</p>
-</li>
-</ul>
+</div>
+<p><strong>核心框架：</strong></p>
+<p>ROS2 有个叫 <strong>MoveIt2</strong> 的框架，专门做运动规划的，挺好用的。</p>
 <hr />
-<h3 id="_2">机械臂<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="3">3. 无人机<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">应用实例</p>
 <ul>
-<li>
-<p>工业机械臂</p>
-</li>
-<li>
-<p>协作机器人</p>
-</li>
+<li>航拍的</li>
+<li>农业喷药的</li>
+<li>送快递的</li>
 </ul>
+</div>
+<hr />
+<h3 id="4">4. 自动驾驶<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>很多自动驾驶公司的原型系统就是基于 ROS 开发的。</p>
 <div class="admonition info">
-<p class="admonition-title">关键框架</p>
+<p class="admonition-title">实际情况</p>
+<p>当然真正上路的产品可能会换成自己的系统，</p>
+<p>但研发阶段用 ROS 很普遍。</p>
 </div>
-<p>&nbsp;   ROS2 中常用 MoveIt2 做运动规划。</p>
 <hr />
-<h3 id="_3">无人机<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>航拍</p>
-</li>
-<li>
-<p>巡检</p>
-</li>
-<li>
-<p>农业植保</p>
-</li>
-</ul>
-<hr />
-<h3 id="_4">自动驾驶（研发阶段）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>算法验证</p>
-</li>
-<li>
-<p>系统原型</p>
-</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">现实说明</p>
-</div>
-<p>&nbsp;   真正上路的自动驾驶系统未必直接使用 ROS。  </p>
-<p>&nbsp;   但在研发阶段，很多团队会依赖 ROS 做原型验证。</p>
-<hr />
-<h2 id="23">2.3 一个完整机器人系统的例子<a class="headerlink" href="#23" title="Permanent link">&para;</a></h2>
-<p>假设我们要做一个<strong>室内移动机器人</strong>，它需要：</p>
+<h2 id="23">2.3 举个具体例子<a class="headerlink" href="#23" title="Permanent link">&para;</a></h2>
+<h3 id="_4">场景设定<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>假设我们要做一个能在室内自己走的机器人，它需要：</p>
 <ol>
-<li>
-<p>感知环境</p>
-</li>
-<li>
-<p>判断自己位置</p>
-</li>
-<li>
-<p>规划路径</p>
-</li>
-<li>
-<p>控制运动</p>
-</li>
+<li>建立地图</li>
+<li>知道自己在哪</li>
+<li>规划路径</li>
+<li>控制轮子</li>
+<li>遇到障碍物要躲开</li>
 </ol>
-<p>在 ROS2 中，系统通常这样拆分：</p>
+<hr />
+<h3 id="ros2_3">在 ROS2 里的软件架构<a class="headerlink" href="#ros2_3" title="Permanent link">&para;</a></h3>
+<h4 id="_5">最底层：传感器层<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <ul>
-<li>
-<p>传感器节点：发布雷达、摄像头数据</p>
-</li>
-<li>
-<p>感知节点：处理传感器信息</p>
-</li>
-<li>
-<p>决策节点：决定往哪走</p>
-</li>
-<li>
-<p>控制节点：输出电机指令</p>
-</li>
+<li>激光雷达节点</li>
+<li>摄像头节点</li>
+<li>IMU（惯性测量单元）节点</li>
+</ul>
+<p>各自有个节点，不停地往外发数据。</p>
+<hr />
+<h4 id="_6">中间层：感知层<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>SLAM 节点 → 处理雷达数据建地图</li>
+<li>定位节点 → 算机器人在哪</li>
+<li>目标检测节点 → 处理图像</li>
+</ul>
+<hr />
+<h4 id="_7">上层：决策层<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li>导航决策节点</li>
+<li>综合这些信息</li>
+<li>决定往哪走、怎么躲障碍物</li>
+</ul>
+<hr />
+<h4 id="_8">底层：执行层<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<ul>
+<li>底盘控制节点</li>
+<li>把决策转化成轮子的转速</li>
+</ul>
+<hr />
+<h3 id="_9">架构优势<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>每个框都是一个独立的节点，它们通过话题交换数据。</p>
+<div class="admonition success">
+<p class="admonition-title">这样设计的好处</p>
+<ul>
+<li><strong>换个雷达？</strong> 只改雷达节点就行，其他不用动</li>
+<li><strong>想加个摄像头？</strong> 加个摄像头节点就行，不影响原来的</li>
+<li><strong>某个节点崩了？</strong> 其他节点还能继续跑</li>
+</ul>
+</div>
+<hr />
+<h2 id="24-ros2">2.4 ROS2 的典型工作流程<a class="headerlink" href="#24-ros2" title="Permanent link">&para;</a></h2>
+<h3 id="_10">步骤一：感知<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>传感器采集环境信息：</p>
+<ul>
+<li>摄像头拍图像</li>
+<li>雷达扫描周围</li>
+<li>IMU 测量姿态</li>
+</ul>
+<hr />
+<h3 id="_11">步骤二：处理<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>处理节点分析数据：</p>
+<ul>
+<li>图像识别出了什么</li>
+<li>雷达建出了地图</li>
+<li>定位算出了位置</li>
+</ul>
+<hr />
+<h3 id="_12">步骤三：决策<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>决策节点综合信息：</p>
+<ul>
+<li>分析当前状态</li>
+<li>规划下一步动作</li>
+</ul>
+<hr />
+<h3 id="_13">步骤四：执行<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>控制节点执行命令：</p>
+<ul>
+<li>给电机发指令</li>
+<li>控制机器人运动</li>
+</ul>
+<hr />
+<h3 id="_14">步骤五：反馈<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li>执行结果反馈给感知层</li>
+<li>形成闭环</li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">关键理解</p>
+<p class="admonition-title">闭环控制</p>
+<p>这个循环不断进行，机器人就能自主工作了。</p>
 </div>
-<p>&nbsp;   每一个方块，都是一个独立节点。  </p>
-<p>&nbsp;   它们通过话题通信，而不是直接互相调用。</p>
-<p>这样做的好处是：</p>
-<ul>
-<li>
-<p>模块解耦</p>
-</li>
-<li>
-<p>易于调试</p>
-</li>
-<li>
-<p>易于扩展</p>
-</li>
-<li>
-<p>易于替换</p>
-</li>
-</ul>
 <hr />
-<h2 id="_5">本章小结<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>通过这一章，你应该已经理解：</p>
+<h2 id="25">2.5 实际应用案例分享<a class="headerlink" href="#25" title="Permanent link">&para;</a></h2>
+<h3 id="_15">案例一：仓库搬运机器人<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p><strong>需求：</strong></p>
 <ul>
-<li>
-<p>ROS2 的核心作用是连接各个模块</p>
-</li>
-<li>
-<p>它解决了通信、硬件复用和工程效率问题</p>
-</li>
-<li>
-<p>ROS2 并不是“某一个算法”，而是系统级框架</p>
-</li>
-<li>
-<p>真实机器人系统，几乎都可以用 ROS2 拆解建模</p>
-</li>
+<li>在仓库里自动搬运货物</li>
+<li>能自主导航</li>
+<li>能避开障碍物和人</li>
 </ul>
+<p><strong>ROS2 方案：</strong></p>
+<div class="highlight"><pre><span></span><code>传感器节点（激光雷达） 
+    ↓
+SLAM 节点（建图定位）
+    ↓
+导航节点（路径规划）
+    ↓
+控制节点（执行运动）
+</code></pre></div>
 <hr />
-<h2 id="_6">下一章预告<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>下一章我们会回顾历史，回答一个很多新手都会问的问题：</p>
+<h3 id="_16">案例二：服务机器人<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<p><strong>需求：</strong></p>
+<ul>
+<li>在餐厅送餐</li>
+<li>能认人</li>
+<li>能语音交互</li>
+</ul>
+<p><strong>ROS2 方案：</strong></p>
+<div class="highlight"><pre><span></span><code>摄像头节点 → 人脸识别节点
+麦克风节点 → 语音识别节点
+    ↓
+决策节点
+    ↓
+导航节点 + 语音合成节点
+</code></pre></div>
+<hr />
+<h3 id="_17">案例三：巡检机器人<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p><strong>需求：</strong></p>
+<ul>
+<li>在工厂巡检</li>
+<li>检测设备异常</li>
+<li>自动充电</li>
+</ul>
+<p><strong>ROS2 方案：</strong></p>
+<div class="highlight"><pre><span></span><code>热成像摄像头 → 异常检测节点
+GPS + 雷达 → 定位导航节点
+电池监控 → 充电管理节点
+</code></pre></div>
+<hr />
+<h2 id="_18">本章小结<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<p>通过这一章，你应该已经了解到：</p>
+<ol>
+<li><strong>ROS2 主要解决的问题：</strong></li>
+<li>通信问题（话题、服务、动作）</li>
+<li>硬件抽象（统一接口）</li>
+<li>
+<p>工具支持（仿真、可视化、调试）</p>
+</li>
+<li>
+<p><strong>ROS2 的应用领域：</strong></p>
+</li>
+<li>移动机器人</li>
+<li>机械臂</li>
+<li>无人机</li>
+<li>
+<p>自动驾驶</p>
+</li>
+<li>
+<p><strong>ROS2 的软件架构：</strong></p>
+</li>
+<li>模块化设计</li>
+<li>节点通信</li>
+<li>数据流动</li>
+</ol>
+<hr />
+<h2 id="_19">下一章预告<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<p>下一章我们会讲：</p>
 <blockquote>
-<p>既然已经有 ROS1，为什么还要有 ROS2？</p>
+<p><strong>ROS2 的前身 ROS1——知道它从哪来</strong></p>
 </blockquote>
-<p>你会理解 ROS2 的设计动机，以及为什么现在应该直接学习 ROS2。</p>
+<p>了解 ROS1 和 ROS2 的区别，为什么要学 ROS2。</p>
 
 
 

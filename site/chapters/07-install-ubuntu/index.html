@@ -46,8 +46,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -920,7 +918,567 @@
 
   <h1>07 安装 Ubuntu</h1>
 
+<div class="admonition danger">
+<p class="admonition-title">FILE-CHECK</p>
+</div>
+<p>&nbsp;   This is 07-install-ubuntu.md</p>
+<p># 第七章：ROS2 支持哪些编程语言——选择适合你的</p>
+<p>ROS2 支持多种编程语言，但官方主推的是两种：</p>
+<p>- **Python（rclpy）**</p>
+<p>- **C++（rclcpp）**</p>
+<p>这一章我们详细聊聊这两种语言在 ROS2 中的应用。</p>
+<hr />
+<p>## 7.1 官方支持的两种语言</p>
+<p>### Python（rclpy）</p>
+<p>#### 优点</p>
+<div class="admonition success">
+<p class="admonition-title">Python 的优势</p>
+</div>
+<p>&nbsp;   - ✓ **语法简单**</p>
+<p>&nbsp;     - 代码量少，可读性强</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - ✓ **开发快**</p>
+<p>&nbsp;     - 不需要编译，改完直接运行</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - ✓ **调试方便**</p>
+<p>&nbsp;     - 报错信息清晰，容易定位问题</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - ✓ **第三方库多**</p>
+<p>&nbsp;     - NumPy、OpenCV、TensorFlow 等</p>
+<p>&nbsp;     - 数据处理、图像处理、机器学习都很方便</p>
+<hr />
+<p>#### 缺点</p>
+<div class="admonition warning">
+<p class="admonition-title">Python 的劣势</p>
+</div>
+<p>&nbsp;   - ✗ **运行慢**</p>
+<p>&nbsp;     - 解释型语言，性能比 C++ 差</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - ✗ **不支持实时系统**</p>
+<p>&nbsp;     - 有 GIL（全局解释器锁）</p>
+<p>&nbsp;     - 无法保证确定性响应时间</p>
+<hr />
+<p>#### 适合场景</p>
+<div class="admonition info">
+<p class="admonition-title">推荐使用 Python 的情况</p>
+</div>
+<p>&nbsp;   - ✓ 学习入门</p>
+<p>&nbsp;   - ✓ 快速验证想法</p>
+<p>&nbsp;   - ✓ 对性能要求不高的应用</p>
+<p>&nbsp;   - ✓ 数据处理和分析</p>
+<p>&nbsp;   - ✓ 深度学习相关应用</p>
+<hr />
+<p>### C++（rclcpp）</p>
+<p>#### 优点</p>
+<div class="admonition success">
+<p class="admonition-title">C++ 的优势</p>
+</div>
+<p>&nbsp;   - ✓ **运行快**</p>
+<p>&nbsp;     - 编译型语言，性能优秀</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - ✓ **性能好**</p>
+<p>&nbsp;     - 可以充分利用硬件性能</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - ✓ **支持实时**</p>
+<p>&nbsp;     - 可以用于实时控制系统</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - ✓ **底层驱动多是 C++ 写的**</p>
+<p>&nbsp;     - 与硬件交互更直接</p>
+<hr />
+<p>#### 缺点</p>
+<div class="admonition warning">
+<p class="admonition-title">C++ 的劣势</p>
+</div>
+<p>&nbsp;   - ✗ **语法复杂**</p>
+<p>&nbsp;     - 学习曲线陡峭</p>
+<p>&nbsp;     - 指针、内存管理等概念容易出错</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - ✗ **开发慢**</p>
+<p>&nbsp;     - 需要编译，改一点代码要重新编译</p>
+<p>&nbsp;     - 编译时间长</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - ✗ **调试相对困难**</p>
+<p>&nbsp;     - 报错信息有时不够清晰</p>
+<hr />
+<p>#### 适合场景</p>
+<div class="admonition info">
+<p class="admonition-title">推荐使用 C++ 的情况</p>
+</div>
+<p>&nbsp;   - ✓ 对性能要求高的应用</p>
+<p>&nbsp;   - ✓ 实时控制系统</p>
+<p>&nbsp;   - ✓ 硬件驱动开发</p>
+<p>&nbsp;   - ✓ 商业产品</p>
+<hr />
+<p>## 7.2 我的建议</p>
+<p>### 新手先用 Python！</p>
+<div class="admonition success">
+<p class="admonition-title">推荐学习路径</p>
+</div>
+<p>&nbsp;   **先用 Python 学习 ROS2 的概念和用法。**</p>
+<hr />
+<p>#### 为什么这样建议？</p>
+<p>1. **降低学习难度**</p>
+<p>&nbsp;  - 不用同时学 ROS2 和 C++ 语法</p>
+<p>&nbsp;  - 专注于理解 ROS2 的核心概念</p>
+<p>2. **快速看到效果**</p>
+<p>&nbsp;  - 写几行代码就能跑起来</p>
+<p>&nbsp;  - 增强学习信心</p>
+<p>3. **后续转 C++ 不难**</p>
+<p>&nbsp;  - ROS2 的 Python 和 C++ API 设计类似</p>
+<p>&nbsp;  - 概念清楚后，语法只是工具</p>
+<hr />
+<p>### 不要一上来就学 C++</p>
+<div class="admonition danger">
+<p class="admonition-title">常见误区</p>
+</div>
+<p>&nbsp;   别一上来就学 C++，</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   容易被语法劝退，</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   反而忽略了对 ROS2 本身的理解。</p>
+<hr />
+<p>## 7.3 Python 和 C++ 在 ROS2 中的对比</p>
+<p>### 代码对比</p>
+<p>同一个功能，用两种语言实现：</p>
+<hr />
+<p>#### Python 版本</p>
+<div class="highlight"><pre><span></span><code>\<span class="c1">#!/usr/bin/env python3</span>
 
+<span class="kn">import</span><span class="w"> </span><span class="nn">rclpy</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">rclpy.node</span><span class="w"> </span><span class="kn">import</span> <span class="n">Node</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">std</span>\<span class="n">_msgs</span><span class="o">.</span><span class="n">msg</span> <span class="kn">import</span><span class="w"> </span><span class="nn">String</span>
+
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PublisherNode</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="k">def</span><span class="w"> </span>\<span class="n">_</span>\<span class="n">_init</span>\<span class="n">_</span>\<span class="n">_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="nb">super</span><span class="p">()</span><span class="o">.</span>\<span class="n">_</span>\<span class="n">_init</span>\<span class="n">_</span>\<span class="n">_</span><span class="p">(</span><span class="s1">&#39;publisher\_node&#39;</span><span class="p">)</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span>\<span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create</span>\<span class="n">_publisher</span><span class="p">(</span><span class="n">String</span><span class="p">,</span> <span class="s1">&#39;topic&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="bp">self</span><span class="o">.</span><span class="n">timer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create</span>\<span class="n">_timer</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">timer</span>\<span class="n">_callback</span><span class="p">)</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="k">def</span><span class="w"> </span><span class="nf">timer</span>\<span class="n">_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="n">msg</span> <span class="o">=</span> <span class="n">String</span><span class="p">()</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="n">msg</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Hello </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">count</span><span class="si">}</span><span class="s1">&#39;</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="bp">self</span><span class="o">.</span><span class="n">publisher</span>\<span class="n">_</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="n">rclpy</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="n">node</span> <span class="o">=</span> <span class="n">PublisherNode</span><span class="p">()</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="n">rclpy</span><span class="o">.</span><span class="n">spin</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="n">rclpy</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
+
+
+
+<span class="k">if</span> \<span class="n">_</span>\<span class="n">_name</span>\<span class="n">_</span>\<span class="n">_</span> <span class="o">==</span> <span class="s1">&#39;\_\_main\_\_&#39;</span><span class="p">:</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<p>#### C++ 版本</p>
+<div class="highlight"><pre><span></span><code><span class="err">\#</span><span class="n">include</span><span class="w"> </span><span class="s">&quot;rclcpp/rclcpp.hpp&quot;</span>
+
+<span class="err">\#</span><span class="n">include</span><span class="w"> </span><span class="s">&quot;std\_msgs/msg/string.hpp&quot;</span>
+
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PublisherNode</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="w"> </span><span class="p">{</span>
+
+<span class="k">public</span><span class="o">:</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="n">PublisherNode</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">&quot;publisher\_node&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">count</span><span class="err">\</span><span class="n">_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">       </span><span class="n">publisher</span><span class="err">\</span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create</span><span class="err">\</span><span class="n">_publisher</span><span class="o">&lt;</span><span class="n">std</span><span class="err">\</span><span class="n">_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;topic&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">       </span><span class="n">timer</span><span class="err">\</span><span class="n">_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create</span><span class="err">\</span><span class="n">_wall</span><span class="err">\</span><span class="n">_timer</span><span class="p">(</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">           </span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">seconds</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">           </span><span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="err">\</span><span class="o">&amp;</span><span class="n">PublisherNode</span><span class="o">::</span><span class="n">timer</span><span class="err">\</span><span class="n">_callback</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">)</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">       </span><span class="p">);</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="p">}</span>
+
+
+
+<span class="k">private</span><span class="o">:</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="kt">void</span><span class="w"> </span><span class="n">timer</span><span class="err">\</span><span class="n">_callback</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">       </span><span class="k">auto</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="err">\</span><span class="n">_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="p">();</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">       </span><span class="n">msg</span><span class="p">.</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to</span><span class="err">\</span><span class="n">_string</span><span class="p">(</span><span class="n">count</span><span class="err">\</span><span class="n">_</span><span class="p">);</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">       </span><span class="n">publisher</span><span class="err">\</span><span class="n">_</span><span class="o">-&gt;</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">       </span><span class="n">count</span><span class="err">\</span><span class="n">_</span><span class="o">++</span><span class="p">;</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="p">}</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Publisher</span><span class="o">&lt;</span><span class="n">std</span><span class="err">\</span><span class="n">_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">publisher</span><span class="err">\</span><span class="n">_</span><span class="p">;</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">TimerBase</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">timer</span><span class="err">\</span><span class="n">_</span><span class="p">;</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="err">\</span><span class="n">_</span><span class="p">;</span>
+
+<span class="p">};</span>
+
+
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="err">\</span><span class="o">*</span><span class="err">\</span><span class="o">*</span><span class="w"> </span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="k">auto</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make</span><span class="err">\</span><span class="n">_shared</span><span class="o">&lt;</span><span class="n">PublisherNode</span><span class="o">&gt;</span><span class="p">();</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">spin</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<p>### 可以看到：</p>
+<div class="admonition info">
+<p class="admonition-title">代码对比</p>
+</div>
+<p>&nbsp;   - **Python 版本**</p>
+<p>&nbsp;     - 代码更简洁</p>
+<p>&nbsp;     - 可读性更强</p>
+<p>&nbsp;     - 20 多行代码</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - **C++ 版本**</p>
+<p>&nbsp;     - 代码更啰嗦</p>
+<p>&nbsp;     - 需要包含头文件</p>
+<p>&nbsp;     - 需要声明类型</p>
+<p>&nbsp;     - 30 多行代码</p>
+<hr />
+<p>## 7.4 性能对比</p>
+<p>### 实际测试</p>
+<div class="admonition info">
+<p class="admonition-title">性能数据</p>
+</div>
+<p>&nbsp;   对于简单的发布/订阅：</p>
+<p>&nbsp;   - C++ 延迟约 **0.1 ms**</p>
+<p>&nbsp;   - Python 延迟约 **1-2 ms**</p>
+<hr />
+<p>### 什么时候性能差异重要？</p>
+<div class="admonition warning">
+<p class="admonition-title">需要考虑性能的场景</p>
+</div>
+<p>&nbsp;   1. **高频控制**</p>
+<p>&nbsp;      - 比如 1000 Hz 的控制循环</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   2. **实时系统**</p>
+<p>&nbsp;      - 工业机器人</p>
+<p>&nbsp;      - 无人机姿态控制</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   3. **大量数据处理**</p>
+<p>&nbsp;      - 高速图像处理</p>
+<p>&nbsp;      - 点云处理</p>
+<hr />
+<p>### 什么时候性能差异不重要？</p>
+<div class="admonition success">
+<p class="admonition-title">Python 完全够用的场景</p>
+</div>
+<p>&nbsp;   1. **低频任务**</p>
+<p>&nbsp;      - 比如 10 Hz 的导航</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   2. **非实时应用**</p>
+<p>&nbsp;      - 数据记录</p>
+<p>&nbsp;      - 用户界面</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   3. **学习阶段**</p>
+<p>&nbsp;      - 理解概念最重要</p>
+<hr />
+<p>## 7.5 混合使用策略</p>
+<p>### 最佳实践</p>
+<div class="admonition success">
+<p class="admonition-title">工程化方案</p>
+</div>
+<p>&nbsp;   **Python 和 C++ 的节点可以在一个项目里共存！**</p>
+<hr />
+<p>### 混合使用的典型方案</p>
+<div class="highlight"><pre><span></span><code>机器人系统架构：
+
+
+
+底层控制（C++）
+
+&amp;nbsp;   ↓
+
+&amp;nbsp;   └─ 电机驱动节点（C++）
+
+&amp;nbsp;   └─ 传感器驱动节点（C++）
+
+&amp;nbsp;   └─ 实时控制节点（C++）
+
+
+
+中间层（Python/C++ 混合）
+
+&amp;nbsp;   ↓
+
+&amp;nbsp;   └─ SLAM 节点（C++）
+
+&amp;nbsp;   └─ 导航节点（C++）
+
+&amp;nbsp;   └─ 图像处理节点（Python）
+
+
+
+高层决策（Python）
+
+&amp;nbsp;   ↓
+
+&amp;nbsp;   └─ 任务规划节点（Python）
+
+&amp;nbsp;   └─ 用户界面节点（Python）
+
+&amp;nbsp;   └─ 数据记录节点（Python）
+</code></pre></div>
+<hr />
+<p>### 混合使用的优势</p>
+<div class="admonition info">
+<p class="admonition-title">各取所长</p>
+</div>
+<p>&nbsp;   - **性能关键部分用 C++**</p>
+<p>&nbsp;     - 保证实时性和效率</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - **快速开发部分用 Python**</p>
+<p>&nbsp;     - 提高开发效率</p>
+<p>&nbsp;     - 方便调试和修改</p>
+<hr />
+<p>## 7.6 学习路径建议</p>
+<p>### 阶段一：入门（1-2 个月）</p>
+<div class="admonition success">
+<p class="admonition-title">Python 入门</p>
+</div>
+<p>&nbsp;   - 只用 Python</p>
+<p>&nbsp;   - 学习 ROS2 核心概念</p>
+<p>&nbsp;   - 完成基础项目</p>
+<hr />
+<p>### 阶段二：进阶（2-3 个月）</p>
+<div class="admonition info">
+<p class="admonition-title">深入学习</p>
+</div>
+<p>&nbsp;   - 继续用 Python</p>
+<p>&nbsp;   - 学习更复杂的功能</p>
+<p>&nbsp;   - 导航、SLAM、机械臂控制等</p>
+<hr />
+<p>### 阶段三：优化（根据需求）</p>
+<div class="admonition tip">
+<p class="admonition-title">按需选择</p>
+</div>
+<p>&nbsp;   - 如果需要性能</p>
+<p>&nbsp;     - 学习 C++</p>
+<p>&nbsp;     - 重写关键节点</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   - 如果 Python 够用</p>
+<p>&nbsp;     - 继续用 Python</p>
+<p>&nbsp;     - 专注于应用开发</p>
+<hr />
+<p>## 7.7 其他语言支持</p>
+<p>### 社区支持的语言</p>
+<p>除了 Python 和 C++，ROS2 社区还有一些其他语言的实现：</p>
+<hr />
+<p>#### Rust</p>
+<div class="admonition info">
+<p class="admonition-title">新兴选择</p>
+</div>
+<p>&nbsp;   - 性能接近 C++</p>
+<p>&nbsp;   - 内存安全</p>
+<p>&nbsp;   - 适合系统编程</p>
+<p>**状态：** 社区开发中，不够成熟</p>
+<hr />
+<p>#### Java</p>
+<div class="admonition info">
+<p class="admonition-title">企业级</p>
+</div>
+<p>&nbsp;   - 适合企业应用</p>
+<p>&nbsp;   - 跨平台</p>
+<p>**状态：** 有官方支持，但不如 Python/C++ 完善</p>
+<hr />
+<p>#### JavaScript/TypeScript</p>
+<div class="admonition info">
+<p class="admonition-title">Web 开发</p>
+</div>
+<p>&nbsp;   - 适合 Web 界面开发</p>
+<p>&nbsp;   - ros2djs、ros3djs</p>
+<p>**状态：** 主要用于可视化，不用于核心开发</p>
+<hr />
+<p>### 建议</p>
+<div class="admonition tip">
+<p class="admonition-title">语言选择</p>
+</div>
+<p>&nbsp;   **对于学习和开发，还是建议专注于 Python 和 C++。**</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   其他语言可以作为了解，</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   但不要在学习阶段增加额外负担。</p>
+<hr />
+<p>## 7.8 常见问题</p>
+<p>### 问题1：我只会 Python，能找到工作吗？</p>
+<div class="admonition success">
+<p class="admonition-title">完全可以</p>
+</div>
+<p>&nbsp;   - 很多公司的 ROS 项目主要用 Python</p>
+<p>&nbsp;   - 特别是研究型岗位</p>
+<p>&nbsp;   - 但如果会 C++，选择会更多</p>
+<hr />
+<p>### 问题2：我只会 C++，可以吗？</p>
+<div class="admonition info">
+<p class="admonition-title">当然可以</p>
+</div>
+<p>&nbsp;   - 很多底层开发必须用 C++</p>
+<p>&nbsp;   - 但建议也了解 Python</p>
+<p>&nbsp;   - 可以提高开发效率</p>
+<hr />
+<p>### 问题3：我应该花多少时间学 C++？</p>
+<div class="admonition tip">
+<p class="admonition-title">建议</p>
+</div>
+<p>&nbsp;   如果你的主要目标是学 ROS2：</p>
+<p>&nbsp;   </p>
+<p>&nbsp;   1. **先用 2-3 个月学好 ROS2（用 Python）**</p>
+<p>&nbsp;   2. **然后根据需求决定是否学 C++**</p>
+<p>&nbsp;   3. **如果要学 C++，再花 1-2 个月**</p>
+<hr />
+<p>### 问题4：Python 节点和 C++ 节点能通信吗？</p>
+<div class="admonition success">
+<p class="admonition-title">完全可以</p>
+</div>
+<p>&nbsp;   - ROS2 的通信是语言无关的</p>
+<p>&nbsp;   - Python 节点和 C++ 节点可以无缝通信</p>
+<p>&nbsp;   - 这也是混合开发的基础</p>
+<hr />
+<p>## 7.9 代码风格建议</p>
+<p>### Python 代码风格</p>
+<p>遵循 **PEP 8** 规范：</p>
+<div class="highlight"><pre><span></span><code>\<span class="c1"># 好的命名</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">RobotController</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="k">def</span><span class="w"> </span>\<span class="n">_</span>\<span class="n">_init</span>\<span class="n">_</span>\<span class="n">_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="bp">self</span><span class="o">.</span><span class="n">max</span>\<span class="n">_speed</span> <span class="o">=</span> <span class="mf">2.0</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="k">def</span><span class="w"> </span><span class="nf">calculate</span>\<span class="n">_velocity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">distance</span><span class="p">):</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max</span>\<span class="n">_speed</span><span class="p">)</span>
+
+
+
+\<span class="c1"># 不好的命名</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">rc</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="k">def</span><span class="w"> </span>\<span class="n">_</span>\<span class="n">_init</span>\<span class="n">_</span>\<span class="n">_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="bp">self</span><span class="o">.</span><span class="n">ms</span> <span class="o">=</span> <span class="mf">2.0</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>   <span class="k">def</span><span class="w"> </span><span class="nf">cv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span>       <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ms</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<p>### C++ 代码风格</p>
+<p>遵循 **Google C++ Style Guide** 或 **ROS2 Style Guide**：</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// 好的命名</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">RobotController</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="w"> </span><span class="p">{</span>
+
+<span class="k">private</span><span class="o">:</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="kt">double</span><span class="w"> </span><span class="n">max</span><span class="err">\</span><span class="n">_speed</span><span class="err">\</span><span class="n">_</span><span class="p">;</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span>
+
+<span class="k">public</span><span class="o">:</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="kt">double</span><span class="w"> </span><span class="nf">calculateVelocity</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">distance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">       </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span><span class="w"> </span><span class="n">max</span><span class="err">\</span><span class="n">_speed</span><span class="err">\</span><span class="n">_</span><span class="p">);</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="p">}</span>
+
+<span class="p">};</span>
+
+
+
+<span class="c1">// 不好的命名</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">RC</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="w"> </span><span class="p">{</span>
+
+<span class="k">private</span><span class="o">:</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="kt">double</span><span class="w"> </span><span class="n">ms</span><span class="p">;</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span>
+
+<span class="k">public</span><span class="o">:</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="kt">double</span><span class="w"> </span><span class="nf">cv</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">       </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">ms</span><span class="p">);</span>
+
+<span class="o">&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="w">   </span><span class="p">}</span>
+
+<span class="p">};</span>
+</code></pre></div>
+<hr />
+<p>## 本：</p>
+<p>1. **ROS2 官方支持两种语言**</p>
+<p>&nbsp;  - Python（rclpy）：简单、开发快</p>
+<p>&nbsp;  - C++（rclcpp）：性能好、支持实时</p>
+<p>2. **语言选择建议**</p>
+<p>&nbsp;  - 新手先用 Python</p>
+<p>&nbsp;  - 需要性能时用 C++</p>
+<p>&nbsp;  - 可以混合使用</p>
+<p>3. **学习路径**</p>
+<p>&nbsp;  - 先用 Python 学 ROS2 概念</p>
+<p>&nbsp;  - 根据需求决定是否学 C++</p>
+<p>&nbsp;  - 不要在学习初期增加额外负担</p>
+<p>4. **混合开发**</p>
+<p>&nbsp;  - Python 和 C++ 节点可以共存</p>
+<p>&nbsp;  - 各取所长，提高开发效率</p>
+<hr />
+<p>## 下一章预告</p>
+<p>下一章我们会进入实战部分：</p>
+<blockquote>
+<p>**Ubuntu 系统安装教程——搭建环境**</p>
+</blockquote>
+<p>手把手教你安装 Ubuntu 系统，</p>
+<p>为学习 ROS2 做好准备。</p>
 
 
 
