@@ -23,7 +23,7 @@
     
     
       
-        <title>07 安装 Ubuntu - ROS2 Newbie Guide</title>
+        <title>07 ROS2 支持哪些编程语言——选择适合你的 - ROS2 新手指导</title>
       
     
     
@@ -46,8 +46,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -65,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ros2" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -77,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="ROS2 Newbie Guide" class="md-header__button md-logo" aria-label="ROS2 Newbie Guide" data-md-component="logo">
+    <a href="../.." title="ROS2 新手指导" class="md-header__button md-logo" aria-label="ROS2 新手指导" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -91,13 +94,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            ROS2 Newbie Guide
+            ROS2 新手指导
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              07 安装 Ubuntu
+              07 ROS2 支持哪些编程语言——选择适合你的
             
           </span>
         </div>
@@ -175,13 +178,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ROS2 Newbie Guide" class="md-nav__button md-logo" aria-label="ROS2 Newbie Guide" data-md-component="logo">
+    <a href="../.." title="ROS2 新手指导" class="md-nav__button md-logo" aria-label="ROS2 新手指导" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    ROS2 Newbie Guide
+    ROS2 新手指导
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -302,7 +305,7 @@
   <span class="md-ellipsis">
     
   
-    02 ROS2 能干什么
+    02 ROS2能干什么——了解它的实际用途
   
 
     
@@ -330,7 +333,7 @@
   <span class="md-ellipsis">
     
   
-    03 ROS1 vs ROS2
+    03 ROS2 的前身 ROS1——知道它从哪来
   
 
     
@@ -358,7 +361,7 @@
   <span class="md-ellipsis">
     
   
-    04 为什么选择 Ubuntu
+    04 为什么选择 Ubuntu 20.04/22.04
   
 
     
@@ -468,7 +471,7 @@
   <span class="md-ellipsis">
     
   
-    06 开发工具
+    06 开发工具介绍——认识你的"武器库"
   
 
     
@@ -551,6 +554,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 ROS2 支持哪些编程语言——选择适合你的
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -559,7 +582,7 @@
   <span class="md-ellipsis">
     
   
-    07 安装 Ubuntu
+    07 ROS2 支持哪些编程语言——选择适合你的
   
 
     
@@ -568,6 +591,615 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 官方支持的两种语言
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 官方支持的两种语言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pythonrclpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python（rclpy）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python（rclpy）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        缺点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        适合场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crclcpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C++（rclcpp）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C++（rclcpp）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        缺点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        适合场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 我的建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 我的建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        新手先用 Python！
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="新手先用 Python！">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这样建议？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不要一上来就学 C++
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-python-c-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Python 和 C++ 在 ROS2 中的对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 Python 和 C++ 在 ROS2 中的对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        代码对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="代码对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python 版本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C++ 版本
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可以看到：
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 性能对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 性能对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实际测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么时候性能差异重要？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么时候性能差异不重要？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 混合使用策略
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.5 混合使用策略">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最佳实践
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        混合使用的典型方案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        混合使用的优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6 学习路径建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.6 学习路径建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段一：入门（1-2 个月）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段二：进阶（2-3 个月）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段三：优化（根据需求）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#77" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7 其他语言支持
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.7 其他语言支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        社区支持的语言
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="社区支持的语言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rust" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rust
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Java
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascripttypescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JavaScript/TypeScript
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#78" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.8 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.8 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题1：我只会 Python，能找到工作吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题2：我只会 C++，可以吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题3：我应该花多少时间学 C++？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4python-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题4：Python 节点和 C++ 节点能通信吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#79" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.9 代码风格建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.9 代码风格建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python 代码风格
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C++ 代码风格
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结：
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -588,7 +1220,7 @@
   <span class="md-ellipsis">
     
   
-    08 安装 ROS2
+    08 Ubuntu 系统安装教程——搭建环境
   
 
     
@@ -670,7 +1302,7 @@
   <span class="md-ellipsis">
     
   
-    09 核心概念速通
+    09 ROS2 安装教程——安装核心软件
   
 
     
@@ -698,7 +1330,7 @@
   <span class="md-ellipsis">
     
   
-    10 Hello Node
+    10 ROS2 核心概念详解——最重要的知识点
   
 
     
@@ -726,7 +1358,7 @@
   <span class="md-ellipsis">
     
   
-    11 Pub/Sub
+    11 第一个 ROS2 程序——Hello World
   
 
     
@@ -754,7 +1386,7 @@
   <span class="md-ellipsis">
     
   
-    12 turtlesim
+    12 项目实战——发布者与订阅者通信
   
 
     
@@ -836,7 +1468,7 @@
   <span class="md-ellipsis">
     
   
-    13 常见问题与排障
+    13 进阶项目——控制小海龟运动
   
 
     
@@ -864,7 +1496,7 @@
   <span class="md-ellipsis">
     
   
-    14 资源与下一步
+    14 常见问题与解决方案——遇到问题别慌
   
 
     
@@ -902,6 +1534,606 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 官方支持的两种语言
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 官方支持的两种语言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pythonrclpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python（rclpy）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Python（rclpy）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        缺点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        适合场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crclcpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C++（rclcpp）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C++（rclcpp）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        优点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        缺点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        适合场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 我的建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.2 我的建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        新手先用 Python！
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="新手先用 Python！">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这样建议？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        不要一上来就学 C++
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73-python-c-ros2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Python 和 C++ 在 ROS2 中的对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 Python 和 C++ 在 ROS2 中的对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        代码对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="代码对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python 版本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C++ 版本
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        可以看到：
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 性能对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 性能对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        实际测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么时候性能差异重要？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么时候性能差异不重要？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 混合使用策略
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.5 混合使用策略">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        最佳实践
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        混合使用的典型方案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        混合使用的优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6 学习路径建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.6 学习路径建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段一：入门（1-2 个月）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段二：进阶（2-3 个月）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        阶段三：优化（根据需求）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#77" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7 其他语言支持
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.7 其他语言支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        社区支持的语言
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="社区支持的语言">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rust" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rust
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Java
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#javascripttypescript" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JavaScript/TypeScript
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#78" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.8 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.8 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题1：我只会 Python，能找到工作吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题2：我只会 C++，可以吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题3：我应该花多少时间学 C++？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4python-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题4：Python 节点和 C++ 节点能通信吗？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#79" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.9 代码风格建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.9 代码风格建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Python 代码风格
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C++ 代码风格
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结：
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -918,9 +2150,559 @@
 
 
 
-  <h1>07 安装 Ubuntu</h1>
+<h1 id="ros2">第七章：ROS2 支持哪些编程语言——选择适合你的<a class="headerlink" href="#ros2" title="Permanent link">&para;</a></h1>
+<p>ROS2 支持多种编程语言，但官方主推的是两种：</p>
+<ul>
+<li><strong>Python（rclpy）</strong></li>
+<li><strong>C++（rclcpp）</strong></li>
+</ul>
+<p>这一章我们详细聊聊这两种语言在 ROS2 中的应用。</p>
+<hr />
+<h2 id="71">7.1 官方支持的两种语言<a class="headerlink" href="#71" title="Permanent link">&para;</a></h2>
+<h3 id="pythonrclpy">Python（rclpy）<a class="headerlink" href="#pythonrclpy" title="Permanent link">&para;</a></h3>
+<h4 id="_1">优点<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">Python 的优势</p>
+<ul>
+<li>✓ <strong>语法简单</strong></li>
+<li>
+<p>代码量少，可读性强</p>
+</li>
+<li>
+<p>✓ <strong>开发快</strong></p>
+</li>
+<li>
+<p>不需要编译，改完直接运行</p>
+</li>
+<li>
+<p>✓ <strong>调试方便</strong></p>
+</li>
+<li>
+<p>报错信息清晰，容易定位问题</p>
+</li>
+<li>
+<p>✓ <strong>第三方库多</strong></p>
+</li>
+<li>NumPy、OpenCV、TensorFlow 等</li>
+<li>数据处理、图像处理、机器学习都很方便</li>
+</ul>
+</div>
+<hr />
+<h4 id="_2">缺点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Python 的劣势</p>
+<ul>
+<li>✗ <strong>运行慢</strong></li>
+<li>
+<p>解释型语言，性能比 C++ 差</p>
+</li>
+<li>
+<p>✗ <strong>不支持实时系统</strong></p>
+</li>
+<li>有 GIL（全局解释器锁）</li>
+<li>无法保证确定性响应时间</li>
+</ul>
+</div>
+<hr />
+<h4 id="_3">适合场景<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">推荐使用 Python 的情况</p>
+<ul>
+<li>✓ 学习入门</li>
+<li>✓ 快速验证想法</li>
+<li>✓ 对性能要求不高的应用</li>
+<li>✓ 数据处理和分析</li>
+<li>✓ 深度学习相关应用</li>
+</ul>
+</div>
+<hr />
+<h3 id="crclcpp">C++（rclcpp）<a class="headerlink" href="#crclcpp" title="Permanent link">&para;</a></h3>
+<h4 id="_4">优点<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">C++ 的优势</p>
+<ul>
+<li>✓ <strong>运行快</strong></li>
+<li>
+<p>编译型语言，性能优秀</p>
+</li>
+<li>
+<p>✓ <strong>性能好</strong></p>
+</li>
+<li>
+<p>可以充分利用硬件性能</p>
+</li>
+<li>
+<p>✓ <strong>支持实时</strong></p>
+</li>
+<li>
+<p>可以用于实时控制系统</p>
+</li>
+<li>
+<p>✓ <strong>底层驱动多是 C++ 写的</strong></p>
+</li>
+<li>与硬件交互更直接</li>
+</ul>
+</div>
+<hr />
+<h4 id="_5">缺点<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">C++ 的劣势</p>
+<ul>
+<li>✗ <strong>语法复杂</strong></li>
+<li>学习曲线陡峭</li>
+<li>
+<p>指针、内存管理等概念容易出错</p>
+</li>
+<li>
+<p>✗ <strong>开发慢</strong></p>
+</li>
+<li>需要编译，改一点代码要重新编译</li>
+<li>
+<p>编译时间长</p>
+</li>
+<li>
+<p>✗ <strong>调试相对困难</strong></p>
+</li>
+<li>报错信息有时不够清晰</li>
+</ul>
+</div>
+<hr />
+<h4 id="_6">适合场景<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">推荐使用 C++ 的情况</p>
+<ul>
+<li>✓ 对性能要求高的应用</li>
+<li>✓ 实时控制系统</li>
+<li>✓ 硬件驱动开发</li>
+<li>✓ 商业产品</li>
+</ul>
+</div>
+<hr />
+<h2 id="72">7.2 我的建议<a class="headerlink" href="#72" title="Permanent link">&para;</a></h2>
+<h3 id="python">新手先用 Python！<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">推荐学习路径</p>
+<p><strong>先用 Python 学习 ROS2 的概念和用法。</strong></p>
+</div>
+<hr />
+<h4 id="_7">为什么这样建议？<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>降低学习难度</strong></li>
+<li>不用同时学 ROS2 和 C++ 语法</li>
+<li>
+<p>专注于理解 ROS2 的核心概念</p>
+</li>
+<li>
+<p><strong>快速看到效果</strong></p>
+</li>
+<li>写几行代码就能跑起来</li>
+<li>
+<p>增强学习信心</p>
+</li>
+<li>
+<p><strong>后续转 C++ 不难</strong></p>
+</li>
+<li>ROS2 的 Python 和 C++ API 设计类似</li>
+<li>概念清楚后，语法只是工具</li>
+</ol>
+<hr />
+<h3 id="c">不要一上来就学 C++<a class="headerlink" href="#c" title="Permanent link">&para;</a></h3>
+<div class="admonition danger">
+<p class="admonition-title">常见误区</p>
+<p>别一上来就学 C++，</p>
+<p>容易被语法劝退，</p>
+<p>反而忽略了对 ROS2 本身的理解。</p>
+</div>
+<hr />
+<h2 id="73-python-c-ros2">7.3 Python 和 C++ 在 ROS2 中的对比<a class="headerlink" href="#73-python-c-ros2" title="Permanent link">&para;</a></h2>
+<h3 id="_8">代码对比<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>同一个功能，用两种语言实现：</p>
+<hr />
+<h4 id="python_1">Python 版本<a class="headerlink" href="#python_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">rclpy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rclpy.node</span><span class="w"> </span><span class="kn">import</span> <span class="n">Node</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">std_msgs.msg</span><span class="w"> </span><span class="kn">import</span> <span class="n">String</span>
 
+<span class="k">class</span><span class="w"> </span><span class="nc">PublisherNode</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;publisher_node&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">publisher_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_publisher</span><span class="p">(</span><span class="n">String</span><span class="p">,</span> <span class="s1">&#39;topic&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_timer</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">timer_callback</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 
+    <span class="k">def</span><span class="w"> </span><span class="nf">timer_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="n">String</span><span class="p">()</span>
+        <span class="n">msg</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Hello </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">count</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">publisher_</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="n">rclpy</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+    <span class="n">node</span> <span class="o">=</span> <span class="n">PublisherNode</span><span class="p">()</span>
+    <span class="n">rclpy</span><span class="o">.</span><span class="n">spin</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+    <span class="n">rclpy</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h4 id="c_1">C++ 版本<a class="headerlink" href="#c_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rclcpp/rclcpp.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;std_msgs/msg/string.hpp&quot;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PublisherNode</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">PublisherNode</span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Node</span><span class="p">(</span><span class="s">&quot;publisher_node&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">count_</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">publisher_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_publisher</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;topic&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">        </span><span class="n">timer_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">create_wall_timer</span><span class="p">(</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">seconds</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+<span class="w">            </span><span class="n">std</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="o">&amp;</span><span class="n">PublisherNode</span><span class="o">::</span><span class="n">timer_callback</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">)</span>
+<span class="w">        </span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">timer_callback</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">auto</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="p">();</span>
+<span class="w">        </span><span class="n">msg</span><span class="p">.</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">to_string</span><span class="p">(</span><span class="n">count_</span><span class="p">);</span>
+<span class="w">        </span><span class="n">publisher_</span><span class="o">-&gt;</span><span class="n">publish</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+<span class="w">        </span><span class="n">count_</span><span class="o">++</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Publisher</span><span class="o">&lt;</span><span class="n">std_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">String</span><span class="o">&gt;::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">publisher_</span><span class="p">;</span>
+<span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">TimerBase</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="n">timer_</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">count_</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">**</span><span class="w"> </span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">init</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">);</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">node</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">PublisherNode</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">spin</span><span class="p">(</span><span class="n">node</span><span class="p">);</span>
+<span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">shutdown</span><span class="p">();</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h3 id="_9">可以看到：<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">代码对比</p>
+<ul>
+<li><strong>Python 版本</strong></li>
+<li>代码更简洁</li>
+<li>可读性更强</li>
+<li>
+<p>20 多行代码</p>
+</li>
+<li>
+<p><strong>C++ 版本</strong></p>
+</li>
+<li>代码更啰嗦</li>
+<li>需要包含头文件</li>
+<li>需要声明类型</li>
+<li>30 多行代码</li>
+</ul>
+</div>
+<hr />
+<h2 id="74">7.4 性能对比<a class="headerlink" href="#74" title="Permanent link">&para;</a></h2>
+<h3 id="_10">实际测试<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">性能数据</p>
+<p>对于简单的发布/订阅：
+- C++ 延迟约 <strong>0.1 ms</strong>
+- Python 延迟约 <strong>1-2 ms</strong></p>
+</div>
+<hr />
+<h3 id="_11">什么时候性能差异重要？<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">需要考虑性能的场景</p>
+<ol>
+<li><strong>高频控制</strong></li>
+<li>
+<p>比如 1000 Hz 的控制循环</p>
+</li>
+<li>
+<p><strong>实时系统</strong></p>
+</li>
+<li>工业机器人</li>
+<li>
+<p>无人机姿态控制</p>
+</li>
+<li>
+<p><strong>大量数据处理</strong></p>
+</li>
+<li>高速图像处理</li>
+<li>点云处理</li>
+</ol>
+</div>
+<hr />
+<h3 id="_12">什么时候性能差异不重要？<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">Python 完全够用的场景</p>
+<ol>
+<li><strong>低频任务</strong></li>
+<li>
+<p>比如 10 Hz 的导航</p>
+</li>
+<li>
+<p><strong>非实时应用</strong></p>
+</li>
+<li>数据记录</li>
+<li>
+<p>用户界面</p>
+</li>
+<li>
+<p><strong>学习阶段</strong></p>
+</li>
+<li>理解概念最重要</li>
+</ol>
+</div>
+<hr />
+<h2 id="75">7.5 混合使用策略<a class="headerlink" href="#75" title="Permanent link">&para;</a></h2>
+<h3 id="_13">最佳实践<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">工程化方案</p>
+<p><strong>Python 和 C++ 的节点可以在一个项目里共存！</strong></p>
+</div>
+<hr />
+<h3 id="_14">混合使用的典型方案<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>机器人系统架构：
+
+底层控制（C++）
+    ↓
+    └─ 电机驱动节点（C++）
+    └─ 传感器驱动节点（C++）
+    └─ 实时控制节点（C++）
+
+中间层（Python/C++ 混合）
+    ↓
+    └─ SLAM 节点（C++）
+    └─ 导航节点（C++）
+    └─ 图像处理节点（Python）
+
+高层决策（Python）
+    ↓
+    └─ 任务规划节点（Python）
+    └─ 用户界面节点（Python）
+    └─ 数据记录节点（Python）
+</code></pre></div>
+<hr />
+<h3 id="_15">混合使用的优势<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">各取所长</p>
+<ul>
+<li><strong>性能关键部分用 C++</strong></li>
+<li>
+<p>保证实时性和效率</p>
+</li>
+<li>
+<p><strong>快速开发部分用 Python</strong></p>
+</li>
+<li>提高开发效率</li>
+<li>方便调试和修改</li>
+</ul>
+</div>
+<hr />
+<h2 id="76">7.6 学习路径建议<a class="headerlink" href="#76" title="Permanent link">&para;</a></h2>
+<h3 id="1-2">阶段一：入门（1-2 个月）<a class="headerlink" href="#1-2" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">Python 入门</p>
+<ul>
+<li>只用 Python</li>
+<li>学习 ROS2 核心概念</li>
+<li>完成基础项目</li>
+</ul>
+</div>
+<hr />
+<h3 id="2-3">阶段二：进阶（2-3 个月）<a class="headerlink" href="#2-3" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">深入学习</p>
+<ul>
+<li>继续用 Python</li>
+<li>学习更复杂的功能</li>
+<li>导航、SLAM、机械臂控制等</li>
+</ul>
+</div>
+<hr />
+<h3 id="_16">阶段三：优化（根据需求）<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">按需选择</p>
+<ul>
+<li>如果需要性能</li>
+<li>学习 C++</li>
+<li>
+<p>重写关键节点</p>
+</li>
+<li>
+<p>如果 Python 够用</p>
+</li>
+<li>继续用 Python</li>
+<li>专注于应用开发</li>
+</ul>
+</div>
+<hr />
+<h2 id="77">7.7 其他语言支持<a class="headerlink" href="#77" title="Permanent link">&para;</a></h2>
+<h3 id="_17">社区支持的语言<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>除了 Python 和 C++，ROS2 社区还有一些其他语言的实现：</p>
+<hr />
+<h4 id="rust">Rust<a class="headerlink" href="#rust" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">新兴选择</p>
+<ul>
+<li>性能接近 C++</li>
+<li>内存安全</li>
+<li>适合系统编程</li>
+</ul>
+</div>
+<p><strong>状态：</strong> 社区开发中，不够成熟</p>
+<hr />
+<h4 id="java">Java<a class="headerlink" href="#java" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">企业级</p>
+<ul>
+<li>适合企业应用</li>
+<li>跨平台</li>
+</ul>
+</div>
+<p><strong>状态：</strong> 有官方支持，但不如 Python/C++ 完善</p>
+<hr />
+<h4 id="javascripttypescript">JavaScript/TypeScript<a class="headerlink" href="#javascripttypescript" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">Web 开发</p>
+<ul>
+<li>适合 Web 界面开发</li>
+<li>ros2djs、ros3djs</li>
+</ul>
+</div>
+<p><strong>状态：</strong> 主要用于可视化，不用于核心开发</p>
+<hr />
+<h3 id="_18">建议<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">语言选择</p>
+<p><strong>对于学习和开发，还是建议专注于 Python 和 C++。</strong></p>
+<p>其他语言可以作为了解，</p>
+<p>但不要在学习阶段增加额外负担。</p>
+</div>
+<hr />
+<h2 id="78">7.8 常见问题<a class="headerlink" href="#78" title="Permanent link">&para;</a></h2>
+<h3 id="1-python">问题1：我只会 Python，能找到工作吗？<a class="headerlink" href="#1-python" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">完全可以</p>
+<ul>
+<li>很多公司的 ROS 项目主要用 Python</li>
+<li>特别是研究型岗位</li>
+<li>但如果会 C++，选择会更多</li>
+</ul>
+</div>
+<hr />
+<h3 id="2-c">问题2：我只会 C++，可以吗？<a class="headerlink" href="#2-c" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">当然可以</p>
+<ul>
+<li>很多底层开发必须用 C++</li>
+<li>但建议也了解 Python</li>
+<li>可以提高开发效率</li>
+</ul>
+</div>
+<hr />
+<h3 id="3-c">问题3：我应该花多少时间学 C++？<a class="headerlink" href="#3-c" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">建议</p>
+<p>如果你的主要目标是学 ROS2：</p>
+<ol>
+<li><strong>先用 2-3 个月学好 ROS2（用 Python）</strong></li>
+<li><strong>然后根据需求决定是否学 C++</strong></li>
+<li><strong>如果要学 C++，再花 1-2 个月</strong></li>
+</ol>
+</div>
+<hr />
+<h3 id="4python-c">问题4：Python 节点和 C++ 节点能通信吗？<a class="headerlink" href="#4python-c" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">完全可以</p>
+<ul>
+<li>ROS2 的通信是语言无关的</li>
+<li>Python 节点和 C++ 节点可以无缝通信</li>
+<li>这也是混合开发的基础</li>
+</ul>
+</div>
+<hr />
+<h2 id="79">7.9 代码风格建议<a class="headerlink" href="#79" title="Permanent link">&para;</a></h2>
+<h3 id="python_2">Python 代码风格<a class="headerlink" href="#python_2" title="Permanent link">&para;</a></h3>
+<p>遵循 <strong>PEP 8</strong> 规范：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 好的命名</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">RobotController</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_speed</span> <span class="o">=</span> <span class="mf">2.0</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">calculate_velocity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">distance</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_speed</span><span class="p">)</span>
+
+<span class="c1"># 不好的命名</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">rc</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ms</span> <span class="o">=</span> <span class="mf">2.0</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">cv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">min</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ms</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="c_2">C++ 代码风格<a class="headerlink" href="#c_2" title="Permanent link">&para;</a></h3>
+<p>遵循 <strong>Google C++ Style Guide</strong> 或 <strong>ROS2 Style Guide</strong>：</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// 好的命名</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">RobotController</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="w"> </span><span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">max_speed_</span><span class="p">;</span>
+
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">calculateVelocity</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">distance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span><span class="w"> </span><span class="n">max_speed_</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="c1">// 不好的命名</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">RC</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="w"> </span><span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">ms</span><span class="p">;</span>
+
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">cv</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">ms</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
+<hr />
+<h2 id="_19">本章小结：<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>ROS2 官方支持两种语言</strong></p>
+<p>Python（rclpy）：简单、开发快</p>
+<p>C++（rclcpp）：性能好、支持实时</p>
+</li>
+<li>
+<p><strong>语言选择建议</strong></p>
+<p>新手先用 Python</p>
+<p>需要性能时用 C++</p>
+<p>可以混合使用</p>
+</li>
+<li>
+<p><strong>学习路径</strong></p>
+<p>先用 Python 学 ROS2 概念</p>
+<p>根据需求决定是否学 C++</p>
+<p>不要在学习初期增加额外负担</p>
+</li>
+<li>
+<p><strong>混合开发</strong></p>
+<p>Python 和 C++ 节点可以共存</p>
+<p>各取所长，提高开发效率</p>
+</li>
+</ol>
+<hr />
+<h2 id="_20">下一章预告<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<p>下一章我们会进入实战部分：</p>
+<blockquote>
+<p><strong>Ubuntu 系统安装教程——搭建环境</strong></p>
+</blockquote>
+<p>手把手教你安装 Ubuntu 系统，</p>
+<p>为学习 ROS2 做好准备。</p>
 
 
 

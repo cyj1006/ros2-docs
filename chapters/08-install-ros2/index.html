@@ -23,7 +23,7 @@
     
     
       
-        <title>08 安装 ROS2 - ROS2 Newbie Guide</title>
+        <title>08 Ubuntu 系统安装教程——搭建环境 - ROS2 新手指导</title>
       
     
     
@@ -46,8 +46,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -65,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ubuntu" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -77,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="ROS2 Newbie Guide" class="md-header__button md-logo" aria-label="ROS2 Newbie Guide" data-md-component="logo">
+    <a href="../.." title="ROS2 新手指导" class="md-header__button md-logo" aria-label="ROS2 新手指导" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -91,13 +94,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            ROS2 Newbie Guide
+            ROS2 新手指导
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              08 安装 ROS2
+              08 Ubuntu 系统安装教程——搭建环境
             
           </span>
         </div>
@@ -175,13 +178,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ROS2 Newbie Guide" class="md-nav__button md-logo" aria-label="ROS2 Newbie Guide" data-md-component="logo">
+    <a href="../.." title="ROS2 新手指导" class="md-nav__button md-logo" aria-label="ROS2 新手指导" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    ROS2 Newbie Guide
+    ROS2 新手指导
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -302,7 +305,7 @@
   <span class="md-ellipsis">
     
   
-    02 ROS2 能干什么
+    02 ROS2能干什么——了解它的实际用途
   
 
     
@@ -330,7 +333,7 @@
   <span class="md-ellipsis">
     
   
-    03 ROS1 vs ROS2
+    03 ROS2 的前身 ROS1——知道它从哪来
   
 
     
@@ -358,7 +361,7 @@
   <span class="md-ellipsis">
     
   
-    04 为什么选择 Ubuntu
+    04 为什么选择 Ubuntu 20.04/22.04
   
 
     
@@ -468,7 +471,7 @@
   <span class="md-ellipsis">
     
   
-    06 开发工具
+    06 开发工具介绍——认识你的"武器库"
   
 
     
@@ -552,7 +555,7 @@
   <span class="md-ellipsis">
     
   
-    07 安装 Ubuntu
+    07 ROS2 支持哪些编程语言——选择适合你的
   
 
     
@@ -579,6 +582,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 Ubuntu 系统安装教程——搭建环境
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -587,7 +610,7 @@
   <span class="md-ellipsis">
     
   
-    08 安装 ROS2
+    08 Ubuntu 系统安装教程——搭建环境
   
 
     
@@ -596,6 +619,753 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 准备工作
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1 准备工作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#811-vmware-workstation-player" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.1 下载 VMware Workstation Player
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1.1 下载 VMware Workstation Player">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows 用户
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mac 用户
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安装 VMware
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812-ubuntu-2204-iso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.2 下载 Ubuntu 22.04 ISO 镜像
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1.2 下载 Ubuntu 22.04 ISO 镜像">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        官方下载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        国内镜像（推荐，速度快）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        选择正确的文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#813" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.3 检查硬件要求
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 创建虚拟机
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2 创建虚拟机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-vmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.1 启动 VMware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2 选择安装方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.3 配置用户信息
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#824" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.4 配置虚拟机位置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.5 配置磁盘大小
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#826" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.6 自定义硬件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2.6 自定义硬件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        内存
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        处理器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        显示器（重要！）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络适配器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        其他设备
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#827" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.7 完成创建
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 安装 Ubuntu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3 安装 Ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#831" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.1 启动虚拟机
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#832" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.2 等待自动安装
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3.2 等待自动安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        你会看到：
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#833" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.3 首次登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#834" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.4 初始配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 安装后的配置
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4 安装后的配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#841-vmware-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.1 安装 VMware Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4.1 安装 VMware Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安装步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#842" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.2 更换软件源（重要！）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4.2 更换软件源（重要！）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法一：图形化界面
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#843" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.3 更新系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#844" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.4 安装常用工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#845" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.5 安装中文输入法（可选）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#846-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.6 配置 SSH（可选）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 虚拟机使用技巧
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5 虚拟机使用技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#851" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.1 快照功能（非常重要！）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.1 快照功能（非常重要！）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创建快照
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        恢复快照
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#852" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.2 共享文件夹
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.2 共享文件夹">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        设置方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        访问共享文件夹
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#853" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.3 全屏显示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#854" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.4 复制粘贴
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.6 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题1：虚拟机启动很慢
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2gazebo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题2：Gazebo 黑屏
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题3：网络连接不上
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题4：分辨率调整不了
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 性能优化建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.7 性能优化建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#871" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7.1 关闭不必要的后台服务
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#872" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7.2 调整虚拟机配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#873-ssd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7.3 使用 SSD
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -670,7 +1440,7 @@
   <span class="md-ellipsis">
     
   
-    09 核心概念速通
+    09 ROS2 安装教程——安装核心软件
   
 
     
@@ -698,7 +1468,7 @@
   <span class="md-ellipsis">
     
   
-    10 Hello Node
+    10 ROS2 核心概念详解——最重要的知识点
   
 
     
@@ -726,7 +1496,7 @@
   <span class="md-ellipsis">
     
   
-    11 Pub/Sub
+    11 第一个 ROS2 程序——Hello World
   
 
     
@@ -754,7 +1524,7 @@
   <span class="md-ellipsis">
     
   
-    12 turtlesim
+    12 项目实战——发布者与订阅者通信
   
 
     
@@ -836,7 +1606,7 @@
   <span class="md-ellipsis">
     
   
-    13 常见问题与排障
+    13 进阶项目——控制小海龟运动
   
 
     
@@ -864,7 +1634,7 @@
   <span class="md-ellipsis">
     
   
-    14 资源与下一步
+    14 常见问题与解决方案——遇到问题别慌
   
 
     
@@ -902,6 +1672,744 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 准备工作
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1 准备工作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#811-vmware-workstation-player" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.1 下载 VMware Workstation Player
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1.1 下载 VMware Workstation Player">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows 用户
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mac 用户
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安装 VMware
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812-ubuntu-2204-iso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.2 下载 Ubuntu 22.04 ISO 镜像
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1.2 下载 Ubuntu 22.04 ISO 镜像">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        官方下载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        国内镜像（推荐，速度快）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        选择正确的文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#813" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.3 检查硬件要求
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 创建虚拟机
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2 创建虚拟机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-vmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.1 启动 VMware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2 选择安装方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.3 配置用户信息
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#824" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.4 配置虚拟机位置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.5 配置磁盘大小
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#826" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.6 自定义硬件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2.6 自定义硬件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        内存
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        处理器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        显示器（重要！）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        网络适配器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        其他设备
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#827" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.7 完成创建
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 安装 Ubuntu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3 安装 Ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#831" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.1 启动虚拟机
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#832" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.2 等待自动安装
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3.2 等待自动安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        你会看到：
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#833" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.3 首次登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#834" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.4 初始配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 安装后的配置
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4 安装后的配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#841-vmware-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.1 安装 VMware Tools
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4.1 安装 VMware Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安装步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#842" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.2 更换软件源（重要！）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4.2 更换软件源（重要！）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法一：图形化界面
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#843" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.3 更新系统
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#844" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.4 安装常用工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#845" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.5 安装中文输入法（可选）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#846-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.6 配置 SSH（可选）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 虚拟机使用技巧
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5 虚拟机使用技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#851" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.1 快照功能（非常重要！）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.1 快照功能（非常重要！）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创建快照
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        恢复快照
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#852" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.2 共享文件夹
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.5.2 共享文件夹">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        设置方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        访问共享文件夹
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#853" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.3 全屏显示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#854" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.4 复制粘贴
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 常见问题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.6 常见问题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题1：虚拟机启动很慢
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2gazebo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题2：Gazebo 黑屏
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题3：网络连接不上
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        问题4：分辨率调整不了
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 性能优化建议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.7 性能优化建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#871" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7.1 关闭不必要的后台服务
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#872" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7.2 调整虚拟机配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#873-ssd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7.3 使用 SSD
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -918,9 +2426,596 @@
 
 
 
-  <h1>08 安装 ROS2</h1>
+<h1 id="ubuntu">第八章：Ubuntu 系统安装教程——搭建环境<a class="headerlink" href="#ubuntu" title="Permanent link">&para;</a></h1>
+<p>这一章手把手教你安装 Ubuntu 22.04 系统。</p>
+<p>我们采用 <strong>虚拟机</strong> 的方式，这是最安全的方式，新手照着做就行。</p>
+<hr />
+<h2 id="81">8.1 准备工作<a class="headerlink" href="#81" title="Permanent link">&para;</a></h2>
+<p>在开始之前，需要下载两样东西：</p>
+<hr />
+<h3 id="811-vmware-workstation-player">8.1.1 下载 VMware Workstation Player<a class="headerlink" href="#811-vmware-workstation-player" title="Permanent link">&para;</a></h3>
+<h4 id="windows">Windows 用户<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">下载链接</p>
+<ul>
+<li>官网：https://www.vmware.com/products/workstation-player.html</li>
+<li>选择免费版（Player）即可</li>
+</ul>
+</div>
+<hr />
+<h4 id="mac">Mac 用户<a class="headerlink" href="#mac" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>Mac 用户需要下载 <strong>VMware Fusion</strong></p>
+<p>或者使用 <strong>Parallels Desktop</strong>（更好用但需要付费）</p>
+</div>
+<hr />
+<h4 id="vmware">安装 VMware<a class="headerlink" href="#vmware" title="Permanent link">&para;</a></h4>
+<ol>
+<li>下载安装包</li>
+<li>双击运行</li>
+<li>一路下一步</li>
+<li>选择"个人使用"（免费）</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">安装提示</p>
+<p>安装过程很简单，基本都是默认选项。</p>
+</div>
+<hr />
+<h3 id="812-ubuntu-2204-iso">8.1.2 下载 Ubuntu 22.04 ISO 镜像<a class="headerlink" href="#812-ubuntu-2204-iso" title="Permanent link">&para;</a></h3>
+<h4 id="_1">官方下载<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">官方网站</p>
+<p>https://ubuntu.com/download/desktop</p>
+</div>
+<p>选择 <strong>Ubuntu 22.04 LTS</strong></p>
+<hr />
+<h4 id="_2">国内镜像（推荐，速度快）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">推荐下载源</p>
+<ul>
+<li><strong>清华大学镜像站</strong></li>
+<li>
+<p>https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/22.04/</p>
+</li>
+<li>
+<p><strong>阿里云镜像站</strong></p>
+</li>
+<li>
+<p>https://mirrors.aliyun.com/ubuntu-releases/22.04/</p>
+</li>
+<li>
+<p><strong>中科大镜像站</strong></p>
+</li>
+<li>https://mirrors.ustc.edu.cn/ubuntu-releases/22.04/</li>
+</ul>
+</div>
+<hr />
+<h4 id="_3">选择正确的文件<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">注意选择</p>
+<p>下载文件名类似：</p>
+<p><code>ubuntu-22.04.x-desktop-amd64.iso</code></p>
+<ul>
+<li><strong>desktop</strong>：桌面版（我们要的）</li>
+<li><strong>amd64</strong>：64 位系统（大部分电脑）</li>
+</ul>
+</div>
+<hr />
+<h3 id="813">8.1.3 检查硬件要求<a class="headerlink" href="#813" title="Permanent link">&para;</a></h3>
+<p>确保你的电脑满足以下要求：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>最低要求</th>
+<th>推荐配置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CPU</strong></td>
+<td>双核</td>
+<td>四核及以上</td>
+</tr>
+<tr>
+<td><strong>内存</strong></td>
+<td>4GB</td>
+<td>8GB 及以上</td>
+</tr>
+<tr>
+<td><strong>硬盘空间</strong></td>
+<td>50GB</td>
+<td>100GB 及以上</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">硬盘空间说明</p>
+<p>这里说的是给虚拟机分配的空间，</p>
+<p>你的实际硬盘要更大一些。</p>
+</div>
+<hr />
+<h2 id="82">8.2 创建虚拟机<a class="headerlink" href="#82" title="Permanent link">&para;</a></h2>
+<h3 id="821-vmware">8.2.1 启动 VMware<a class="headerlink" href="#821-vmware" title="Permanent link">&para;</a></h3>
+<p>打开 VMware Workstation Player</p>
+<p>点击 <strong>"创建新虚拟机"</strong></p>
+<hr />
+<h3 id="822">8.2.2 选择安装方式<a class="headerlink" href="#822" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">安装源选择</p>
+<p>选择 <strong>"安装程序光盘映像文件(iso)"</strong></p>
+<p>点击 <strong>"浏览"</strong>，选择刚才下载的 Ubuntu ISO 文件</p>
+</div>
+<hr />
+<h3 id="823">8.2.3 配置用户信息<a class="headerlink" href="#823" title="Permanent link">&para;</a></h3>
+<p>VMware 会自动检测到 Ubuntu 安装程序，要求你输入：</p>
+<div class="admonition warning">
+<p class="admonition-title">重要提醒</p>
+<ul>
+<li><strong>全名</strong>：可以是中文</li>
+<li><strong>用户名</strong>：<strong>只能用英文小写，不能有空格</strong></li>
+<li><strong>密码</strong>：自己设一个，别忘了</li>
+</ul>
+</div>
+<p><strong>示例：</strong></p>
+<div class="highlight"><pre><span></span><code>全名：张三
+用户名：zhangsan
+密码：********
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">常见错误</p>
+<p>用户名不能用中文、大写字母、空格！</p>
+<p>比如：<code>Zhang San</code>、<code>ZhangSan</code>、<code>张三</code> 都是错的</p>
+</div>
+<hr />
+<h3 id="824">8.2.4 配置虚拟机位置<a class="headerlink" href="#824" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">存储位置</p>
+<ul>
+<li><strong>虚拟机名称</strong>：Ubuntu 22.04</li>
+<li><strong>位置</strong>：选择一个空间 最好不要放在 C 盘（Windows）</li>
+</ul>
+</div>
+<hr />
+<h3 id="825">8.2.5 配置磁盘大小<a class="headerlink" href="#825" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">推荐设置</p>
+<ul>
+<li><strong>最大磁盘大小</strong>：100GB</li>
+<li><strong>存储方式</strong>：选择 "将虚拟磁盘拆分成多个文件"</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">说明</p>
+<p>虚拟机使用的是 <strong>动态分配</strong>，</p>
+<p>不会立刻占用 100GB，</p>
+<p>而是用多少占多少。</p>
+</div>
+<hr />
+<h3 id="826">8.2.6 自定义硬件<a class="headerlink" href="#826" title="Permanent link">&para;</a></h3>
+<p>点击 <strong>"自定义硬件"</strong>，进行以下调整：</p>
+<hr />
+<h4 id="_4">内存<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">推荐设置</p>
+<ul>
+<li>最少：4GB</li>
+<li>推荐：8GB</li>
+<li>如果你电脑内存够大：16GB</li>
+</ul>
+</div>
+<hr />
+<h4 id="_5">处理器<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<div class="admonition success">
+<p class="admonition-title">推荐设置</p>
+<ul>
+<li><strong>处理器数量</strong>：1</li>
+<li><strong>每个处理器的核心数量</strong>：4</li>
+</ul>
+<p>（总共 4 核）</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">核心分配建议</p>
+<p>给虚拟机分配你 CPU 的一半核心数。</p>
+<p>比如你的 CPU 是 8 核，就给虚拟机 4 核。</p>
+</div>
+<hr />
+<h4 id="_6">显示器（重要！）<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<div class="admonition danger">
+<p class="admonition-title">必须设置</p>
+<p><strong>一定要勾选 "加速 3D 图形"</strong></p>
+<p>否则 Gazebo 会黑屏！</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">推荐设置</p>
+<ul>
+<li>☑ 加速 3D 图形</li>
+<li>图形内存：2GB 或更多</li>
+</ul>
+</div>
+<hr />
+<h4 id="_7">网络适配器<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">默认设置</p>
+<p>保持默认的 <strong>NAT 模式</strong> 即可</p>
+</div>
+<hr />
+<h4 id="_8">其他设备<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">可选</p>
+<ul>
+<li>可以移除打印机、软盘等用不到的设备</li>
+<li>保持 CD/DVD 连接 ISO 镜像</li>
+</ul>
+</div>
+<hr />
+<h3 id="827">8.2.7 完成创建<a class="headerlink" href="#827" title="Permanent link">&para;</a></h3>
+<p>点击 <strong>"完成"</strong></p>
+<p>虚拟机创建完成，但还没有启动。</p>
+<hr />
+<h2 id="83-ubuntu">8.3 安装 Ubuntu<a class="headerlink" href="#83-ubuntu" title="Permanent link">&para;</a></h2>
+<h3 id="831">8.3.1 启动虚拟机<a class="headerlink" href="#831" title="Permanent link">&para;</a></h3>
+<p>在 VMware 主界面，点击 <strong>"开启此虚拟机"</strong></p>
+<hr />
+<h3 id="832">8.3.2 等待自动安装<a class="headerlink" href="#832" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">自动化安装</p>
+<p>由于我们使用了 VMware 的简易安装功能，</p>
+<p>Ubuntu 会 <strong>自动安装</strong>。</p>
+<p>整个过程大约 10-20 分钟，不需要你操作。</p>
+</div>
+<hr />
+<h4 id="_9">你会看到：<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Ubuntu 安装界面</li>
+<li>自动选择语言、键盘</li>
+<li>自动分区</li>
+<li>自动安装软件</li>
+<li>自动重启</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">耐心等待</p>
+<p>这期间可以去喝杯水，休息一下。</p>
+</div>
+<hr />
+<h3 id="833">8.3.3 首次登录<a class="headerlink" href="#833" title="Permanent link">&para;</a></h3>
+<p>安装完成后，虚拟机会自动重启。</p>
+<div class="admonition success">
+<p class="admonition-title">登录</p>
+<p>输入你之前设置的密码，登录系统。</p>
+</div>
+<hr />
+<h3 id="834">8.3.4 初始配置<a class="headerlink" href="#834" title="Permanent link">&para;</a></h3>
+<p>首次登录会有一些引导界面：</p>
+<ol>
+<li><strong>在线账号</strong>：可以跳过</li>
+<li><strong>Livepatch</strong>：可以跳过</li>
+<li><strong>帮助改进 Ubuntu</strong>：选择"否"</li>
+<li><strong>隐私设置</strong>：根据个人喜好</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">快速设置</p>
+<p>这些都可以跳过，不影响使用。</p>
+</div>
+<hr />
+<h2 id="84">8.4 安装后的配置<a class="headerlink" href="#84" title="Permanent link">&para;</a></h2>
+<h3 id="841-vmware-tools">8.4.1 安装 VMware Tools<a class="headerlink" href="#841-vmware-tools" title="Permanent link">&para;</a></h3>
+<p>VMware Tools 可以提供：</p>
+<ul>
+<li>更好的显示效果</li>
+<li>共享文件夹</li>
+<li>复制粘贴功能</li>
+</ul>
+<hr />
+<h4 id="_10">安装步骤<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">通常会自动安装</p>
+<p>现代版本的 Ubuntu 和 VMware 通常会自动安装 VMware Tools。</p>
+<p>如果没有自动安装：</p>
+</div>
+<ol>
+<li>在 VMware 菜单选择 <strong>"虚拟机" → "安装 VMware Tools"</strong></li>
+<li>Ubuntu 桌面会出现一个光盘图标</li>
+<li>打开终端，运行：</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/media/你的用户名/VMware<span class="se">\ </span>Tools
+tar<span class="w"> </span>xzvf<span class="w"> </span>VMwareTools-*.tar.gz<span class="w"> </span>-C<span class="w"> </span>/tmp
+<span class="nb">cd</span><span class="w"> </span>/tmp/vmware-tools-distrib
+sudo<span class="w"> </span>./vmware-install.pl
+</code></pre></div>
+<ol>
+<li>一路回车默认选项</li>
+<li>重启虚拟机</li>
+</ol>
+<hr />
+<h3 id="842">8.4.2 更换软件源（重要！）<a class="headerlink" href="#842" title="Permanent link">&para;</a></h3>
+<p>Ubuntu 默认使用国外源，下载速度 <strong>非常慢</strong>。</p>
+<div class="admonition success">
+<p class="admonition-title">必须换成国内源</p>
+<p>换成国内源后，下载速度能快 <strong>10 倍以上</strong>。</p>
+</div>
+<hr />
+<h4 id="_11">方法一：图形化界面<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<ol>
+<li>打开 <strong>"软件和更新"</strong>（Software &amp; Updates）</li>
+<li>
+<p>可以在应用程序菜单里搜索</p>
+</li>
+<li>
+<p>在 <strong>"下载自"</strong> 那里点击下拉菜单</p>
+</li>
+<li>
+<p>选择 <strong>"其他站点"</strong></p>
+</li>
+<li>
+<p>点击 <strong>"选择最佳服务器"</strong></p>
+</li>
+<li>
+<p>或者手动选择国内镜像：</p>
+<ul>
+<li>阿里云</li>
+<li>清华大学</li>
+<li>中科大</li>
+</ul>
+</li>
+<li>
+<p>点击 <strong>"选择服务器"</strong></p>
+</li>
+<li>
+<p>提示输入密码，输入你的密码</p>
+</li>
+<li>
+<p>点击 <strong>"关闭"</strong>，会提示更新软件列二：命令行（推荐，更快）</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1"># 备份原来的源</span>
+sudo<span class="w"> </span>cp<span class="w"> </span>/etc/apt/sources.list<span class="w"> </span>/etc/apt/sources.list.backup
 
+<span class="c1"># 修改源文件</span>
+sudo<span class="w"> </span>nano<span class="w"> </span>/etc/apt/sources.list
+</code></pre></div>
+<p>删除所有内容，替换为以下内容（阿里云镜像）：</p>
+<div class="highlight"><pre><span></span><code>deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+</code></pre></div>
+<p>保存退出：<code>Ctrl+O</code> → 回车 → <code>Ctrl+X</code></p>
+<hr />
+<h3 id="843">8.4.3 更新系统<a class="headerlink" href="#843" title="Permanent link">&para;</a></h3>
+<p>换好源后，立刻更新系统：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 更新软件包列表</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>update
 
+<span class="c1"># 升级已安装的软件</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+
+<span class="c1"># 清理不需要的包</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>autoremove<span class="w"> </span>-y
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">更新时间</p>
+<p>第一次更新可能需要 5-10 分钟，</p>
+<p>取决于网速和系统更新的内容。</p>
+</div>
+<hr />
+<h3 id="844">8.4.4 安装常用工具<a class="headerlink" href="#844" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>git<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>vim<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>curl<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>wget<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>terminator<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>tree<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>net-tools<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>htop
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">工具说明</p>
+<ul>
+<li><strong>git</strong>：版本控制</li>
+<li><strong>vim</strong>：文本编辑器</li>
+<li><strong>curl/wget</strong>：下载工具</li>
+<li><strong>terminator</strong>：好用的终端</li>
+<li><strong>tree</strong>：目录树显示</li>
+<li><strong>net-tools</strong>：网络工具</li>
+<li><strong>htop</strong>：系统监控</li>
+</ul>
+</div>
+<hr />
+<h3 id="845">8.4.5 安装中文输入法（可选）<a class="headerlink" href="#845" title="Permanent link">&para;</a></h3>
+<p>如果需要在 Ubuntu 里输入中文：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 安装 ibus 拼音输入法</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>ibus-pinyin
+
+<span class="c1"># 重启 ibus</span>
+ibus<span class="w"> </span>restart
+
+<span class="c1"># 或者安装搜狗输入法（需要额外步骤）</span>
+</code></pre></div>
+<hr />
+<h3 id="846-ssh">8.4.6 配置 SSH（可选）<a class="headerlink" href="#846-ssh" title="Permanent link">&para;</a></h3>
+<p>如果想从 Windows 通过 SSH 连接虚拟机：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 安装 SSH 服务器</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>openssh-server
+
+<span class="c1"># 启动 SSH 服务</span>
+sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>ssh
+
+<span class="c1"># 设置开机自启</span>
+sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>ssh
+
+<span class="c1"># 查看 IP 地址</span>
+ip<span class="w"> </span>addr<span class="w"> </span>show
+</code></pre></div>
+<p>然后在 Windows 可以用 <strong>PuTTY</strong> 或 <strong>MobaXterm</strong> 连接。</p>
+<hr />
+<h2 id="85">8.5 虚拟机使用技巧<a class="headerlink" href="#85" title="Permanent link">&para;</a></h2>
+<h3 id="851">8.5.1 快照功能（非常重要！）<a class="headerlink" href="#851" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">强烈建议</p>
+<p>在装 ROS2 之前，给虚拟机拍个快照。</p>
+<p>万一后面折腾坏了，可以一键恢复。</p>
+</div>
+<hr />
+<h4 id="_12">创建快照<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<ol>
+<li>确保虚拟机已关机或挂起</li>
+<li>在 VMware 菜单选择 <strong>"虚拟机" → "快照" → "拍摄快照"</strong></li>
+<li>输入快照名称，如 <strong>"系统安装完成"</strong></li>
+<li>点击 <strong>"拍摄快照"</strong></li>
+</ol>
+<hr />
+<h4 id="_13">恢复快照<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<p>如果系统出问题了：</p>
+<ol>
+<li>关闭虚拟机</li>
+<li><strong>"虚拟机" → "快照" → "快照管理器"</strong></li>
+<li>选择要恢复的快照</li>
+<li>点击 <strong>"恢复"</strong></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">快照建议</p>
+<p>建议在以下时间点拍快照：</p>
+<ul>
+<li>系统安装完成</li>
+<li>ROS2 安装完成</li>
+<li>重要项目开始前</li>
+</ul>
+</div>
+<hr />
+<h3 id="852">8.5.2 共享文件夹<a class="headerlink" href="#852" title="Permanent link">&para;</a></h3>
+<p>可以在 Windows 和 Ubuntu 之间共享文件。</p>
+<hr />
+<h4 id="_14">设置方法<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>"虚拟机" → "设置" → "选项" → "共享文件夹"</strong></li>
+<li>选择 <strong>"总是启用"</strong></li>
+<li>点击 <strong>"添加"</strong></li>
+<li>选择 Windows 上的文件夹</li>
+<li>给它起个名字</li>
+</ol>
+<hr />
+<h4 id="_15">访问共享文件夹<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
+<p>在 Ubuntu 里：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/mnt/hgfs/共享文件夹名称
+</code></pre></div>
+<hr />
+<h3 id="853">8.5.3 全屏显示<a class="headerlink" href="#853" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">快捷键</p>
+<ul>
+<li><strong>进入全屏</strong>：<code>Ctrl+Alt+Enter</code></li>
+<li><strong>退出全屏</strong>：<code>Ctrl+Alt</code></li>
+</ul>
+</div>
+<hr />
+<h3 id="854">8.5.4 复制粘贴<a class="headerlink" href="#854" title="Permanent link">&para;</a></h3>
+<p>VMware Tools 安装后，可以在 Windows 和 Ubuntu 之间直接复制粘贴文本。</p>
+<div class="admonition info">
+<p class="admonition-title">如果不行</p>
+<p>重启虚拟机通常能解决问题。</p>
+</div>
+<hr />
+<h2 id="86">8.6 常见问题<a class="headerlink" href="#86" title="Permanent link">&para;</a></h2>
+<h3 id="1">问题1：虚拟机启动很慢<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">解决方法</p>
+<ul>
+<li>确保分配了足够的内存（8GB）</li>
+<li>确保 SSD 有足够空间</li>
+<li>关闭不必要的后台程序</li>
+</ul>
+</div>
+<hr />
+<h3 id="2gazebo">问题2：Gazebo 黑屏<a class="headerlink" href="#2gazebo" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">最常见问题</p>
+<p><strong>原因：</strong> 没有开启 3D 加速</p>
+</div>
+<p><strong>解决方法：</strong></p>
+<ol>
+<li>关闭虚拟机</li>
+<li>编辑虚拟机设置</li>
+<li>显示器 → 勾选 "加速 3D 图形"</li>
+<li>重启虚拟机</li>
+</ol>
+<hr />
+<h3 id="3">问题3：网络连接不上<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">检查步骤</p>
+<ol>
+<li>检查虚拟机设置 → 网络适配器 → 确保是 NAT 模式</li>
+<li>在 Ubuntu 里运行：
+   <div class="highlight"><pre><span></span><code>ip<span class="w"> </span>addr<span class="w"> </span>show
+</code></pre></div></li>
+<li>如果没有 IP，重启虚拟机</li>
+</ol>
+</div>
+<hr />
+<h3 id="4">问题4：分辨率调整不了<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">解决方法</p>
+<ol>
+<li>确保安装了 VMware Tools</li>
+<li>重启虚拟机</li>
+<li>在 Ubuntu 设置 → 显示里调整</li>
+</ol>
+</div>
+<hr />
+<h2 id="87">8.7 性能优化建议<a class="headerlink" href="#87" title="Permanent link">&para;</a></h2>
+<h3 id="871">8.7.1 关闭不必要的后台服务<a class="headerlink" href="#871" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 禁用自动更新（可选）</span>
+sudo<span class="w"> </span>systemctl<span class="w"> </span>disable<span class="w"> </span>unattended-upgrades
+</code></pre></div>
+<hr />
+<h3 id="872">8.7.2 调整虚拟机配置<a class="headerlink" href="#872" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">如果电脑性能不够</p>
+<p>可以适当降低：
+- 内存：降到 6GB 或 4GB
+- CPU 核心：降到 2 核
+- 3D 图形内存：降到 1GB</p>
+</div>
+<hr />
+<h3 id="873-ssd">8.7.3 使用 SSD<a class="headerlink" href="#873-ssd" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">最有效的优化</p>
+<p>如果可能，把虚拟机文件放在 SSD 上，</p>
+<p>速度会快很多。</p>
+</div>
+<hr />
+<h2 id="_16">本章小结<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<p>通过这一章，你应该已经：</p>
+<ol>
+<li>
+<p><strong>成功安装了 Ubuntu 22.04 虚拟机</strong></p>
+<p>下载了 VMware 和 Ubuntu ISO</p>
+<p>创建并配置了虚拟机</p>
+<p>完成了系统安装</p>
+</li>
+<li>
+<p><strong>完成了基本配置</strong></p>
+<p>更换了软件源</p>
+<p>更新了系统</p>
+<p>安装了常用工具</p>
+</li>
+<li>
+<p><strong>学会了虚拟机的使用</strong></p>
+<p>创建快照</p>
+<p>共享文件夹</p>
+<p>常见问题处理</p>
+</li>
+</ol>
+<hr />
+<h2 id="_17">下一章预告<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<p>下一章我们会进入 <strong>最激动人心的部分</strong>：</p>
+<blockquote>
+<p><strong>ROS2 安装教程——安装核心软件</strong></p>
+</blockquote>
+<p>我会推荐使用 <strong>鱼香 ROS 的一键安装脚本</strong>，</p>
+<p>让安装过程变得超级简单。</p>
 
 
 

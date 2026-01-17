@@ -23,7 +23,7 @@
     
     
       
-        <title>11 Pub/Sub - ROS2 Newbie Guide</title>
+        <title>11 第一个 ROS2 程序——Hello World - ROS2 新手指导</title>
       
     
     
@@ -46,8 +46,6 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -65,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ros2-hello-world" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -77,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="ROS2 Newbie Guide" class="md-header__button md-logo" aria-label="ROS2 Newbie Guide" data-md-component="logo">
+    <a href="../.." title="ROS2 新手指导" class="md-header__button md-logo" aria-label="ROS2 新手指导" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -91,13 +94,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            ROS2 Newbie Guide
+            ROS2 新手指导
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              11 Pub/Sub
+              11 第一个 ROS2 程序——Hello World
             
           </span>
         </div>
@@ -175,13 +178,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ROS2 Newbie Guide" class="md-nav__button md-logo" aria-label="ROS2 Newbie Guide" data-md-component="logo">
+    <a href="../.." title="ROS2 新手指导" class="md-nav__button md-logo" aria-label="ROS2 新手指导" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    ROS2 Newbie Guide
+    ROS2 新手指导
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -302,7 +305,7 @@
   <span class="md-ellipsis">
     
   
-    02 ROS2 能干什么
+    02 ROS2能干什么——了解它的实际用途
   
 
     
@@ -330,7 +333,7 @@
   <span class="md-ellipsis">
     
   
-    03 ROS1 vs ROS2
+    03 ROS2 的前身 ROS1——知道它从哪来
   
 
     
@@ -358,7 +361,7 @@
   <span class="md-ellipsis">
     
   
-    04 为什么选择 Ubuntu
+    04 为什么选择 Ubuntu 20.04/22.04
   
 
     
@@ -468,7 +471,7 @@
   <span class="md-ellipsis">
     
   
-    06 开发工具
+    06 开发工具介绍——认识你的"武器库"
   
 
     
@@ -550,7 +553,7 @@
   <span class="md-ellipsis">
     
   
-    07 安装 Ubuntu
+    07 ROS2 支持哪些编程语言——选择适合你的
   
 
     
@@ -578,7 +581,7 @@
   <span class="md-ellipsis">
     
   
-    08 安装 ROS2
+    08 Ubuntu 系统安装教程——搭建环境
   
 
     
@@ -662,7 +665,7 @@
   <span class="md-ellipsis">
     
   
-    09 核心概念速通
+    09 ROS2 安装教程——安装核心软件
   
 
     
@@ -690,7 +693,7 @@
   <span class="md-ellipsis">
     
   
-    10 Hello Node
+    10 ROS2 核心概念详解——最重要的知识点
   
 
     
@@ -717,6 +720,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 第一个 ROS2 程序——Hello World
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -725,7 +748,7 @@
   <span class="md-ellipsis">
     
   
-    11 Pub/Sub
+    11 第一个 ROS2 程序——Hello World
   
 
     
@@ -734,6 +757,563 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 创建功能包
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.1 创建功能包">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#src" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        进入工作空间的 src 目录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创建包
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        命令解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创建后的目录结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 编写节点代码
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.2 编写节点代码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创建 Python 文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        编写代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        完整代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 代码详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.3 代码详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一部分：导入库
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二部分：定义节点类
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三部分：初始化函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四部分：回调函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五部分：主函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 配置入口点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.4 配置入口点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setuppy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        编辑 setup.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entry_points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        找到 entry_points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        添加我们的节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.5 编译和运行
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.5 编译和运行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        回到工作空间根目录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        编译包
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        加载环境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应该看到
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        停止节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#116" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.6 查看节点信息
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.6 查看节点信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        另开一个终端
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        查看运行的节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        查看节点详细信息
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#117" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.7 常见错误
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.7 常见错误">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        错误1：找不到包
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        错误2：找不到可执行文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        错误3：import 错误
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        错误4：权限问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#118" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8 改进版本：带参数的节点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.8 改进版本：带参数的节点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        修改代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重新编译
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行时设置参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行时查看参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#119" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9 完整开发流程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.9 完整开发流程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤回顾
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -754,7 +1334,7 @@
   <span class="md-ellipsis">
     
   
-    12 turtlesim
+    12 项目实战——发布者与订阅者通信
   
 
     
@@ -836,7 +1416,7 @@
   <span class="md-ellipsis">
     
   
-    13 常见问题与排障
+    13 进阶项目——控制小海龟运动
   
 
     
@@ -864,7 +1444,7 @@
   <span class="md-ellipsis">
     
   
-    14 资源与下一步
+    14 常见问题与解决方案——遇到问题别慌
   
 
     
@@ -902,6 +1482,554 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 创建功能包
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.1 创建功能包">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#src" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        进入工作空间的 src 目录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创建包
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        命令解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创建后的目录结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 编写节点代码
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.2 编写节点代码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        创建 Python 文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        编写代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        完整代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 代码详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.3 代码详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一部分：导入库
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二部分：定义节点类
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三部分：初始化函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四部分：回调函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五部分：主函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#114" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 配置入口点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.4 配置入口点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setuppy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        编辑 setup.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entry_points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        找到 entry_points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        添加我们的节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#115" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.5 编译和运行
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.5 编译和运行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        回到工作空间根目录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        编译包
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        加载环境
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        应该看到
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        停止节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#116" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.6 查看节点信息
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.6 查看节点信息">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        另开一个终端
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        查看运行的节点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        查看节点详细信息
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#117" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.7 常见错误
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.7 常见错误">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        错误1：找不到包
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        错误2：找不到可执行文件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3import" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        错误3：import 错误
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        错误4：权限问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#118" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.8 改进版本：带参数的节点
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.8 改进版本：带参数的节点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        修改代码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重新编译
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行时设置参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行时查看参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#119" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.9 完整开发流程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11.9 完整开发流程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步骤回顾
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章小结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        下一章预告
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -918,9 +2046,590 @@
 
 
 
-  <h1>11 Pub/Sub</h1>
+<h1 id="ros2-hello-world">第十一章：第一个 ROS2 程序——Hello World<a class="headerlink" href="#ros2-hello-world" title="Permanent link">&para;</a></h1>
+<div class="admonition quote">
+<p class="admonition-title">学习规律</p>
+<p><strong>学啥都得从 Hello World 开始。</strong></p>
+</div>
+<p>这一章我们来写第一个 ROS2 节点。</p>
+<hr />
+<h2 id="111">11.1 创建功能包<a class="headerlink" href="#111" title="Permanent link">&para;</a></h2>
+<h3 id="src">进入工作空间的 src 目录<a class="headerlink" href="#src" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+</code></pre></div>
+<hr />
+<h3 id="_1">创建包<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>pkg<span class="w"> </span>create<span class="w"> </span>--build-type<span class="w"> </span>ament_python<span class="w"> </span>hello_ros2<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--dependencies<span class="w"> </span>rclpy<span class="w"> </span>std_msgs
+</code></pre></div>
+<hr />
+<h3 id="_2">命令解释<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">参数说明</p>
+<ul>
+<li><code>--build-type ament_python</code>：创建 Python 包</li>
+<li><code>hello_ros2</code>：包的名字</li>
+<li><code>--dependencies rclpy std_msgs</code>：依赖的包</li>
+<li><code>rclpy</code>：ROS2 的 Python 客户端库</li>
+<li><code>std_msgs</code>：标准消息类型</li>
+</ul>
+</div>
+<hr />
+<h3 id="_3">创建后的目录结构<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>hello_ros2/
+├── hello_ros2/         # Python 代码目录
+│   └── __init__.py
+├── resource/
+│   └── hello_ros2
+├── test/
+├── package.xml         # 包的描述文件
+├── setup.cfg
+└── setup.py            # Python 包配置文件
+</code></pre></div>
+<hr />
+<h2 id="112">11.2 编写节点代码<a class="headerlink" href="#112" title="Permanent link">&para;</a></h2>
+<h3 id="python">创建 Python 文件<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<p>在 <code>hello_ros2/hello_ros2/</code> 目录下创建 <code>hello_node.py</code>：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>hello_ros2/hello_ros2
+touch<span class="w"> </span>hello_node.py
+</code></pre></div>
+<hr />
+<h3 id="_4">编写代码<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>用你喜欢的编辑器打开 <code>hello_node.py</code>：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># VS Code</span>
+code<span class="w"> </span>hello_node.py
+
+<span class="c1"># 或者 nano</span>
+nano<span class="w"> </span>hello_node.py
+
+<span class="c1"># 或者 vim</span>
+vim<span class="w"> </span>hello_node.py
+</code></pre></div>
+<hr />
+<h3 id="_5">完整代码<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">rclpy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rclpy.node</span><span class="w"> </span><span class="kn">import</span> <span class="n">Node</span>
 
 
+<span class="k">class</span><span class="w"> </span><span class="nc">HelloNode</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Hello ROS2 节点&quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># 调用父类的构造函数，给节点起名字</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;hello_node&#39;</span><span class="p">)</span>
+
+        <span class="c1"># 打印启动信息</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;节点启动了！&#39;</span><span class="p">)</span>
+
+        <span class="c1"># 创建定时器，每1秒调用一次回调函数</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_timer</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">timer_callback</span><span class="p">)</span>
+
+        <span class="c1"># 计数器</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">timer_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;定时器回调函数&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Hello ROS2! 第 </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">count</span><span class="si">}</span><span class="s1"> 次问候&#39;</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;主函数&quot;&quot;&quot;</span>
+    <span class="c1"># 初始化 rclpy</span>
+    <span class="n">rclpy</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">)</span>
+
+    <span class="c1"># 创建节点</span>
+    <span class="n">node</span> <span class="o">=</span> <span class="n">HelloNode</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># 保持节点运行，处理回调</span>
+        <span class="n">rclpy</span><span class="o">.</span><span class="n">spin</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+        <span class="c1"># 用户按 Ctrl+C 时</span>
+        <span class="k">pass</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="c1"># 清理资源</span>
+        <span class="n">node</span><span class="o">.</span><span class="n">destroy_node</span><span class="p">()</span>
+        <span class="n">rclpy</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h2 id="113">11.3 代码详解<a class="headerlink" href="#113" title="Permanent link">&para;</a></h2>
+<h3 id="_6">第一部分：导入库<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">rclpy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rclpy.node</span><span class="w"> </span><span class="kn">import</span> <span class="n">Node</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">说明</p>
+<ul>
+<li><code>#!/usr/bin/env python3</code>：指定用 Python3 运行</li>
+<li><code>rclpy</code>：ROS2 的 Python 客户端库</li>
+<li><code>Node</code>：节点的基类</li>
+</ul>
+</div>
+<hr />
+<h3 id="_7">第二部分：定义节点类<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">HelloNode</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Hello ROS2 节点&quot;&quot;&quot;</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">说明</p>
+<ul>
+<li>继承自 <code>Node</code> 类</li>
+<li>所有 ROS2 节点都要继承 <code>Node</code></li>
+</ul>
+</div>
+<hr />
+<h3 id="_8">第三部分：初始化函数<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># 调用父类的构造函数，给节点起名字</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;hello_node&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">必须做</p>
+<ul>
+<li><code>super().__init__('hello_node')</code>：<strong>必须调用</strong></li>
+<li><code>'hello_node'</code>：节点的名字</li>
+</ul>
+</div>
+<hr />
+<div class="highlight"><pre><span></span><code>    <span class="c1"># 打印启动信息</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;节点启动了！&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">日志系统</p>
+<ul>
+<li><code>self.get_logger()</code>：获取节点的日志记录器</li>
+<li><code>.info()</code>：打印信息级别的日志</li>
+<li>还有：<code>.debug()</code>, <code>.warn()</code>, <code>.error()</code></li>
+</ul>
+</div>
+<hr />
+<div class="highlight"><pre><span></span><code>    <span class="c1"># 创建定时器，每1秒调用一次回调函数</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">timer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_timer</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">timer_callback</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">定时器</p>
+<ul>
+<li><code>create_timer(周期, 回调函数)</code></li>
+<li><code>1.0</code>：1 秒</li>
+<li><code>self.timer_callback</code>：回调函数名</li>
+</ul>
+</div>
+<hr />
+<div class="highlight"><pre><span></span><code>    <span class="c1"># 计数器</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">成员变量</p>
+<p>用来记录问候的次数。</p>
+</div>
+<hr />
+<h3 id="_9">第四部分：回调函数<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">timer_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;定时器回调函数&quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Hello ROS2! 第 </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">count</span><span class="si">}</span><span class="s1"> 次问候&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">说明</p>
+<ul>
+<li>每秒被调用一次</li>
+<li>计数器加 1</li>
+<li>打印问候信息</li>
+</ul>
+</div>
+<hr />
+<h3 id="_10">第五部分：主函数<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="c1"># 初始化 rclpy</span>
+    <span class="n">rclpy</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">必须做</p>
+<p><code>rclpy.init()</code>：<strong>必须调用</strong>，初始化 ROS2 系统</p>
+</div>
+<hr />
+<div class="highlight"><pre><span></span><code>    <span class="c1"># 创建节点</span>
+    <span class="n">node</span> <span class="o">=</span> <span class="n">HelloNode</span><span class="p">()</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">实例化</p>
+<p>创建我们定义的节点对象。</p>
+</div>
+<hr />
+<div class="highlight"><pre><span></span><code>    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># 保持节点运行，处理回调</span>
+        <span class="n">rclpy</span><span class="o">.</span><span class="n">spin</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">spin 的作用</p>
+<ul>
+<li>让节点保持运行</li>
+<li>不断处理回调函数</li>
+<li>如果没有 spin，程序会立刻结束</li>
+</ul>
+</div>
+<hr />
+<div class="highlight"><pre><span></span><code>    <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+        <span class="c1"># 用户按 Ctrl+C 时</span>
+        <span class="k">pass</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">优雅退出</p>
+<p>捕获 <code>Ctrl+C</code>，避免报错信息。</p>
+</div>
+<hr />
+<div class="highlight"><pre><span></span><code>    <span class="k">finally</span><span class="p">:</span>
+        <span class="c1"># 清理资源</span>
+        <span class="n">node</span><span class="o">.</span><span class="n">destroy_node</span><span class="p">()</span>
+        <span class="n">rclpy</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">必须做</p>
+<ul>
+<li><code>destroy_node()</code>：销毁节点</li>
+<li><code>shutdown()</code>：关闭 ROS2 系统</li>
+</ul>
+</div>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">入口点</p>
+<p>如果直接运行这个文件，就调用 <code>main()</code> 函数。</p>
+</div>
+<hr />
+<h2 id="114">11.4 配置入口点<a class="headerlink" href="#114" title="Permanent link">&para;</a></h2>
+<h3 id="setuppy">编辑 setup.py<a class="headerlink" href="#setuppy" title="Permanent link">&para;</a></h3>
+<p>打开 <code>hello_ros2/setup.py</code>：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src/hello_ros2
+nano<span class="w"> </span>setup.py
+</code></pre></div>
+<hr />
+<h3 id="entry_points">找到 entry_points<a class="headerlink" href="#entry_points" title="Permanent link">&para;</a></h3>
+<p>找到这一段：</p>
+<div class="highlight"><pre><span></span><code><span class="n">entry_points</span><span class="o">=</span><span class="p">{</span>
+    <span class="s1">&#39;console_scripts&#39;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">],</span>
+<span class="p">},</span>
+</code></pre></div>
+<hr />
+<h3 id="_11">添加我们的节点<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<p>修改为：</p>
+<div class="highlight"><pre><span></span><code><span class="n">entry_points</span><span class="o">=</span><span class="p">{</span>
+    <span class="s1">&#39;console_scripts&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;hello_node = hello_ros2.hello_node:main&#39;</span><span class="p">,</span>
+    <span class="p">],</span>
+<span class="p">},</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">格式说明</p>
+<p><code>'命令名 = 包名.文件名:函数名'</code></p>
+<ul>
+<li><code>hello_node</code>：以后运行时用的命令名</li>
+<li><code>hello_ros2.hello_node</code>：Python 模块路径</li>
+<li><code>main</code>：要调用的函数</li>
+</ul>
+</div>
+<hr />
+<h2 id="115">11.5 编译和运行<a class="headerlink" href="#115" title="Permanent link">&para;</a></h2>
+<h3 id="_12">回到工作空间根目录<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+</code></pre></div>
+<hr />
+<h3 id="_13">编译包<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--packages-select<span class="w"> </span>hello_ros2
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">编译选项</p>
+<ul>
+<li><code>--packages-select hello_ros2</code>：只编译这一个包</li>
+<li>如果不加，会编译所有包</li>
+</ul>
+</div>
+<hr />
+<h3 id="_14">加载环境<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>install/setup.bash
+</code></pre></div>
+<div class="admonition danger">
+<p class="admonition-title">必须做</p>
+<p>编译完后 <strong>必须 source</strong>，否则找不到新编译的包。</p>
+</div>
+<hr />
+<h3 id="_15">运行节点<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>hello_ros2<span class="w"> </span>hello_node
+</code></pre></div>
+<hr />
+<h3 id="_16">应该看到<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>[INFO] [节点名]: 节点启动了！
+[INFO] [节点名]: Hello ROS2! 第 1 次问候
+[INFO] [节点名]: Hello ROS2! 第 2 次问候
+[INFO] [节点名]: Hello ROS2! 第 3 次问候
+...
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">成功</p>
+<p>每秒打印一条消息！</p>
+</div>
+<hr />
+<h3 id="_17">停止节点<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<p>按 <code>Ctrl+C</code> 停止节点。</p>
+<hr />
+<h2 id="116">11.6 查看节点信息<a class="headerlink" href="#116" title="Permanent link">&para;</a></h2>
+<h3 id="_18">另开一个终端<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>在节点运行时，打开另一个终端。</p>
+<hr />
+<h3 id="_19">查看运行的节点<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>node<span class="w"> </span>list
+</code></pre></div>
+<div class="admonition success">
+<p class="admonition-title">输出</p>
+<div class="highlight"><pre><span></span><code>/hello_node
+</code></pre></div>
+</div>
+<hr />
+<h3 id="_20">查看节点详细信息<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>node<span class="w"> </span>info<span class="w"> </span>/hello_node
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">会显示</p>
+<ul>
+<li>订阅的话题</li>
+<li>发布的话题</li>
+<li>提供的服务</li>
+<li>使用的参数</li>
+</ul>
+</div>
+<hr />
+<h2 id="117">11.7 常见错误<a class="headerlink" href="#117" title="Permanent link">&para;</a></h2>
+<h3 id="1">错误1：找不到包<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Package &#39;hello_ros2&#39; not found
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">解决方法</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 重新 source</span>
+<span class="nb">source</span><span class="w"> </span>~/ros2_ws/install/setup.bash
+
+<span class="c1"># 检查包是否编译成功</span>
+ros2<span class="w"> </span>pkg<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>hello
+</code></pre></div>
+</div>
+<hr />
+<h3 id="2">错误2：找不到可执行文件<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>No executable found
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">解决方法</p>
+<ol>
+<li>检查 <code>setup.py</code> 的 <code>entry_points</code> 是否配置正确</li>
+<li>重新编译：
+   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+colcon<span class="w"> </span>build<span class="w"> </span>--packages-select<span class="w"> </span>hello_ros2
+<span class="nb">source</span><span class="w"> </span>install/setup.bash
+</code></pre></div></li>
+</ol>
+</div>
+<hr />
+<h3 id="3import">错误3：import 错误<a class="headerlink" href="#3import" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ModuleNotFoundError: No module named &#39;rclpy&#39;
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">解决方法</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># source ROS2 环境</span>
+<span class="nb">source</span><span class="w"> </span>/opt/ros/humble/setup.bash
+</code></pre></div>
+</div>
+<hr />
+<h3 id="4">错误4：权限问题<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Permission denied
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">解决方法</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 给文件添加执行权限</span>
+chmod<span class="w"> </span>+x<span class="w"> </span>hello_ros2/hello_node.py
+</code></pre></div>
+</div>
+<hr />
+<h2 id="118">11.8 改进版本：带参数的节点<a class="headerlink" href="#118" title="Permanent link">&para;</a></h2>
+<h3 id="_21">修改代码<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>我们可以让问候的频率可配置：</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">rclpy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rclpy.node</span><span class="w"> </span><span class="kn">import</span> <span class="n">Node</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">HelloNode</span><span class="p">(</span><span class="n">Node</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Hello ROS2 节点（带参数版本）&quot;&quot;&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;hello_node&#39;</span><span class="p">)</span>
+
+        <span class="c1"># 声明参数</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">declare_parameter</span><span class="p">(</span><span class="s1">&#39;timer_period&#39;</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">declare_parameter</span><span class="p">(</span><span class="s1">&#39;greeting_text&#39;</span><span class="p">,</span> <span class="s1">&#39;Hello ROS2!&#39;</span><span class="p">)</span>
+
+        <span class="c1"># 获取参数值</span>
+        <span class="n">timer_period</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_parameter</span><span class="p">(</span><span class="s1">&#39;timer_period&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+        <span class="n">greeting_text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_parameter</span><span class="p">(</span><span class="s1">&#39;greeting_text&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;节点启动！周期=</span><span class="si">{</span><span class="n">timer_period</span><span class="si">}</span><span class="s1">秒&#39;</span><span class="p">)</span>
+
+        <span class="c1"># 使用参数创建定时器</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_timer</span><span class="p">(</span><span class="n">timer_period</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">timer_callback</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">greeting_text</span> <span class="o">=</span> <span class="n">greeting_text</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">timer_callback</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;定时器回调函数&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">greeting_text</span><span class="si">}</span><span class="s1"> 第 </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">count</span><span class="si">}</span><span class="s1"> 次&#39;</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">rclpy</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">)</span>
+    <span class="n">node</span> <span class="o">=</span> <span class="n">HelloNode</span><span class="p">()</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">rclpy</span><span class="o">.</span><span class="n">spin</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">KeyboardInterrupt</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">node</span><span class="o">.</span><span class="n">destroy_node</span><span class="p">()</span>
+        <span class="n">rclpy</span><span class="o">.</span><span class="n">shutdown</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h3 id="_22">重新编译<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+colcon<span class="w"> </span>build<span class="w"> </span>--packages-select<span class="w"> </span>hello_ros2
+<span class="nb">source</span><span class="w"> </span>install/setup.bash
+</code></pre></div>
+<hr />
+<h3 id="_23">运行时设置参数<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># 默认运行</span>
+ros2<span class="w"> </span>run<span class="w"> </span>hello_ros2<span class="w"> </span>hello_node
+
+<span class="c1"># 修改问候周期为0.5秒</span>
+ros2<span class="w"> </span>run<span class="w"> </span>hello_ros2<span class="w"> </span>hello_node<span class="w"> </span>--ros-args<span class="w"> </span>-p<span class="w"> </span>timer_period:<span class="o">=</span><span class="m">0</span>.5
+
+<span class="c1"># 同时修改问候文字</span>
+ros2<span class="w"> </span>run<span class="w"> </span>hello_ros2<span class="w"> </span>hello_node<span class="w"> </span>--ros-args<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-p<span class="w"> </span>timer_period:<span class="o">=</span><span class="m">0</span>.5<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-p<span class="w"> </span>greeting_text:<span class="o">=</span><span class="s2">&quot;你好 ROS2!&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="_24">运行时查看参数<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p>另开终端：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 列出节点的参数</span>
+ros2<span class="w"> </span>param<span class="w"> </span>list<span class="w"> </span>/hello_node
+
+<span class="c1"># 查看参数值</span>
+ros2<span class="w"> </span>param<span class="w"> </span>get<span class="w"> </span>/hello_node<span class="w"> </span>timer_period
+
+<span class="c1"># 修改参数值</span>
+ros2<span class="w"> </span>param<span class="w"> </span><span class="nb">set</span><span class="w"> </span>/hello_node<span class="w"> </span>timer_period<span class="w"> </span><span class="m">2</span>.0
+</code></pre></div>
+<hr />
+<h2 id="119">11.9 完整开发流程总结<a class="headerlink" href="#119" title="Permanent link">&para;</a></h2>
+<h3 id="_25">步骤回顾<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">标准流程</p>
+<ol>
+<li>
+<p><strong>创建功能包</strong>
+   <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>pkg<span class="w"> </span>create<span class="w"> </span>--build-type<span class="w"> </span>ament_python<span class="w"> </span>包名<span class="w"> </span>--dependencies<span class="w"> </span>rclpy
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>编写代码</strong></p>
+</li>
+<li>在 <code>包名/包名/</code> 下创建 Python 文件</li>
+<li>写节点类，继承 <code>Node</code></li>
+<li>
+<p>写 <code>main()</code> 函数</p>
+</li>
+<li>
+<p><strong>配置 setup.py</strong></p>
+</li>
+<li>
+<p>在 <code>entry_points</code> 里添加入口点</p>
+</li>
+<li>
+<p><strong>编译</strong>
+   <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws
+colcon<span class="w"> </span>build<span class="w"> </span>--packages-select<span class="w"> </span>包名
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>加载环境</strong>
+   <div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>install/setup.bash
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>运行</strong>
+   <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>包名<span class="w"> </span>节点名
+</code></pre></div></p>
+</li>
+</ol>
+</div>
+<hr />
+<h2 id="_26">本章小结<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h2>
+<p>通过这一章，你应该已经：</p>
+<ol>
+<li>
+<p><strong>创建了第一个 ROS2 包</strong></p>
+<p>使用 <code>ros2 pkg create</code> 命令</p>
+</li>
+<li>
+<p><strong>编写了第一个 ROS2 节点</strong></p>
+<p>定义节点类</p>
+<p>使用定时器</p>
+<p>使用日志系统</p>
+</li>
+<li>
+<p><strong>理解了节点的基本结构</strong></p>
+<p><code>__init__</code> 初始化</p>
+<p>回调函数</p>
+<p><code>main()</code> 函数</p>
+</li>
+<li>
+<p><strong>学会了编译和运行</strong></p>
+<p><code>colcon build</code></p>
+<p><code>source install/setup.bash</code></p>
+<p><code>ros2 run</code></p>
+</li>
+<li>
+<p><strong>学会了使用参数</strong></p>
+<p>声明参数</p>
+<p>获取参数</p>
+<p>运行时修改参数</p>
+</li>
+</ol>
+<hr />
+<h2 id="_27">下一章预告<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h2>
+<p>下一章我们会做一个 <strong>更实用的项目</strong>：</p>
+<blockquote>
+<p><strong>项目实战——发布者与订阅者通信</strong></p>
+</blockquote>
+<p>学习节点之间如何通过话题进行通信，</p>
+<p>这是 ROS2 中最常用的通信方式。</p>
 
 
 
