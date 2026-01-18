@@ -2,6 +2,7 @@ site_name: ROS2 新手指导
 
 theme:
   name: material
+  custom_dir: docs/overrides
   features: []
 nav:
   - 首页: index.md
@@ -43,3 +44,8 @@ markdown_extensions:
 
 #extra_css:
   #- stylesheets/extra.css
+extra:
+  analytics:
+    provider: google
+    property: G-XKKJBHKRN0
+
