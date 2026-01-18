@@ -28,6 +28,8 @@ nav:
   - 第五部分：排障与资源:
       - 13 进阶项目: chapters/13-troubleshooting.md
       - 14 常见问题与解决方案: chapters/14-resources.md
+  - 其他项目: 
+      - 15 关于数据结构的学习: chapters/others-DS.md
 
 markdown_extensions:
   - admonition
